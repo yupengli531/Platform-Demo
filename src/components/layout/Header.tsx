@@ -1,0 +1,152 @@
+'use client';
+
+import { useCallback, useEffect, useRef, useState } from 'react';
+import {
+  MagnifyingGlassIcon,
+  BellIcon,
+  Bars3Icon,
+  UserCircleIcon,
+  XMarkIcon,
+} from '@heroicons/react/24/outline';
+import { useAppStore } from '@/store/useAppStore';
+
+export default function Header() {
+  const { toggleSidebar, globalSearch, setGlobalSearch } = useAppStore();
+  const [searchInput, setSearchInput] = useState(globalSearch);
+  const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleSearchChange = useCallback(
+    (value: string) => {
+      setSearchInput(value);
+      if (debounceRef.current) clearTimeout(debounceRef.current);
+      debounceRef.current = setTimeout(() => {
+        setGlobalSearch(value);
+      }, 350);
+    },
+    [setGlobalSearch],
+  );
+
+  const handleSearchKeyDown = useCallback(
+    (e: React.KeyboardEvent<HTMLInputElement>) => {
+      if (e.key === 'Enter') {
+        if (debounceRef.current) clearTimeout(debounceRef.current);
+        setGlobalSearch(searchInput);
+      }
+    },
+    [searchInput, setGlobalSearch],
+  );
+
+  useEffect(() => {
+    return () => {
+      if (debounceRef.current) clearTimeout(debounceRef.current);
+    };
+  }, []);
+
+  return (
+    <header className="sticky top-0 z-50 flex h-16 shrink-0 items-center border-b border-navy-800/60 bg-surface-primary/95 backdrop-blur-sm">
+      <div className="flex w-full items-center gap-4 px-4 lg:px-6">
+        {/* Mobile hamburger */}
+        <button
+          type="button"
+          onClick={toggleSidebar}
+          className="rounded-md p-2 text-navy-300 transition-colors hover:bg-navy-800 hover:text-white lg:hidden"
+          aria-label="Toggle sidebar"
+        >
+          <Bars3Icon className="h-5 w-5" />
+        </button>
+
+        {/* Logo / App name */}
+        <div className="flex shrink-0 items-center gap-2.5">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-gold-500 to-gold-600 shadow-glow-gold">
+            <span className="text-sm font-bold text-navy-950">M</span>
+          </div>
+          <div className="hidden sm:block">
+            <h1 className="text-sm font-semibold leading-tight text-white">
+              MPV Capital{' '}
+              <span className="text-gold-400">Intelligence</span>
+            </h1>
+          </div>
+        </div>
+
+        {/* Desktop search */}
+        <div className="mx-4 hidden max-w-xl flex-1 md:block">
+          <div className="relative">
+            <MagnifyingGlassIcon className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-navy-400" />
+            <input
+              type="text"
+              value={searchInput}
+              onChange={(e) => handleSearchChange(e.target.value)}
+              onKeyDown={handleSearchKeyDown}
+              placeholder="Search firms, contacts, deals..."
+              className="w-full rounded-lg border border-navy-700/50 bg-navy-900/60 py-2 pl-10 pr-4 text-sm text-white placeholder-navy-400 transition-colors focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600/40"
+            />
+            {searchInput && (
+              <button
+                type="button"
+                onClick={() => handleSearchChange('')}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-navy-400 hover:text-navy-200"
+              >
+                <XMarkIcon className="h-4 w-4" />
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* Spacer for mobile */}
+        <div className="flex-1 md:hidden" />
+
+        {/* Mobile search toggle */}
+        <button
+          type="button"
+          onClick={() => setMobileSearchOpen(!mobileSearchOpen)}
+          className="rounded-md p-2 text-navy-300 transition-colors hover:bg-navy-800 hover:text-white md:hidden"
+          aria-label="Toggle search"
+        >
+          <MagnifyingGlassIcon className="h-5 w-5" />
+        </button>
+
+        {/* Right section */}
+        <div className="flex items-center gap-1">
+          {/* Notification bell */}
+          <button
+            type="button"
+            className="relative rounded-md p-2 text-navy-300 transition-colors hover:bg-navy-800 hover:text-white"
+            aria-label="Notifications"
+          >
+            <BellIcon className="h-5 w-5" />
+            <span className="absolute right-1.5 top-1.5 h-2 w-2 rounded-full bg-gold-500" />
+          </button>
+
+          {/* User menu */}
+          <button
+            type="button"
+            className="flex items-center gap-2 rounded-md p-1.5 text-navy-300 transition-colors hover:bg-navy-800 hover:text-white"
+            aria-label="User menu"
+          >
+            <UserCircleIcon className="h-6 w-6" />
+            <span className="hidden text-sm font-medium lg:block">Account</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile search bar (expanded) */}
+      {mobileSearchOpen && (
+        <div className="absolute left-0 top-16 w-full border-b border-navy-800/60 bg-surface-primary p-3 md:hidden">
+          <div className="relative">
+            <MagnifyingGlassIcon className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-navy-400" />
+            <input
+              type="text"
+              value={searchInput}
+              onChange={(e) => handleSearchChange(e.target.value)}
+              onKeyDown={handleSearchKeyDown}
+              placeholder="Search firms, contacts, deals..."
+              autoFocus
+              className="w-full rounded-lg border border-navy-700/50 bg-navy-900/60 py-2 pl-10 pr-4 text-sm text-white placeholder-navy-400 transition-colors focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600/40"
+            />
+          </div>
+        </div>
+      )}
+    </header>
+  );
+}

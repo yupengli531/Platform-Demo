@@ -1,0 +1,460 @@
+// MPV Capital Intelligence Platform
+// Production Database Schema
+// PostgreSQL with full-text search, flexible tagging, many-to-many relationships
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["fullTextSearch", "fullTextIndex"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// =============================================================================
+// CORE ENTITY: Firm / Institution / Capital Provider
+// =============================================================================
+
+model Firm {
+  id                String   @id @default(cuid())
+  name              String
+  legalName         String?  @map("legal_name")
+  description       String?  @db.Text
+  website           String?
+  linkedinUrl       String?  @map("linkedin_url")
+  logoUrl           String?  @map("logo_url")
+
+  // Location
+  headquartersCity    String?  @map("headquarters_city")
+  headquartersState   String?  @map("headquarters_state")
+  headquartersCountry String?  @map("headquarters_country")
+  headquartersRegion  String?  @map("headquarters_region")
+
+  // Financial metrics (stored in USD)
+  aumCents              BigInt?  @map("aum_cents")            // Assets Under Management in cents
+  totalFundSizeCents    BigInt?  @map("total_fund_size_cents")
+  minCheckSizeCents     BigInt?  @map("min_check_size_cents")
+  maxCheckSizeCents     BigInt?  @map("max_check_size_cents")
+  minRevenueCents       BigInt?  @map("min_revenue_cents")     // Min revenue requirement
+  maxRevenueCents       BigInt?  @map("max_revenue_cents")
+  minEbitdaCents        BigInt?  @map("min_ebitda_cents")      // Min EBITDA requirement
+  maxEbitdaCents        BigInt?  @map("max_ebitda_cents")
+  targetEvRangeLowCents BigInt?  @map("target_ev_range_low_cents")
+  targetEvRangeHighCents BigInt? @map("target_ev_range_high_cents")
+
+  // Investment preferences
+  stagePreferences    String[]  @map("stage_preferences")     // Seed, Series A, Growth, Buyout, etc.
+  dealTypePreferences String[]  @map("deal_type_preferences") // Equity, Debt, Mezzanine, etc.
+  geographicFocus     String[]  @map("geographic_focus")      // Regions/countries
+  investmentHorizon   String?   @map("investment_horizon")    // Short, Medium, Long term
+
+  // Operational details
+  yearFounded         Int?      @map("year_founded")
+  numberOfEmployees   Int?      @map("number_of_employees")
+  numberOfPartners    Int?      @map("number_of_partners")
+  activePortfolioSize Int?      @map("active_portfolio_size")
+  totalDealsCompleted Int?      @map("total_deals_completed")
+  currentFundNumber   Int?      @map("current_fund_number")
+  currentFundYear     Int?      @map("current_fund_year")
+
+  // CRM and relationship tracking
+  crmStatus           CrmStatus       @default(PROSPECT) @map("crm_status")
+  relationshipOwner   String?         @map("relationship_owner")
+  lastContactDate     DateTime?       @map("last_contact_date")
+  nextFollowUpDate    DateTime?       @map("next_follow_up_date")
+  internalScore       Int?            @map("internal_score")   // 1-100 scoring
+  internalNotes       String?         @map("internal_notes") @db.Text
+  priority            Priority        @default(MEDIUM)
+
+  // Data quality
+  dataSource          String?         @map("data_source")       // Where this record came from
+  dataConfidence      DataConfidence  @default(MEDIUM) @map("data_confidence")
+  lastVerifiedAt      DateTime?       @map("last_verified_at")
+  lastEnrichedAt      DateTime?       @map("last_enriched_at")
+
+  // Metadata
+  isActive    Boolean   @default(true) @map("is_active")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  // Relations
+  institutionTypes    FirmInstitutionType[]
+  industries          FirmIndustry[]
+  contacts            Contact[]
+  transactions        Transaction[]
+  tags                FirmTag[]
+  activityLogs        ActivityLog[]
+  firmSubSectors      FirmSubSector[]
+  sourceLinks         SourceLink[]
+
+  @@map("firms")
+  @@index([name])
+  @@index([headquartersState])
+  @@index([headquartersCountry])
+  @@index([crmStatus])
+  @@index([internalScore])
+  @@index([isActive])
+}
+
+// =============================================================================
+// CLASSIFICATION: Institution Types (Capital Provider Categories)
+// =============================================================================
+
+model InstitutionType {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  slug        String   @unique
+  description String?  @db.Text
+  displayOrder Int     @default(0) @map("display_order")
+  iconName    String?  @map("icon_name")
+  color       String?  // Hex color for UI badges
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  firms       FirmInstitutionType[]
+
+  @@map("institution_types")
+  @@index([slug])
+}
+
+model FirmInstitutionType {
+  id                String          @id @default(cuid())
+  firmId            String          @map("firm_id")
+  institutionTypeId String          @map("institution_type_id")
+  isPrimary         Boolean         @default(false) @map("is_primary")
+  confidence        DataConfidence  @default(HIGH)
+  assignedAt        DateTime        @default(now()) @map("assigned_at")
+
+  firm              Firm            @relation(fields: [firmId], references: [id], onDelete: Cascade)
+  institutionType   InstitutionType @relation(fields: [institutionTypeId], references: [id], onDelete: Cascade)
+
+  @@unique([firmId, institutionTypeId])
+  @@map("firm_institution_types")
+  @@index([firmId])
+  @@index([institutionTypeId])
+}
+
+// =============================================================================
+// CLASSIFICATION: Industries / Sectors
+// =============================================================================
+
+model Industry {
+  id           String   @id @default(cuid())
+  name         String   @unique
+  slug         String   @unique
+  description  String?  @db.Text
+  parentId     String?  @map("parent_id")
+  displayOrder Int      @default(0) @map("display_order")
+  iconName     String?  @map("icon_name")
+  color        String?
+  isActive     Boolean  @default(true) @map("is_active")
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  parent       Industry?  @relation("IndustryHierarchy", fields: [parentId], references: [id])
+  children     Industry[] @relation("IndustryHierarchy")
+  firms        FirmIndustry[]
+  subSectors   SubSector[]
+
+  @@map("industries")
+  @@index([slug])
+  @@index([parentId])
+}
+
+model SubSector {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  industryId  String   @map("industry_id")
+  description String?  @db.Text
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  industry    Industry        @relation(fields: [industryId], references: [id], onDelete: Cascade)
+  firms       FirmSubSector[]
+
+  @@map("sub_sectors")
+  @@index([industryId])
+}
+
+model FirmIndustry {
+  id          String          @id @default(cuid())
+  firmId      String          @map("firm_id")
+  industryId  String          @map("industry_id")
+  isPrimary   Boolean         @default(false) @map("is_primary")
+  confidence  DataConfidence  @default(HIGH)
+  assignedAt  DateTime        @default(now()) @map("assigned_at")
+
+  firm        Firm     @relation(fields: [firmId], references: [id], onDelete: Cascade)
+  industry    Industry @relation(fields: [industryId], references: [id], onDelete: Cascade)
+
+  @@unique([firmId, industryId])
+  @@map("firm_industries")
+  @@index([firmId])
+  @@index([industryId])
+}
+
+model FirmSubSector {
+  id          String   @id @default(cuid())
+  firmId      String   @map("firm_id")
+  subSectorId String   @map("sub_sector_id")
+  assignedAt  DateTime @default(now()) @map("assigned_at")
+
+  firm        Firm      @relation(fields: [firmId], references: [id], onDelete: Cascade)
+  subSector   SubSector @relation(fields: [subSectorId], references: [id], onDelete: Cascade)
+
+  @@unique([firmId, subSectorId])
+  @@map("firm_sub_sectors")
+  @@index([firmId])
+  @@index([subSectorId])
+}
+
+// =============================================================================
+// CONTACTS
+// =============================================================================
+
+model Contact {
+  id              String   @id @default(cuid())
+  firmId          String   @map("firm_id")
+  firstName       String   @map("first_name")
+  lastName        String   @map("last_name")
+  title           String?
+  email           String?
+  phone           String?
+  linkedinUrl     String?  @map("linkedin_url")
+  isPrimaryContact Boolean @default(false) @map("is_primary_contact")
+  department      String?
+  seniority       Seniority?
+
+  // CRM
+  lastContactDate   DateTime? @map("last_contact_date")
+  relationshipScore Int?      @map("relationship_score") // 1-10
+  notes             String?   @db.Text
+
+  isActive    Boolean   @default(true) @map("is_active")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  firm        Firm @relation(fields: [firmId], references: [id], onDelete: Cascade)
+
+  @@map("contacts")
+  @@index([firmId])
+  @@index([lastName, firstName])
+  @@index([email])
+}
+
+// =============================================================================
+// TRANSACTIONS / PORTFOLIO / DEAL HISTORY
+// =============================================================================
+
+model Transaction {
+  id              String   @id @default(cuid())
+  firmId          String   @map("firm_id")
+  transactionName String   @map("transaction_name")
+  targetCompany   String?  @map("target_company")
+  transactionType TransactionType @map("transaction_type")
+  role            String?  // Lead, Co-lead, Participant, Advisor
+  dealSizeCents   BigInt?  @map("deal_size_cents")
+  investmentCents BigInt?  @map("investment_cents")
+  industry        String?
+  sector          String?
+  stage           String?
+  geography       String?
+
+  announcedDate   DateTime? @map("announced_date")
+  closedDate      DateTime? @map("closed_date")
+  status          DealStatus @default(COMPLETED)
+
+  description     String?   @db.Text
+  sourceUrl       String?   @map("source_url")
+
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  firm            Firm @relation(fields: [firmId], references: [id], onDelete: Cascade)
+
+  @@map("transactions")
+  @@index([firmId])
+  @@index([transactionType])
+  @@index([closedDate])
+  @@index([targetCompany])
+}
+
+// =============================================================================
+// TAGGING SYSTEM
+// =============================================================================
+
+model Tag {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  slug      String   @unique
+  category  String?  // e.g., "strategy", "specialty", "market-segment"
+  color     String?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  firms     FirmTag[]
+
+  @@map("tags")
+  @@index([slug])
+  @@index([category])
+}
+
+model FirmTag {
+  id        String   @id @default(cuid())
+  firmId    String   @map("firm_id")
+  tagId     String   @map("tag_id")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  firm      Firm @relation(fields: [firmId], references: [id], onDelete: Cascade)
+  tag       Tag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@unique([firmId, tagId])
+  @@map("firm_tags")
+  @@index([firmId])
+  @@index([tagId])
+}
+
+// =============================================================================
+// ACTIVITY LOG / AUDIT TRAIL
+// =============================================================================
+
+model ActivityLog {
+  id          String       @id @default(cuid())
+  firmId      String?      @map("firm_id")
+  userId      String?      @map("user_id")
+  action      ActivityAction
+  entityType  String       @map("entity_type")
+  entityId    String       @map("entity_id")
+  details     String?      @db.Text
+  metadata    Json?
+  createdAt   DateTime     @default(now()) @map("created_at")
+
+  firm        Firm? @relation(fields: [firmId], references: [id], onDelete: SetNull)
+
+  @@map("activity_logs")
+  @@index([firmId])
+  @@index([action])
+  @@index([createdAt])
+}
+
+// =============================================================================
+// SOURCE LINKS / REFERENCES
+// =============================================================================
+
+model SourceLink {
+  id          String     @id @default(cuid())
+  firmId      String     @map("firm_id")
+  url         String
+  title       String?
+  sourceType  SourceType @map("source_type")
+  description String?    @db.Text
+  accessedAt  DateTime?  @map("accessed_at")
+  createdAt   DateTime   @default(now()) @map("created_at")
+
+  firm        Firm @relation(fields: [firmId], references: [id], onDelete: Cascade)
+
+  @@map("source_links")
+  @@index([firmId])
+}
+
+// =============================================================================
+// ENUMS
+// =============================================================================
+
+enum CrmStatus {
+  PROSPECT
+  CONTACTED
+  MEETING_SCHEDULED
+  IN_DISCUSSION
+  ACTIVE_RELATIONSHIP
+  DORMANT
+  DO_NOT_CONTACT
+  FORMER_CLIENT
+  CLIENT
+}
+
+enum Priority {
+  CRITICAL
+  HIGH
+  MEDIUM
+  LOW
+}
+
+enum DataConfidence {
+  VERIFIED
+  HIGH
+  MEDIUM
+  LOW
+  UNVERIFIED
+}
+
+enum Seniority {
+  C_SUITE
+  PARTNER
+  MANAGING_DIRECTOR
+  DIRECTOR
+  VICE_PRESIDENT
+  ASSOCIATE
+  ANALYST
+  OTHER
+}
+
+enum TransactionType {
+  ACQUISITION
+  MERGER
+  INVESTMENT_EQUITY
+  INVESTMENT_DEBT
+  LEVERAGED_BUYOUT
+  MANAGEMENT_BUYOUT
+  GROWTH_EQUITY
+  VENTURE_CAPITAL
+  SEED_FUNDING
+  IPO
+  SECONDARY
+  RECAPITALIZATION
+  RESTRUCTURING
+  REAL_ESTATE
+  CREDIT_FACILITY
+  MEZZANINE
+  SPECIAL_SITUATIONS
+  CO_INVESTMENT
+  FUND_OF_FUNDS
+  OTHER
+}
+
+enum DealStatus {
+  RUMORED
+  ANNOUNCED
+  PENDING
+  COMPLETED
+  CANCELLED
+  WITHDRAWN
+}
+
+enum ActivityAction {
+  CREATED
+  UPDATED
+  DELETED
+  VIEWED
+  EXPORTED
+  TAGGED
+  SCORED
+  CONTACTED
+  NOTE_ADDED
+  STATUS_CHANGED
+}
+
+enum SourceType {
+  SEC_FILING
+  PRESS_RELEASE
+  NEWS_ARTICLE
+  COMPANY_WEBSITE
+  PITCHBOOK
+  CRUNCHBASE
+  PREQIN
+  BLOOMBERG
+  CAPITAL_IQ
+  LINKEDIN
+  INTERNAL
+  OTHER
+}

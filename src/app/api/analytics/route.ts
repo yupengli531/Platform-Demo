@@ -56,7 +56,7 @@ export async function GET() {
         by: ['headquartersCountry', 'headquartersState'],
         where: { isActive: true, headquartersCountry: { not: null } },
         _count: { _all: true },
-        orderBy: { _count: { _all: 'desc' } },
+        orderBy: { _count: { id: 'desc' } },
         take: 20,
       }),
 

@@ -1,12 +1,14 @@
 /**
  * Database Seed Script
- * Seeds the institution types and industry taxonomy.
- * Does NOT create fake firm data - this only initializes the classification system.
+ * Seeds institution types, industries, firms, contacts, and transactions
+ * with real capital markets data (57 firms including Sequoia, Blackstone, KKR, etc.)
  *
  * Usage: npm run db:seed
  */
 
 import { PrismaClient } from '@prisma/client';
+import * as fs from 'fs';
+import * as path from 'path';
 
 const prisma = new PrismaClient();
 
@@ -29,7 +31,7 @@ const INSTITUTION_TYPES = [
 const INDUSTRIES = [
   { name: 'Technology', slug: 'technology', color: '#3b82f6', displayOrder: 1, subSectors: ['Enterprise Software', 'Hardware', 'IT Services', 'Semiconductors', 'IoT', 'Cybersecurity', 'Cloud Infrastructure'] },
   { name: 'Software / SaaS', slug: 'software-saas', color: '#6366f1', displayOrder: 2, subSectors: ['Vertical SaaS', 'Horizontal SaaS', 'Developer Tools', 'Productivity', 'PLG', 'Infrastructure Software'] },
-  { name: 'AI / Machine Learning', slug: 'ai-machine-learning', color: '#8b5cf6', displayOrder: 3, subSectors: ['Generative AI', 'MLOps', 'NLP', 'Computer Vision', 'Robotics', 'AI Infrastructure', 'Applied AI'] },
+  { name: 'AI / Machine Learning', slug: 'ai-ml', color: '#8b5cf6', displayOrder: 3, subSectors: ['Generative AI', 'MLOps', 'NLP', 'Computer Vision', 'Robotics', 'AI Infrastructure', 'Applied AI'] },
   { name: 'Healthcare', slug: 'healthcare', color: '#ef4444', displayOrder: 4, subSectors: ['Health IT', 'Medical Devices', 'Healthcare Services', 'Diagnostics', 'Telehealth', 'Value-Based Care', 'Behavioral Health'] },
   { name: 'Biotech / Life Sciences', slug: 'biotech-life-sciences', color: '#10b981', displayOrder: 5, subSectors: ['Therapeutics', 'Genomics', 'Drug Discovery', 'CRO/CDMO', 'Lab Equipment', 'Cell & Gene Therapy'] },
   { name: 'Fintech', slug: 'fintech', color: '#06b6d4', displayOrder: 6, subSectors: ['Payments', 'Lending', 'Insurtech', 'Wealthtech', 'Regtech', 'Banking-as-a-Service', 'Embedded Finance'] },
@@ -63,53 +65,288 @@ function slugify(text: string): string {
   return text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_]+/g, '-').replace(/-+/g, '-').trim();
 }
 
+interface SeedFirm {
+  id: string;
+  name: string;
+  legalName: string | null;
+  description: string | null;
+  website: string | null;
+  headquartersCity: string | null;
+  headquartersState: string | null;
+  headquartersCountry: string | null;
+  geographicFocus: string[];
+  minCheckSizeCents: number | null;
+  maxCheckSizeCents: number | null;
+  stagePreferences: string[];
+  dealTypePreferences: string[];
+  yearFounded: number | null;
+  crmStatus: string;
+  internalScore: number;
+  internalNotes: string | null;
+}
+
+interface SeedContact {
+  id: string;
+  firmId: string;
+  firstName: string;
+  lastName: string;
+  title: string | null;
+  email: string | null;
+  phone: string | null;
+  linkedinUrl: string | null;
+  isPrimaryContact: boolean;
+  department: string | null;
+  notes: string | null;
+}
+
+interface SeedDeal {
+  id: string;
+  firmId: string;
+  transactionName: string;
+  targetCompany: string | null;
+  transactionType: string;
+  dealSizeCents: number | null;
+  announcedDate: string;
+  stage: string | null;
+  sector: string | null;
+  status: string;
+  sourceUrl: string | null;
+}
+
+interface SeedData {
+  firms: SeedFirm[];
+  firmInstitutionTypes: { firmId: string; slug: string }[];
+  firmIndustries: { firmId: string; slug: string; isPrimary: boolean }[];
+  contacts: SeedContact[];
+  deals: SeedDeal[];
+}
+
 async function main() {
   console.log('🏦 Seeding MPV Capital Intelligence database...\n');
 
-  // Seed Institution Types
+  // Load seed data from JSON
+  const seedDataPath = path.join(__dirname, 'seed_data.json');
+  const seedData: SeedData = JSON.parse(fs.readFileSync(seedDataPath, 'utf-8'));
+
+  // ==================== CLEAR EXISTING DATA ====================
+  console.log('🗑️  Clearing existing data...');
+  await prisma.activityLog.deleteMany();
+  await prisma.sourceLink.deleteMany();
+  await prisma.firmTag.deleteMany();
+  await prisma.firmSubSector.deleteMany();
+  await prisma.firmIndustry.deleteMany();
+  await prisma.firmInstitutionType.deleteMany();
+  await prisma.transaction.deleteMany();
+  await prisma.contact.deleteMany();
+  await prisma.firm.deleteMany();
+  await prisma.subSector.deleteMany();
+  await prisma.industry.deleteMany();
+  await prisma.tag.deleteMany();
+  await prisma.institutionType.deleteMany();
+  console.log('  Done.\n');
+
+  // ==================== SEED INSTITUTION TYPES ====================
   console.log('📋 Creating institution types...');
+  const itMap = new Map<string, string>();
   for (const type of INSTITUTION_TYPES) {
-    await prisma.institutionType.upsert({
-      where: { slug: type.slug },
-      update: { ...type },
-      create: { ...type },
-    });
+    const created = await prisma.institutionType.create({ data: type });
+    itMap.set(type.slug, created.id);
     console.log(`  ✓ ${type.name}`);
   }
 
-  // Seed Industries with Sub-Sectors
+  // ==================== SEED INDUSTRIES ====================
   console.log('\n🏭 Creating industries and sub-sectors...');
+  const indMap = new Map<string, string>();
   for (const industry of INDUSTRIES) {
     const { subSectors, ...industryData } = industry;
-
-    const created = await prisma.industry.upsert({
-      where: { slug: industry.slug },
-      update: { ...industryData },
-      create: { ...industryData },
-    });
+    const created = await prisma.industry.create({ data: industryData });
+    indMap.set(industry.slug, created.id);
     console.log(`  ✓ ${industry.name}`);
 
-    // Create sub-sectors
     if (subSectors) {
       for (const subSectorName of subSectors) {
         const subSlug = `${industry.slug}-${slugify(subSectorName)}`;
-        await prisma.subSector.upsert({
-          where: { slug: subSlug },
-          update: { name: subSectorName, industryId: created.id },
-          create: { name: subSectorName, slug: subSlug, industryId: created.id },
+        await prisma.subSector.create({
+          data: { name: subSectorName, slug: subSlug, industryId: created.id },
         });
       }
     }
   }
 
-  console.log('\n✅ Seed completed successfully!');
+  // ==================== SEED FIRMS ====================
+  console.log(`\n🏢 Creating ${seedData.firms.length} firms...`);
+  const firmIds = new Set<string>();
+  for (const firm of seedData.firms) {
+    try {
+      await prisma.firm.create({
+        data: {
+          id: firm.id,
+          name: firm.name,
+          legalName: firm.legalName || null,
+          description: firm.description || null,
+          website: firm.website || null,
+          headquartersCity: firm.headquartersCity || null,
+          headquartersState: firm.headquartersState || null,
+          headquartersCountry: firm.headquartersCountry || null,
+          geographicFocus: firm.geographicFocus || [],
+          minCheckSizeCents: firm.minCheckSizeCents ? BigInt(firm.minCheckSizeCents) : null,
+          maxCheckSizeCents: firm.maxCheckSizeCents ? BigInt(firm.maxCheckSizeCents) : null,
+          stagePreferences: firm.stagePreferences || [],
+          dealTypePreferences: firm.dealTypePreferences || [],
+          yearFounded: firm.yearFounded || null,
+          crmStatus: firm.crmStatus as 'PROSPECT',
+          internalScore: firm.internalScore,
+          internalNotes: firm.internalNotes || null,
+          priority: firm.internalScore >= 90 ? 'HIGH' : firm.internalScore >= 70 ? 'MEDIUM' : 'LOW',
+          dataSource: 'Liquidity AI Seed Data',
+          dataConfidence: 'HIGH',
+        },
+      });
+      firmIds.add(firm.id);
+      console.log(`  ✓ ${firm.name}`);
+    } catch (e) {
+      console.error(`  ✗ Failed: ${firm.name}`, (e as Error).message?.substring(0, 100));
+    }
+  }
+
+  // ==================== SEED FIRM-INSTITUTION TYPE JUNCTIONS ====================
+  console.log(`\n🔗 Creating institution type associations...`);
+  const seenFIT = new Set<string>();
+  let fitCount = 0;
+  for (const j of seedData.firmInstitutionTypes) {
+    const key = `${j.firmId}:${j.slug}`;
+    if (seenFIT.has(key)) continue;
+    seenFIT.add(key);
+
+    const typeId = itMap.get(j.slug);
+    if (!typeId || !firmIds.has(j.firmId)) continue;
+
+    try {
+      await prisma.firmInstitutionType.create({
+        data: {
+          firmId: j.firmId,
+          institutionTypeId: typeId,
+          isPrimary: fitCount === 0,
+        },
+      });
+      fitCount++;
+    } catch {
+      // Skip duplicates
+    }
+  }
+  console.log(`  ✓ ${fitCount} associations created`);
+
+  // ==================== SEED FIRM-INDUSTRY JUNCTIONS ====================
+  console.log(`\n🔗 Creating industry associations...`);
+  const seenFI = new Set<string>();
+  let fiCount = 0;
+  for (const j of seedData.firmIndustries) {
+    const key = `${j.firmId}:${j.slug}`;
+    if (seenFI.has(key)) continue;
+    seenFI.add(key);
+
+    const industryId = indMap.get(j.slug);
+    if (!industryId || !firmIds.has(j.firmId)) continue;
+
+    try {
+      await prisma.firmIndustry.create({
+        data: {
+          firmId: j.firmId,
+          industryId: industryId,
+          isPrimary: j.isPrimary,
+        },
+      });
+      fiCount++;
+    } catch {
+      // Skip duplicates
+    }
+  }
+  console.log(`  ✓ ${fiCount} associations created`);
+
+  // ==================== SEED CONTACTS ====================
+  console.log(`\n👤 Creating ${seedData.contacts.length} contacts...`);
+  let contactCount = 0;
+  for (const c of seedData.contacts) {
+    if (!firmIds.has(c.firmId)) continue;
+    try {
+      await prisma.contact.create({
+        data: {
+          id: c.id,
+          firmId: c.firmId,
+          firstName: c.firstName,
+          lastName: c.lastName,
+          title: c.title || null,
+          email: c.email || null,
+          phone: c.phone || null,
+          linkedinUrl: c.linkedinUrl || null,
+          isPrimaryContact: c.isPrimaryContact,
+          department: c.department || null,
+          notes: c.notes || null,
+        },
+      });
+      contactCount++;
+    } catch {
+      // Skip duplicates
+    }
+  }
+  console.log(`  ✓ ${contactCount} contacts created`);
+
+  // ==================== SEED DEALS AS TRANSACTIONS ====================
+  console.log(`\n💼 Creating ${seedData.deals.length} transactions...`);
+  let dealCount = 0;
+  for (const d of seedData.deals) {
+    if (!firmIds.has(d.firmId)) continue;
+    try {
+      await prisma.transaction.create({
+        data: {
+          id: d.id,
+          firmId: d.firmId,
+          transactionName: d.transactionName,
+          targetCompany: d.targetCompany || null,
+          transactionType: d.transactionType as 'OTHER',
+          dealSizeCents: d.dealSizeCents ? BigInt(d.dealSizeCents) : null,
+          announcedDate: new Date(d.announcedDate),
+          stage: d.stage || null,
+          sector: d.sector || null,
+          status: d.status as 'ANNOUNCED',
+          sourceUrl: d.sourceUrl || null,
+        },
+      });
+      dealCount++;
+    } catch (e) {
+      console.error(`  ✗ Failed deal: ${d.transactionName}`, (e as Error).message?.substring(0, 100));
+    }
+  }
+  console.log(`  ✓ ${dealCount} transactions created`);
+
+  // ==================== LOG ACTIVITY ====================
+  console.log('\n📝 Creating activity logs...');
+  for (const firmId of firmIds) {
+    await prisma.activityLog.create({
+      data: {
+        firmId,
+        action: 'CREATED',
+        entityType: 'firm',
+        entityId: firmId,
+        details: 'Imported from Liquidity AI seed data',
+      },
+    });
+  }
+  console.log(`  ✓ ${firmIds.size} activity logs created`);
+
+  // ==================== SUMMARY ====================
+  console.log('\n' + '='.repeat(50));
+  console.log('✅ Seed completed successfully!');
+  console.log('='.repeat(50));
   console.log(`   ${INSTITUTION_TYPES.length} institution types`);
   console.log(`   ${INDUSTRIES.length} industries`);
   console.log(`   ${INDUSTRIES.reduce((sum, i) => sum + (i.subSectors?.length || 0), 0)} sub-sectors`);
-  console.log('\n📌 Next steps:');
-  console.log('   1. Import your firm data: npm run import:csv -- --file data/firms.csv');
-  console.log('   2. Or import JSON: npm run import:json -- --file data/firms.json');
-  console.log('   3. Start the app: npm run dev\n');
+  console.log(`   ${firmIds.size} firms`);
+  console.log(`   ${contactCount} contacts`);
+  console.log(`   ${fitCount} institution type associations`);
+  console.log(`   ${fiCount} industry associations`);
+  console.log(`   ${dealCount} transactions`);
+  console.log('\n🚀 Start the app: npm run dev\n');
 }
 
 main()

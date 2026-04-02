@@ -1,0 +1,5115 @@
+{
+  "firms": [
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000001",
+      "legalName": "Sequoia Capital Operations LLC",
+      "name": "Sequoia Capital",
+      "website": "https://www.sequoiacap.com",
+      "headquartersCity": "Menlo Park",
+      "headquartersState": "CA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "minCheckSizeCents": 30000000000,
+      "maxCheckSizeCents": 686986698400,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "B",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 1972,
+      "description": "Global venture capital firm founded in 1972 by Don Valentine. Early backer of Apple, Atari, Google, YouTube, Instagram, WhatsApp, Airbnb, and Stripe. Manages a suite of venture, growth, and crossover funds.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables.",
+      "aumRange": null
+    },
+    {
+      "id": "a1b2c3d4-0002-0002-0002-000000000002",
+      "legalName": "Andreessen Horowitz LLC",
+      "name": "Andreessen Horowitz",
+      "website": "https://a16z.com",
+      "headquartersCity": "Menlo Park",
+      "headquartersState": "CA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": 2500000000,
+      "maxCheckSizeCents": 858966127800,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "B",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 2009,
+      "description": "Venture capital firm (a16z) founded in 2009 by Marc Andreessen and Ben Horowitz. Over $90B under management across funds dedicated to venture, growth, bio, and crypto. Pioneered the platform model in VC.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0003-0003-0003-000000000003",
+      "legalName": "Blackstone Inc.",
+      "name": "Blackstone",
+      "website": "https://www.blackstone.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "buyout",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "mezz"
+      ],
+      "yearFounded": 1985,
+      "description": "World's largest alternative investment firm with $1.2 trillion AUM (as of Q3 2025). Founded in 1985 by Stephen Schwarzman. Strategies include private equity, real estate, credit, hedge fund solutions, and infrastructure.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0004-0004-0004-000000000004",
+      "legalName": "KKR & Co. Inc.",
+      "name": "KKR",
+      "website": "https://www.kkr.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": 530000000000,
+      "maxCheckSizeCents": 530000000000,
+      "stagePreferences": [
+        "buyout",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "mezz"
+      ],
+      "yearFounded": 1976,
+      "description": "Global alternative asset manager founded in 1976 by Henry Kravis and George Roberts. Pioneer of the leveraged buyout. Invests across private equity, credit, real estate, and infrastructure globally.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0005-0005-0005-000000000005",
+      "legalName": "Tiger Global Management LLC",
+      "name": "Tiger Global",
+      "website": "https://www.tigerglobal.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": 340000000000,
+      "maxCheckSizeCents": 340000000000,
+      "stagePreferences": [
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 2001,
+      "description": "Investment firm founded in 2001 with $25M seed from Julian Robertson (Tiger Management). Runs both a hedge fund and a private investment vehicle. Among the most prolific venture investors globally in tech and fintech.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0006-0006-0006-000000000006",
+      "legalName": "Citadel LLC",
+      "name": "Citadel",
+      "website": "https://www.citadel.com",
+      "headquartersCity": "Miami",
+      "headquartersState": "FL",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "credit"
+      ],
+      "yearFounded": 1990,
+      "description": "Global alternative investment firm founded in 1990 by Ken Griffin. Over 2,500 professionals. Runs multi-strategy hedge funds and Citadel Securities, a leading market maker. Global HQ established in Miami in 2022.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0007-0007-0007-000000000007",
+      "legalName": "Bridgewater Associates LP",
+      "name": "Bridgewater Associates",
+      "website": "https://www.bridgewater.com",
+      "headquartersCity": "Westport",
+      "headquartersState": "CT",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "credit"
+      ],
+      "yearFounded": 1975,
+      "description": "World's largest hedge fund by AUM, founded in 1975 by Ray Dalio. Known for Pure Alpha and All Weather macro strategies. Manages assets for sovereign wealth funds, pension funds, central banks, and endowments.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0016-0016-0016-000000000016",
+      "legalName": "Franklin Resources Inc.",
+      "name": "Franklin Templeton",
+      "website": "https://www.franklintempleton.com",
+      "headquartersCity": "San Mateo",
+      "headquartersState": "CA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": 20000000000,
+      "maxCheckSizeCents": 100000000000,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "B",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 1947,
+      "description": "Global investment management organization with over $1.5T AUM. Has been an active crossover investor in late-stage private technology rounds including Databricks and Canva.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0017-0017-0017-000000000017",
+      "legalName": "SoftBank Group Corp.",
+      "name": "SoftBank",
+      "website": "https://www.softbank.jp",
+      "headquartersCity": "Tokyo",
+      "headquartersState": null,
+      "headquartersCountry": "Japan",
+      "geographicFocus": [
+        "Japan"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": 63900000000,
+      "maxCheckSizeCents": 63900000000,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "B",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 1981,
+      "description": "Japanese multinational conglomerate and one of the world's largest technology investors. Operates the SoftBank Vision Fund (SVF1 $100B, SVF2). Invested in Uber, WeWork, Alibaba, Klarna, DoorDash, and hundreds of others.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0018-0018-0018-000000000018",
+      "legalName": "Berkshire Hathaway Inc.",
+      "name": "Berkshire Hathaway",
+      "website": "https://www.berkshirehathaway.com",
+      "headquartersCity": "Omaha",
+      "headquartersState": "NE",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": 75000000000,
+      "maxCheckSizeCents": 75000000000,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity"
+      ],
+      "yearFounded": 1955,
+      "description": "Holding company run by Warren Buffett and Charlie Munger (until 2023). Primarily known for value investing and insurance. Took a notable stake in Nubank at $30B valuation via Series G extension.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0020-0020-0020-000000000020",
+      "legalName": "Apollo Global Management Inc.",
+      "name": "Apollo",
+      "website": "https://www.apollo.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "buyout",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "mezz"
+      ],
+      "yearFounded": 1990,
+      "description": "Global alternative asset manager with $696B AUM (2024 annual report). Founded in 1990 by Leon Black, Josh Harris, and Marc Rowan. Strategies span private equity, credit, and real estate. NYSE: APO, CIK 0001411579.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0021-0021-0021-000000000021",
+      "legalName": "The Carlyle Group Inc.",
+      "name": "Carlyle",
+      "website": "https://www.carlyle.com",
+      "headquartersCity": "Washington",
+      "headquartersState": "DC",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "buyout",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "mezz"
+      ],
+      "yearFounded": 1987,
+      "description": "Global alternative asset manager with $426B AUM (2024 10-K). Founded in 1987 by David Rubenstein, William Conway Jr., and Daniel D'Aniello. Strategies include PE, credit, infrastructure, and real estate. NASDAQ: CG, CIK 0001403161.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0022-0022-0022-000000000022",
+      "legalName": "TPG Inc.",
+      "name": "TPG",
+      "website": "https://www.tpg.com",
+      "headquartersCity": "Fort Worth",
+      "headquartersState": "TX",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "buyout",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "mezz"
+      ],
+      "yearFounded": 1992,
+      "description": "Global alternative asset management firm with $224B AUM (2024 annual report). Co-founded in 1992 by David Bonderman and James Coulter. Strategies include private equity, growth, impact (Rise), and real estate. NASDAQ: TPG, CIK 0001836935.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0023-0023-0023-000000000023",
+      "legalName": "Warburg Pincus LLC",
+      "name": "Warburg Pincus",
+      "website": "https://www.warburgpincus.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "buyout",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 1966,
+      "description": "Global private equity and growth equity firm with approximately $83B AUM. Founded in 1966. Has invested in over 1,000 companies across more than 40 countries. Known for growth equity investing globally.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0024-0024-0024-000000000024",
+      "legalName": "Advent International Corporation",
+      "name": "Advent International",
+      "website": "https://www.adventinternational.com",
+      "headquartersCity": "Boston",
+      "headquartersState": "MA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "buyout",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "buyout",
+        "special-sit"
+      ],
+      "yearFounded": 1984,
+      "description": "International private equity firm with approximately $93B AUM. Founded in 1984. Operates across North America, Europe, Latin America, and Asia-Pacific. Known for deep sector expertise and international PE investing.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0025-0025-0025-000000000025",
+      "legalName": "Bain Capital LLC",
+      "name": "Bain Capital",
+      "website": "https://www.baincapital.com",
+      "headquartersCity": "Boston",
+      "headquartersState": "MA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "buyout",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "mezz"
+      ],
+      "yearFounded": 1984,
+      "description": "Global alternative investment firm with approximately $185B AUM. Founded in 1984, spun out of Bain & Company. Strategies span private equity, venture capital, credit, and public equity. Backed companies including Staples, Dunkin', and Hospital Corporation of America.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0026-0026-0026-000000000026",
+      "legalName": "Benchmark Capital Management Co. LLC",
+      "name": "Benchmark",
+      "website": "https://www.benchmark.com",
+      "headquartersCity": "San Francisco",
+      "headquartersState": "CA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$1B-5B",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "B",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 1995,
+      "description": "Early-stage venture capital firm founded in 1995. Backed Uber, Twitter, Snapchat, Instagram, eBay, Yelp, WeWork, and Dropbox. Operates with a small equal-partnership model with no hierarchy among partners.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0027-0027-0027-000000000027",
+      "legalName": "General Catalyst Group Management LLC",
+      "name": "General Catalyst",
+      "website": "https://www.generalcatalyst.com",
+      "headquartersCity": "Cambridge",
+      "headquartersState": "MA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "B",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 2000,
+      "description": "Venture capital firm with approximately $25B AUM. Founded in 2000 in Cambridge, MA. Investments span early to growth stages. Portfolio includes Airbnb, Stripe, Snap, HubSpot, Warby Parker, and Figma. Expanding into responsible innovation and global health.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0028-0028-0028-000000000028",
+      "legalName": "Founders Fund LLC",
+      "name": "Founders Fund",
+      "website": "https://www.foundersfund.com",
+      "headquartersCity": "San Francisco",
+      "headquartersState": "CA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$1B-5B",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "B",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 2005,
+      "description": "Venture capital firm founded in 2005 by Peter Thiel, Ken Howery, and Luke Nosek. Early backer of SpaceX, Facebook, Airbnb, Lyft, and Palantir. Known for contrarian, science-driven investment thesis.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0029-0029-0029-000000000029",
+      "legalName": "Accel Partners Management LLC",
+      "name": "Accel",
+      "website": "https://www.accel.com",
+      "headquartersCity": "Palo Alto",
+      "headquartersState": "CA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "B",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 1983,
+      "description": "Global venture capital and growth equity firm founded in 1983. Early investor in Facebook, Spotify, Slack, Dropbox, Atlassian, and Crowdstrike. Operates across the US, Europe, and India.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0030-0030-0030-000000000030",
+      "legalName": "Point72 Asset Management LP",
+      "name": "Point72",
+      "website": "https://www.point72.com",
+      "headquartersCity": "Stamford",
+      "headquartersState": "CT",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "credit"
+      ],
+      "yearFounded": 2014,
+      "description": "Multi-strategy hedge fund with approximately $35B AUM. Founded in 2014 by Steve Cohen, successor to SAC Capital Advisors. Strategies include discretionary long/short equity, macro, systematic, and venture. HQ in Stamford, CT.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0031-0031-0031-000000000031",
+      "legalName": "D.E. Shaw & Co LP",
+      "name": "D.E. Shaw",
+      "website": "https://www.deshaw.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "credit"
+      ],
+      "yearFounded": 1988,
+      "description": "Quantitative and multi-strategy investment firm with approximately $60B AUM. Founded in 1988 by David Shaw. Known for systematic and computational approaches to investing. Operates across hedge fund, private equity, and technology businesses.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0032-0032-0032-000000000032",
+      "legalName": "Two Sigma Investments LP",
+      "name": "Two Sigma",
+      "website": "https://www.twosigma.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "credit"
+      ],
+      "yearFounded": 2001,
+      "description": "Quantitative and systematic investment firm with approximately $60B AUM. Founded in 2001 by John Overdeck and David Siegel. Uses data science, distributed computing, and machine learning across all investment strategies.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0033-0033-0033-000000000033",
+      "legalName": "Gates Frontier LLC",
+      "name": "Gates Frontier",
+      "website": "https://www.gatesfrontier.com",
+      "headquartersCity": "Kirkland",
+      "headquartersState": "WA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity"
+      ],
+      "yearFounded": null,
+      "description": "Family investment office for Bill Gates. Registered investment adviser (SEC Form ADV). Manages a diversified portfolio across technology, healthcare, energy, and global development. Sister entity to Cascade Investment LLC.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 85,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0034-0034-0034-000000000034",
+      "legalName": "Walton Enterprises LLC",
+      "name": "Walton Enterprises",
+      "website": "https://www.waltonenterprises.com",
+      "headquartersCity": "Bentonville",
+      "headquartersState": "AR",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity"
+      ],
+      "yearFounded": null,
+      "description": "Family investment office for the Walton family (founders of Walmart). Registered investment adviser (SEC Form ADV). Manages one of the largest family fortunes in the world, estimated at over $200B.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 85,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0035-0035-0035-000000000035",
+      "legalName": "Cascade Investment LLC",
+      "name": "Cascade Investment",
+      "website": "https://www.cascadeinvestment.com",
+      "headquartersCity": "Kirkland",
+      "headquartersState": "WA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity"
+      ],
+      "yearFounded": 1994,
+      "description": "Personal investment vehicle for Bill Gates, founded in 1994. Registered investment adviser (SEC Form ADV). Managed by CIO Michael Larson. Holds stakes in Canadian National Railway, AutoNation, and large US farmland holdings.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0036-0036-0036-000000000036",
+      "legalName": "Pritzker Private Capital LLC",
+      "name": "Pritzker Private Capital",
+      "website": "https://www.pritzker.com",
+      "headquartersCity": "Chicago",
+      "headquartersState": "IL",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$1B-5B",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "buyout",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "buyout",
+        "special-sit"
+      ],
+      "yearFounded": null,
+      "description": "Pritzker family private equity and family office platform headquartered in Chicago, IL. Focuses on middle market companies in manufacturing, services, and healthcare. Affiliated with the Pritzker family (Hyatt Hotels founders).",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 85,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0037-0037-0037-000000000037",
+      "legalName": "Rockefeller Capital Management LP",
+      "name": "Rockefeller Capital Management",
+      "website": "https://www.rockco.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity"
+      ],
+      "yearFounded": 2018,
+      "description": "Independent wealth and asset management firm with approximately $130B AUM. Founded in 2018 from the former Rockefeller & Co. Serves ultra-high-net-worth families, institutions, and the Rockefeller family legacy.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0038-0038-0038-000000000038",
+      "legalName": "JPMorgan Chase & Co.",
+      "name": "JPMorgan Chase",
+      "website": "https://www.jpmorganchase.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": 234000000000,
+      "maxCheckSizeCents": 234000000000,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "advisory"
+      ],
+      "yearFounded": 1799,
+      "description": "Global financial services firm with $4T+ in total assets. NYSE: JPM, CIK 0000019617. Predecessor institutions date to 1799. Largest US bank by assets. Operates investment banking, consumer banking, asset management, and commercial banking.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0039-0039-0039-000000000039",
+      "legalName": "The Goldman Sachs Group Inc.",
+      "name": "Goldman Sachs",
+      "website": "https://www.goldmansachs.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": 52100000000,
+      "maxCheckSizeCents": 1193400000000,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "advisory"
+      ],
+      "yearFounded": 1869,
+      "description": "Global investment banking and asset management firm. NYSE: GS, CIK 0000886982. Founded in 1869. Lead underwriter on some of the largest IPOs in history including DoorDash, Snowflake, Rivian, Arm Holdings, and Duolingo.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0040-0040-0040-000000000040",
+      "legalName": "Bank of America Corporation",
+      "name": "Bank of America",
+      "website": "https://www.bankofamerica.com",
+      "headquartersCity": "Charlotte",
+      "headquartersState": "NC",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "advisory"
+      ],
+      "yearFounded": 1904,
+      "description": "Global banking and financial services corporation. NYSE: BAC, CIK 0000070858. Founded in 1904 as Bank of Italy in San Francisco. Second-largest US bank by assets. Operates consumer banking, global banking, global markets, and Merrill Lynch wealth management.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0041-0041-0041-000000000041",
+      "legalName": "Wells Fargo & Company",
+      "name": "Wells Fargo",
+      "website": "https://www.wellsfargo.com",
+      "headquartersCity": "San Francisco",
+      "headquartersState": "CA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "advisory"
+      ],
+      "yearFounded": 1852,
+      "description": "Diversified financial services company. NYSE: WFC, CIK 0000072971. Founded in 1852 by Henry Wells and William Fargo. Third-largest US bank by assets. Operates consumer and small business banking, commercial banking, and corporate investment banking.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0042-0042-0042-000000000042",
+      "legalName": "Citigroup Inc.",
+      "name": "Citigroup",
+      "website": "https://www.citigroup.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "advisory"
+      ],
+      "yearFounded": 1812,
+      "description": "Global banking institution. NYSE: C, CIK 0000831001. Predecessor City Bank of New York founded in 1812. Operates across institutional clients group, personal banking, and wealth management in approximately 160 countries.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0043-0043-0043-000000000043",
+      "legalName": "Morgan Stanley",
+      "name": "Morgan Stanley",
+      "website": "https://www.morganstanley.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": 74800000000,
+      "maxCheckSizeCents": 810000000000,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "advisory"
+      ],
+      "yearFounded": 1935,
+      "description": "Global investment bank and wealth management firm. NYSE: MS, CIK 0000895421. Founded in 1935. Lead underwriter on landmark IPOs including Uber, Reddit, UiPath, and Airbnb. Operates investment banking, institutional securities, and wealth management globally.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0044-0044-0044-000000000044",
+      "legalName": "UBS Group AG",
+      "name": "UBS",
+      "website": "https://www.ubs.com",
+      "headquartersCity": "Zurich",
+      "headquartersState": null,
+      "headquartersCountry": "Switzerland",
+      "geographicFocus": [
+        "Switzerland"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "advisory"
+      ],
+      "yearFounded": 1862,
+      "description": "Global investment bank and wealth management firm. NYSE: UBS. Founded in 1862. Headquartered in Zurich, Switzerland. Completed acquisition of Credit Suisse in 2023. Serves private, corporate, and institutional clients worldwide.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0045-0045-0045-000000000045",
+      "legalName": "Deutsche Bank AG",
+      "name": "Deutsche Bank",
+      "website": "https://www.db.com",
+      "headquartersCity": "Frankfurt",
+      "headquartersState": null,
+      "headquartersCountry": "Germany",
+      "geographicFocus": [
+        "Germany"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "advisory"
+      ],
+      "yearFounded": 1870,
+      "description": "Global investment bank headquartered in Frankfurt, Germany. NYSE: DB. Founded in 1870. Files 20-F annual reports with the SEC. Operates investment banking, corporate banking, private banking, and asset management globally.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0046-0046-0046-000000000046",
+      "legalName": "Lazard Inc.",
+      "name": "Lazard",
+      "website": "https://www.lazard.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "advisory"
+      ],
+      "yearFounded": 1848,
+      "description": "Independent investment bank and asset management firm. NYSE: LAZ, CIK 0001302215. Founded in 1848. Provides M&A advisory, restructuring, and asset management. One of the oldest and most prestigious independent advisory firms globally.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0047-0047-0047-000000000047",
+      "legalName": "Evercore Inc.",
+      "name": "Evercore",
+      "website": "https://www.evercore.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$1B-5B",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "advisory"
+      ],
+      "yearFounded": 1995,
+      "description": "Independent investment banking advisory firm. NYSE: EVR, CIK 0001360901. Founded in 1995 by Roger Altman. Provides M&A advisory, restructuring, and equity capital markets services. Consistently ranked among the top independent advisory firms by deal volume.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0048-0048-0048-000000000048",
+      "legalName": "Sun Capital Partners Inc.",
+      "name": "Sun Capital Partners",
+      "website": "https://www.suncappart.com",
+      "headquartersCity": "Boca Raton",
+      "headquartersState": "FL",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$1B-5B",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "buyout",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "buyout",
+        "special-sit"
+      ],
+      "yearFounded": 1995,
+      "description": "Private equity firm specializing in operational turnarounds and management-led buyouts. Founded in 1995 by Marc Leder and Rodger Krouse. Headquartered in Boca Raton, FL. Has invested in over 400 companies since inception.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 85,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0049-0049-0049-000000000049",
+      "legalName": "Marlin Equity Partners LLC",
+      "name": "Marlin Equity Partners",
+      "website": "https://www.marlinequity.com",
+      "headquartersCity": "Manhattan Beach",
+      "headquartersState": "CA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$1B-5B",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "buyout",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "buyout",
+        "special-sit"
+      ],
+      "yearFounded": 2005,
+      "description": "Private equity firm focused on technology, software, and business services. Founded in 2005 by David McGovern. Headquartered in Manhattan Beach, CA, with offices in London. Has completed over 200 acquisitions since inception.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 85,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0050-0050-0050-000000000050",
+      "legalName": "Frontenac Company LLC",
+      "name": "Frontenac",
+      "website": "https://www.frontenac.com",
+      "headquartersCity": "Chicago",
+      "headquartersState": "IL",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$500M-1B",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "buyout",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "buyout",
+        "special-sit"
+      ],
+      "yearFounded": 1971,
+      "description": "Lower middle market private equity firm founded in 1971. Headquartered in Chicago, IL. Focuses on management-led buyouts and recapitalizations of companies in business services, consumer, and industrial sectors.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 85,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0051-0051-0051-000000000051",
+      "legalName": "Huron Capital Partners LLC",
+      "name": "Huron Capital",
+      "website": "https://www.huroncapital.com",
+      "headquartersCity": "Detroit",
+      "headquartersState": "MI",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$500M-1B",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "buyout",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "buyout",
+        "special-sit"
+      ],
+      "yearFounded": 1999,
+      "description": "Lower middle market private equity firm founded in 1999. Headquartered in Detroit, MI. Focuses on buyouts and build-ups in fragmented industries. Uses a proprietary thesis-driven deal sourcing approach.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 85,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0052-0052-0052-000000000052",
+      "legalName": "California Public Employees' Retirement System",
+      "name": "CalPERS",
+      "website": "https://www.calpers.ca.gov",
+      "headquartersCity": "Sacramento",
+      "headquartersState": "CA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity"
+      ],
+      "yearFounded": 1932,
+      "description": "Largest public pension fund in the United States with $503B AUM as of June 30 2024 (calpers.ca.gov 2024 Annual Report). Serves approximately 2 million members. Invests across public equity, fixed income, private equity, real assets, and real estate.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0053-0053-0053-000000000053",
+      "legalName": "Ontario Teachers' Pension Plan Board",
+      "name": "Ontario Teachers'",
+      "website": "https://www.otpp.com",
+      "headquartersCity": "Toronto",
+      "headquartersState": "ON",
+      "headquartersCountry": "Canada",
+      "geographicFocus": [
+        "Canada"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity"
+      ],
+      "yearFounded": 1990,
+      "description": "Canadian pension fund with CAD $247.5B in net assets (2023 Annual Report, otpp.com). Founded in 1990. Serves approximately 340,000 working and retired teachers in Ontario. Known for direct investing capability across infrastructure, private equity, and real assets.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0054-0054-0054-000000000054",
+      "legalName": "Canada Pension Plan Investment Board",
+      "name": "CPP Investments",
+      "website": "https://www.cppinvestments.com",
+      "headquartersCity": "Toronto",
+      "headquartersState": "ON",
+      "headquartersCountry": "Canada",
+      "geographicFocus": [
+        "Canada"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity"
+      ],
+      "yearFounded": 1997,
+      "description": "Canadian Crown corporation managing the CPP Fund with CAD $632B AUM (cppinvestments.com 2024 Annual Report). Founded in 1997. Invests on behalf of approximately 21 million contributors and beneficiaries. One of the world's 10 largest pension funds.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0055-0055-0055-000000000055",
+      "legalName": "Hamilton Lane Advisors LLC",
+      "name": "Hamilton Lane",
+      "website": "https://www.hamiltonlane.com",
+      "headquartersCity": "Conshohocken",
+      "headquartersState": "PA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity"
+      ],
+      "yearFounded": 1991,
+      "description": "Global private markets investment management firm with $900B+ in assets under management and supervision (10-K). NASDAQ: HLNE, CIK 0001433642. Founded in 1991. Provides fund of funds, direct co-investment, and customized separate accounts globally.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0056-0056-0056-000000000056",
+      "legalName": "StepStone Group LP",
+      "name": "StepStone Group",
+      "website": "https://www.stepstonegroup.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity"
+      ],
+      "yearFounded": 2007,
+      "description": "Global private markets investment firm with $675B+ in AUM and advisory assets (10-K). NASDAQ: STEP, CIK 0001816090. Founded in 2007. Provides customized investment solutions for institutional investors across all private market strategies.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 95,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0057-0057-0057-000000000057",
+      "legalName": "HarbourVest Partners LLC",
+      "name": "HarbourVest Partners",
+      "website": "https://www.harbourvest.com",
+      "headquartersCity": "Boston",
+      "headquartersState": "MA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity"
+      ],
+      "yearFounded": 1982,
+      "description": "Global private markets investment management firm with approximately $116B AUM (harbourvest.com). Founded in 1982. Provides fund of funds, direct co-investments, and secondary market solutions to institutional investors worldwide.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0058-0058-0058-000000000058",
+      "legalName": "First Round Capital Management LLC",
+      "name": "First Round Capital",
+      "website": "https://www.firstround.com",
+      "headquartersCity": "San Francisco",
+      "headquartersState": "CA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$500M-1B",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "B",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 2004,
+      "description": "Seed-stage venture capital firm founded in 2004 by Josh Kopelman. Registered investment adviser (SEC Form ADV). Early backer of Uber, Square, Warby Parker, Mint, Flatiron Health, and Roblox. Known for founder-focused approach and community platform.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0059-0059-0059-000000000059",
+      "legalName": "Y Combinator Management LLC",
+      "name": "Y Combinator",
+      "website": "https://www.ycombinator.com",
+      "headquartersCity": "San Francisco",
+      "headquartersState": "CA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$500M-1B",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "B",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 2005,
+      "description": "World's most influential startup accelerator and seed investor. Founded in 2005 by Paul Graham, Jessica Livingston, Trevor Blackwell, and Robert Morris. Alumni include Airbnb, Dropbox, Stripe, Coinbase, Reddit, DoorDash, and thousands of others.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0060-0060-0060-000000000060",
+      "legalName": "Lux Capital Management LLC",
+      "name": "Lux Capital",
+      "website": "https://www.luxcapital.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$1B-5B",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "B",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 2000,
+      "description": "Deep tech and science-focused venture capital firm founded in 2000 by Josh Wolfe and Peter H\u00e9bert. Registered investment adviser (SEC Form ADV). Portfolio includes Osmo, Kaleidoscope Bio, Orbital Insight, and Shypdirect.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0061-0061-0061-000000000061",
+      "legalName": "GIC Private Limited",
+      "name": "GIC",
+      "website": "https://www.gic.com.sg",
+      "headquartersCity": "Singapore",
+      "headquartersState": null,
+      "headquartersCountry": "Singapore",
+      "geographicFocus": [
+        "Singapore"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity"
+      ],
+      "yearFounded": 1981,
+      "description": "Singapore sovereign wealth fund managing government reserves. Founded in 1981. Estimated AUM of $770B+ (gic.com.sg). Invests across public markets, private equity, real estate, and infrastructure in over 40 countries.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0062-0062-0062-000000000062",
+      "legalName": "Temasek Holdings Private Limited",
+      "name": "Temasek",
+      "website": "https://www.temasek.com.sg",
+      "headquartersCity": "Singapore",
+      "headquartersState": null,
+      "headquartersCountry": "Singapore",
+      "geographicFocus": [
+        "Singapore"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "A",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity"
+      ],
+      "yearFounded": 1974,
+      "description": "Singapore state-owned investment company with SGD $389B net portfolio value (temasek.com.sg 2024 Annual Report). Founded in 1974. Active investor in technology, financial services, and consumer sectors globally. Owns stakes in Singapore Airlines, DBS Bank, and ST Engineering.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Ported from legacy seed; taxonomy via junction tables."
+    },
+    {
+      "id": "a1b2c3d4-0064-0064-0064-000000000064",
+      "legalName": "U.S. Bancorp",
+      "name": "U.S. Bank",
+      "website": "https://www.usbank.com",
+      "headquartersCity": "Minneapolis",
+      "headquartersState": "MN",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$10B+",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [],
+      "dealTypePreferences": [
+        "equity",
+        "debt",
+        "advisory"
+      ],
+      "yearFounded": 1863,
+      "description": "Fifth-largest US commercial bank by assets with $678.3B in total assets as of December 31, 2024 (2024 10-K, CIK 0000036104). NYSE: USB. Founded under national bank charter No. 24 in 1863 during the Lincoln administration. Operates consumer and business banking, payment services, corporate and commercial banking, and wealth management. Completed $8B acquisition of MUFG Union Bank on December 1, 2022.",
+      "crmStatus": "ACTIVE_RELATIONSHIP",
+      "internalScore": 90,
+      "internalNotes": "Added to meet 5-bank spread requirement."
+    },
+    {
+      "id": "a1b2c3d4-0065-0065-0065-000000000065",
+      "legalName": "SV Angel Management, LLC",
+      "name": "SV Angel",
+      "website": "https://svangel.com",
+      "headquartersCity": "San Francisco",
+      "headquartersState": "CA",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": null,
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed",
+        "growth"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 1992,
+      "description": "Seed and growth-stage angel investment firm founded by Ron Conway in 1992. SEC-registered investment adviser, CRD 162285 / SEC# 802-75165, HQ at 950 Mason Street, San Francisco. Operates a Seed Fund and a Growth Fund. Described on official site as hyper-engaged and founder-focused.",
+      "crmStatus": "PROSPECT",
+      "internalScore": 80,
+      "internalNotes": "Angel investor; seed and growth funds. AUM not publicly disclosed."
+    },
+    {
+      "id": "a1b2c3d4-0066-0066-0066-000000000066",
+      "legalName": "Lerer Hippeau Ventures Management, LLC",
+      "name": "Lerer Hippeau",
+      "website": "https://lererhippeau.com",
+      "headquartersCity": "New York",
+      "headquartersState": "NY",
+      "headquartersCountry": "USA",
+      "geographicFocus": [
+        "USA"
+      ],
+      "aumRange": "$100M-500M",
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "seed"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "convertible"
+      ],
+      "yearFounded": 2010,
+      "description": "New York-based early-stage venture and seed investment firm. SEC exempt reporting adviser, CRD 162263 / SEC 802-76405. HQ at 555 Greenwich Street, New York, NY 10014. Founded in 2010. Describes itself as singularly obsessed with finding founders before they are famous. Focuses on pre-seed and seed stage across consumer and enterprise. Most recent fund Lerer Hippeau IX LP closed at $200M (announced April 2025).",
+      "crmStatus": "PROSPECT",
+      "internalScore": 75,
+      "internalNotes": "Seed/pre-seed stage fund; tagged angel-investors per category definition overlap at seed stage."
+    },
+    {
+      "id": "a1b2c3d4-0063-0063-0063-000000000063",
+      "legalName": "Mubadala Investment Company PJSC",
+      "name": "Mubadala",
+      "website": "https://www.mubadala.com",
+      "headquartersCity": "Abu Dhabi",
+      "headquartersState": "",
+      "headquartersCountry": "UAE",
+      "geographicFocus": [
+        "Middle East",
+        "Global"
+      ],
+      "minCheckSizeCents": null,
+      "maxCheckSizeCents": null,
+      "stagePreferences": [
+        "growth",
+        "buyout"
+      ],
+      "dealTypePreferences": [
+        "equity",
+        "infrastructure",
+        "real_estate"
+      ],
+      "yearFounded": 2002,
+      "description": "Abu Dhabi sovereign wealth fund managing approximately $302B in assets. Invests across aerospace, ICT, semiconductors, renewable energy, healthcare, real estate, and financial services globally.",
+      "crmStatus": "PROSPECT",
+      "internalScore": 85,
+      "internalNotes": null,
+      "aumRange": null
+    }
+  ],
+  "firmInstitutionTypes": [
+    {
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0003-0003-0003-000000000003",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0003-0003-0003-000000000003",
+      "slug": "hedge-funds"
+    },
+    {
+      "firmId": "a1b2c3d4-0004-0004-0004-000000000004",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0005-0005-0005-000000000005",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0005-0005-0005-000000000005",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0005-0005-0005-000000000005",
+      "slug": "hedge-funds"
+    },
+    {
+      "firmId": "a1b2c3d4-0006-0006-0006-000000000006",
+      "slug": "hedge-funds"
+    },
+    {
+      "firmId": "a1b2c3d4-0007-0007-0007-000000000007",
+      "slug": "hedge-funds"
+    },
+    {
+      "firmId": "a1b2c3d4-0016-0016-0016-000000000016",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0016-0016-0016-000000000016",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0017-0017-0017-000000000017",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0017-0017-0017-000000000017",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0018-0018-0018-000000000018",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0020-0020-0020-000000000020",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0021-0021-0021-000000000021",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0022-0022-0022-000000000022",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0023-0023-0023-000000000023",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0024-0024-0024-000000000024",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0025-0025-0025-000000000025",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0025-0025-0025-000000000025",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0025-0025-0025-000000000025",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0026-0026-0026-000000000026",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0027-0027-0027-000000000027",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0027-0027-0027-000000000027",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0028-0028-0028-000000000028",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0029-0029-0029-000000000029",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0029-0029-0029-000000000029",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0030-0030-0030-000000000030",
+      "slug": "hedge-funds"
+    },
+    {
+      "firmId": "a1b2c3d4-0031-0031-0031-000000000031",
+      "slug": "hedge-funds"
+    },
+    {
+      "firmId": "a1b2c3d4-0032-0032-0032-000000000032",
+      "slug": "hedge-funds"
+    },
+    {
+      "firmId": "a1b2c3d4-0033-0033-0033-000000000033",
+      "slug": "family-offices"
+    },
+    {
+      "firmId": "a1b2c3d4-0034-0034-0034-000000000034",
+      "slug": "family-offices"
+    },
+    {
+      "firmId": "a1b2c3d4-0035-0035-0035-000000000035",
+      "slug": "family-offices"
+    },
+    {
+      "firmId": "a1b2c3d4-0036-0036-0036-000000000036",
+      "slug": "family-offices"
+    },
+    {
+      "firmId": "a1b2c3d4-0036-0036-0036-000000000036",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0037-0037-0037-000000000037",
+      "slug": "family-offices"
+    },
+    {
+      "firmId": "a1b2c3d4-0037-0037-0037-000000000037",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0038-0038-0038-000000000038",
+      "slug": "banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0038-0038-0038-000000000038",
+      "slug": "investment-banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0038-0038-0038-000000000038",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "slug": "investment-banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0040-0040-0040-000000000040",
+      "slug": "banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0040-0040-0040-000000000040",
+      "slug": "investment-banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0040-0040-0040-000000000040",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0041-0041-0041-000000000041",
+      "slug": "banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0041-0041-0041-000000000041",
+      "slug": "investment-banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0042-0042-0042-000000000042",
+      "slug": "banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0042-0042-0042-000000000042",
+      "slug": "investment-banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0042-0042-0042-000000000042",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "slug": "investment-banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0044-0044-0044-000000000044",
+      "slug": "investment-banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0044-0044-0044-000000000044",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0045-0045-0045-000000000045",
+      "slug": "investment-banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0045-0045-0045-000000000045",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0046-0046-0046-000000000046",
+      "slug": "investment-banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0046-0046-0046-000000000046",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0047-0047-0047-000000000047",
+      "slug": "investment-banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0048-0048-0048-000000000048",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0048-0048-0048-000000000048",
+      "slug": "independent-sponsors"
+    },
+    {
+      "firmId": "a1b2c3d4-0049-0049-0049-000000000049",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0049-0049-0049-000000000049",
+      "slug": "independent-sponsors"
+    },
+    {
+      "firmId": "a1b2c3d4-0050-0050-0050-000000000050",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0050-0050-0050-000000000050",
+      "slug": "independent-sponsors"
+    },
+    {
+      "firmId": "a1b2c3d4-0051-0051-0051-000000000051",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0051-0051-0051-000000000051",
+      "slug": "independent-sponsors"
+    },
+    {
+      "firmId": "a1b2c3d4-0052-0052-0052-000000000052",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0053-0053-0053-000000000053",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0054-0054-0054-000000000054",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0055-0055-0055-000000000055",
+      "slug": "allocators"
+    },
+    {
+      "firmId": "a1b2c3d4-0055-0055-0055-000000000055",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0056-0056-0056-000000000056",
+      "slug": "allocators"
+    },
+    {
+      "firmId": "a1b2c3d4-0056-0056-0056-000000000056",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0057-0057-0057-000000000057",
+      "slug": "allocators"
+    },
+    {
+      "firmId": "a1b2c3d4-0057-0057-0057-000000000057",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0058-0058-0058-000000000058",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0059-0059-0059-000000000059",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0060-0060-0060-000000000060",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0060-0060-0060-000000000060",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0061-0061-0061-000000000061",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0062-0062-0062-000000000062",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0063-0063-0063-000000000063",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0063-0063-0063-000000000063",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0018-0018-0018-000000000018",
+      "slug": "investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0033-0033-0033-000000000033",
+      "slug": "family-offices"
+    },
+    {
+      "firmId": "a1b2c3d4-0030-0030-0030-000000000030",
+      "slug": "hedge-funds"
+    },
+    {
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "slug": "investment-banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0040-0040-0040-000000000040",
+      "slug": "banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0020-0020-0020-000000000020",
+      "slug": "private-equity"
+    },
+    {
+      "firmId": "a1b2c3d4-0048-0048-0048-000000000048",
+      "slug": "independent-sponsors"
+    },
+    {
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0052-0052-0052-000000000052",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0051-0051-0051-000000000051",
+      "slug": "search-funds"
+    },
+    {
+      "firmId": "a1b2c3d4-0055-0055-0055-000000000055",
+      "slug": "allocators"
+    },
+    {
+      "firmId": "a1b2c3d4-0035-0035-0035-000000000035",
+      "slug": "private-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0058-0058-0058-000000000058",
+      "slug": "angel-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0064-0064-0064-000000000064",
+      "slug": "banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0064-0064-0064-000000000064",
+      "slug": "investment-banks"
+    },
+    {
+      "firmId": "a1b2c3d4-0064-0064-0064-000000000064",
+      "slug": "institutional-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0065-0065-0065-000000000065",
+      "slug": "angel-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0065-0065-0065-000000000065",
+      "slug": "venture-capital"
+    },
+    {
+      "firmId": "a1b2c3d4-0066-0066-0066-000000000066",
+      "slug": "angel-investors"
+    },
+    {
+      "firmId": "a1b2c3d4-0066-0066-0066-000000000066",
+      "slug": "venture-capital"
+    }
+  ],
+  "firmIndustries": [
+    {
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "slug": "ai-ml",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "slug": "fintech",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "slug": "ai-ml",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "slug": "fintech",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "slug": "crypto-blockchain",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0003-0003-0003-000000000003",
+      "slug": "real-estate",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0003-0003-0003-000000000003",
+      "slug": "infrastructure",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0003-0003-0003-000000000003",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0003-0003-0003-000000000003",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0003-0003-0003-000000000003",
+      "slug": "financial-services",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0004-0004-0004-000000000004",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0004-0004-0004-000000000004",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0004-0004-0004-000000000004",
+      "slug": "financial-services",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0004-0004-0004-000000000004",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0004-0004-0004-000000000004",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0004-0004-0004-000000000004",
+      "slug": "infrastructure",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0005-0005-0005-000000000005",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0005-0005-0005-000000000005",
+      "slug": "fintech",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0005-0005-0005-000000000005",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0005-0005-0005-000000000005",
+      "slug": "software-saas",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0005-0005-0005-000000000005",
+      "slug": "retail-ecommerce",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0006-0006-0006-000000000006",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0006-0006-0006-000000000006",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0007-0007-0007-000000000007",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0007-0007-0007-000000000007",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0016-0016-0016-000000000016",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0016-0016-0016-000000000016",
+      "slug": "ai-ml",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0016-0016-0016-000000000016",
+      "slug": "financial-services",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0016-0016-0016-000000000016",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0017-0017-0017-000000000017",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0017-0017-0017-000000000017",
+      "slug": "fintech",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0017-0017-0017-000000000017",
+      "slug": "ai-ml",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0017-0017-0017-000000000017",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0017-0017-0017-000000000017",
+      "slug": "retail-ecommerce",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0017-0017-0017-000000000017",
+      "slug": "software-saas",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0018-0018-0018-000000000018",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0018-0018-0018-000000000018",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0018-0018-0018-000000000018",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0018-0018-0018-000000000018",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0020-0020-0020-000000000020",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0020-0020-0020-000000000020",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0020-0020-0020-000000000020",
+      "slug": "infrastructure",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0020-0020-0020-000000000020",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0020-0020-0020-000000000020",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0020-0020-0020-000000000020",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0021-0021-0021-000000000021",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0021-0021-0021-000000000021",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0021-0021-0021-000000000021",
+      "slug": "financial-services",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0021-0021-0021-000000000021",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0021-0021-0021-000000000021",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0021-0021-0021-000000000021",
+      "slug": "infrastructure",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0022-0022-0022-000000000022",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0022-0022-0022-000000000022",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0022-0022-0022-000000000022",
+      "slug": "financial-services",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0022-0022-0022-000000000022",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0022-0022-0022-000000000022",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0022-0022-0022-000000000022",
+      "slug": "cleantech-climate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0023-0023-0023-000000000023",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0023-0023-0023-000000000023",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0023-0023-0023-000000000023",
+      "slug": "financial-services",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0023-0023-0023-000000000023",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0023-0023-0023-000000000023",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0023-0023-0023-000000000023",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0024-0024-0024-000000000024",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0024-0024-0024-000000000024",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0024-0024-0024-000000000024",
+      "slug": "financial-services",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0024-0024-0024-000000000024",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0024-0024-0024-000000000024",
+      "slug": "industrials",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0025-0025-0025-000000000025",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0025-0025-0025-000000000025",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0025-0025-0025-000000000025",
+      "slug": "financial-services",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0025-0025-0025-000000000025",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0025-0025-0025-000000000025",
+      "slug": "retail-ecommerce",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0025-0025-0025-000000000025",
+      "slug": "industrials",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0026-0026-0026-000000000026",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0026-0026-0026-000000000026",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0026-0026-0026-000000000026",
+      "slug": "software-saas",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0026-0026-0026-000000000026",
+      "slug": "fintech",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0027-0027-0027-000000000027",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0027-0027-0027-000000000027",
+      "slug": "ai-ml",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0027-0027-0027-000000000027",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0027-0027-0027-000000000027",
+      "slug": "fintech",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0027-0027-0027-000000000027",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0027-0027-0027-000000000027",
+      "slug": "software-saas",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0028-0028-0028-000000000028",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0028-0028-0028-000000000028",
+      "slug": "defense-government",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0028-0028-0028-000000000028",
+      "slug": "biotech-life-sciences",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0028-0028-0028-000000000028",
+      "slug": "ai-ml",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0028-0028-0028-000000000028",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0029-0029-0029-000000000029",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0029-0029-0029-000000000029",
+      "slug": "software-saas",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0029-0029-0029-000000000029",
+      "slug": "fintech",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0029-0029-0029-000000000029",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0030-0030-0030-000000000030",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0030-0030-0030-000000000030",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0030-0030-0030-000000000030",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0030-0030-0030-000000000030",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0031-0031-0031-000000000031",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0031-0031-0031-000000000031",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0032-0032-0032-000000000032",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0032-0032-0032-000000000032",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0032-0032-0032-000000000032",
+      "slug": "ai-ml",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0033-0033-0033-000000000033",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0033-0033-0033-000000000033",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0033-0033-0033-000000000033",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0033-0033-0033-000000000033",
+      "slug": "education",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0034-0034-0034-000000000034",
+      "slug": "retail-ecommerce",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0034-0034-0034-000000000034",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0034-0034-0034-000000000034",
+      "slug": "financial-services",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0034-0034-0034-000000000034",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0035-0035-0035-000000000035",
+      "slug": "real-estate",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0035-0035-0035-000000000035",
+      "slug": "hospitality",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0035-0035-0035-000000000035",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0035-0035-0035-000000000035",
+      "slug": "infrastructure",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0035-0035-0035-000000000035",
+      "slug": "agriculture",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0035-0035-0035-000000000035",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0036-0036-0036-000000000036",
+      "slug": "manufacturing",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0036-0036-0036-000000000036",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0036-0036-0036-000000000036",
+      "slug": "financial-services",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0036-0036-0036-000000000036",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0037-0037-0037-000000000037",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0037-0037-0037-000000000037",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0037-0037-0037-000000000037",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0038-0038-0038-000000000038",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0038-0038-0038-000000000038",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0038-0038-0038-000000000038",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0038-0038-0038-000000000038",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0038-0038-0038-000000000038",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0038-0038-0038-000000000038",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0040-0040-0040-000000000040",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0040-0040-0040-000000000040",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0040-0040-0040-000000000040",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0040-0040-0040-000000000040",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0040-0040-0040-000000000040",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0040-0040-0040-000000000040",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0041-0041-0041-000000000041",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0041-0041-0041-000000000041",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0041-0041-0041-000000000041",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0041-0041-0041-000000000041",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0042-0042-0042-000000000042",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0042-0042-0042-000000000042",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0042-0042-0042-000000000042",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0042-0042-0042-000000000042",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0042-0042-0042-000000000042",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0044-0044-0044-000000000044",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0044-0044-0044-000000000044",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0044-0044-0044-000000000044",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0044-0044-0044-000000000044",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0044-0044-0044-000000000044",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0044-0044-0044-000000000044",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0045-0045-0045-000000000045",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0045-0045-0045-000000000045",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0045-0045-0045-000000000045",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0045-0045-0045-000000000045",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0045-0045-0045-000000000045",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0046-0046-0046-000000000046",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0046-0046-0046-000000000046",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0046-0046-0046-000000000046",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0046-0046-0046-000000000046",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0046-0046-0046-000000000046",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0046-0046-0046-000000000046",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0047-0047-0047-000000000047",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0047-0047-0047-000000000047",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0047-0047-0047-000000000047",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0047-0047-0047-000000000047",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0047-0047-0047-000000000047",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0047-0047-0047-000000000047",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0048-0048-0048-000000000048",
+      "slug": "consumer",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0048-0048-0048-000000000048",
+      "slug": "retail-ecommerce",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0048-0048-0048-000000000048",
+      "slug": "industrials",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0049-0049-0049-000000000049",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0049-0049-0049-000000000049",
+      "slug": "software-saas",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0050-0050-0050-000000000050",
+      "slug": "consumer",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0050-0050-0050-000000000050",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0050-0050-0050-000000000050",
+      "slug": "industrials",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0050-0050-0050-000000000050",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0051-0051-0051-000000000051",
+      "slug": "consumer",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0051-0051-0051-000000000051",
+      "slug": "industrials",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0051-0051-0051-000000000051",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0051-0051-0051-000000000051",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0052-0052-0052-000000000052",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0052-0052-0052-000000000052",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0052-0052-0052-000000000052",
+      "slug": "infrastructure",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0053-0053-0053-000000000053",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0053-0053-0053-000000000053",
+      "slug": "infrastructure",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0053-0053-0053-000000000053",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0054-0054-0054-000000000054",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0054-0054-0054-000000000054",
+      "slug": "infrastructure",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0054-0054-0054-000000000054",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0055-0055-0055-000000000055",
+      "slug": "infrastructure",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0056-0056-0056-000000000056",
+      "slug": "infrastructure",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0056-0056-0056-000000000056",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0057-0057-0057-000000000057",
+      "slug": "infrastructure",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0058-0058-0058-000000000058",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0058-0058-0058-000000000058",
+      "slug": "software-saas",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0058-0058-0058-000000000058",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0058-0058-0058-000000000058",
+      "slug": "fintech",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0058-0058-0058-000000000058",
+      "slug": "ai-ml",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0059-0059-0059-000000000059",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0059-0059-0059-000000000059",
+      "slug": "software-saas",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0059-0059-0059-000000000059",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0059-0059-0059-000000000059",
+      "slug": "fintech",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0059-0059-0059-000000000059",
+      "slug": "ai-ml",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0059-0059-0059-000000000059",
+      "slug": "biotech-life-sciences",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0060-0060-0060-000000000060",
+      "slug": "biotech-life-sciences",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0060-0060-0060-000000000060",
+      "slug": "defense-government",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0060-0060-0060-000000000060",
+      "slug": "ai-ml",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0060-0060-0060-000000000060",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0061-0061-0061-000000000061",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0061-0061-0061-000000000061",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0061-0061-0061-000000000061",
+      "slug": "infrastructure",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0061-0061-0061-000000000061",
+      "slug": "financial-services",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0062-0062-0062-000000000062",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0062-0062-0062-000000000062",
+      "slug": "financial-services",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0062-0062-0062-000000000062",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0062-0062-0062-000000000062",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0062-0062-0062-000000000062",
+      "slug": "infrastructure",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0062-0062-0062-000000000062",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0063-0063-0063-000000000063",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0063-0063-0063-000000000063",
+      "slug": "defense-government",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0063-0063-0063-000000000063",
+      "slug": "energy",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0063-0063-0063-000000000063",
+      "slug": "healthcare",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0063-0063-0063-000000000063",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0063-0063-0063-000000000063",
+      "slug": "financial-services",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0064-0064-0064-000000000064",
+      "slug": "financial-services",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0064-0064-0064-000000000064",
+      "slug": "technology",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0064-0064-0064-000000000064",
+      "slug": "real-estate",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0065-0065-0065-000000000065",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0065-0065-0065-000000000065",
+      "slug": "software-saas",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0065-0065-0065-000000000065",
+      "slug": "fintech",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0065-0065-0065-000000000065",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0066-0066-0066-000000000066",
+      "slug": "technology",
+      "isPrimary": true
+    },
+    {
+      "firmId": "a1b2c3d4-0066-0066-0066-000000000066",
+      "slug": "consumer",
+      "isPrimary": false
+    },
+    {
+      "firmId": "a1b2c3d4-0066-0066-0066-000000000066",
+      "slug": "software-saas",
+      "isPrimary": false
+    }
+  ],
+  "contacts": [
+    {
+      "id": "b1c2d3e4-0001-0001-0001-000000000001",
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "firstName": "Roelof",
+      "lastName": "Botha",
+      "title": "Steward",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/roelofbotha",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Steward at Sequoia Capital. Joined as associate in 2003 after working with Michael Moritz through the PayPal IPO. Made partner in 2007 following the YouTube acquisition (which he advocated for). Former CFO of PayPal."
+    },
+    {
+      "id": "b1c2d3e4-0002-0002-0002-000000000002",
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "firstName": "Alfred",
+      "lastName": "Lin",
+      "title": "Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/alfred-lin-sequoia",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Partner at Sequoia Capital. Former COO and CFO of Zappos (acquired by Amazon for ~$1.2B). Board member at Airbnb, DoorDash, and Houzz. Joined Sequoia in 2010."
+    },
+    {
+      "id": "b1c2d3e4-0003-0003-0003-000000000003",
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "firstName": "Doug",
+      "lastName": "Leone",
+      "title": "Global Steward (Retired)",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/dougleone",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Former Global Steward at Sequoia Capital. Joined the firm in 1988. Led investments in Palo Alto Networks, ServiceNow, and Roper Technologies. Stepped back from active management in 2023."
+    },
+    {
+      "id": "b1c2d3e4-0004-0004-0004-000000000004",
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "firstName": "Marc",
+      "lastName": "Andreessen",
+      "title": "General Partner and Co-Founder",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/marc-andreessen",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Founder and General Partner at Andreessen Horowitz. Co-creator of the Mosaic web browser and co-founder of Netscape. Built a16z in 2009 on the conviction that software would eat the world."
+    },
+    {
+      "id": "b1c2d3e4-0005-0005-0005-000000000005",
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "firstName": "Ben",
+      "lastName": "Horowitz",
+      "title": "General Partner and Co-Founder",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/ben-horowitz",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Founder and General Partner at Andreessen Horowitz. Former CEO of Opsware (sold to HP for $1.6B in 2007). Author of \"The Hard Thing About Hard Things\". Co-founded a16z in 2009 with Marc Andreessen."
+    },
+    {
+      "id": "b1c2d3e4-0006-0006-0006-000000000006",
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "firstName": "Chris",
+      "lastName": "Dixon",
+      "title": "General Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/chrisdixon",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "General Partner at Andreessen Horowitz, leads the a16z crypto fund. Early-stage investor in Coinbase, Oculus VR (acquired by Facebook), and Kickstarter. Joined a16z in 2012."
+    },
+    {
+      "id": "b1c2d3e4-0007-0007-0007-000000000007",
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "firstName": "Scott",
+      "lastName": "Kupor",
+      "title": "Managing Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/scottkupor",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Partner at Andreessen Horowitz, overseeing firm operations and strategy. Author of \"Secrets of Sand Hill Road: Venture Capital and How to Get It\". Has been with a16z since its founding in 2009."
+    },
+    {
+      "id": "b1c2d3e4-0008-0008-0008-000000000008",
+      "firmId": "a1b2c3d4-0003-0003-0003-000000000003",
+      "firstName": "Stephen",
+      "lastName": "Schwarzman",
+      "title": "Chairman, CEO and Co-Founder",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/stephen-schwarzman",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chairman, CEO and Co-Founder of Blackstone. Founded the firm in 1985. Oversees $1.2 trillion in AUM (as of Q3 2025). Major philanthropist; donated $350M to MIT and $100M to Oxford."
+    },
+    {
+      "id": "b1c2d3e4-0009-0009-0009-000000000009",
+      "firmId": "a1b2c3d4-0003-0003-0003-000000000003",
+      "firstName": "Jonathan",
+      "lastName": "Gray",
+      "title": "President and COO",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/jon-gray-blackstone",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "President and COO of Blackstone. Leads the firm's global real estate business, the largest component of Blackstone's AUM. Joined Blackstone in 1992 and has been President since 2018."
+    },
+    {
+      "id": "b1c2d3e4-0010-0010-0010-000000000010",
+      "firmId": "a1b2c3d4-0004-0004-0004-000000000004",
+      "firstName": "Henry",
+      "lastName": "Kravis",
+      "title": "Co-Founder and Co-Executive Chairman",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/henry-kravis",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Founder and Co-Executive Chairman of KKR. Pioneer of the leveraged buyout industry. Led the landmark $31B RJR Nabisco LBO in 1989 \u2014 the largest LBO in history at the time. Joined the firm as Co-Executive Chairman in 2021."
+    },
+    {
+      "id": "b1c2d3e4-0011-0011-0011-000000000011",
+      "firmId": "a1b2c3d4-0004-0004-0004-000000000004",
+      "firstName": "Scott",
+      "lastName": "Nuttall",
+      "title": "Co-Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/scott-nuttall-kkr",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-CEO of KKR. Joined the firm in 1996. Previously led KKR's Global Capital and Asset Management business. Became Co-CEO alongside Joseph Bae in 2021 when Kravis and Roberts transitioned to Co-Executive Chairmen."
+    },
+    {
+      "id": "b1c2d3e4-0012-0012-0012-000000000012",
+      "firmId": "a1b2c3d4-0005-0005-0005-000000000005",
+      "firstName": "Scott",
+      "lastName": "Shleifer",
+      "title": "Founder and Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/scott-shleifer",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Founder and Partner at Tiger Global Management. Formerly at Tiger Management under Julian Robertson. Oversees both the private equity and hedge fund strategies."
+    },
+    {
+      "id": "b1c2d3e4-0013-0013-0013-000000000013",
+      "firmId": "a1b2c3d4-0005-0005-0005-000000000005",
+      "firstName": "Chase",
+      "lastName": "Coleman",
+      "title": "Founder and Managing Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/chase-coleman-iii",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Founder and Managing Partner of Tiger Global Management. Founded the firm in 2001. Manages the hedge fund strategies alongside the private investment vehicles."
+    },
+    {
+      "id": "b1c2d3e4-0014-0014-0014-000000000014",
+      "firmId": "a1b2c3d4-0006-0006-0006-000000000006",
+      "firstName": "Kenneth",
+      "lastName": "Griffin",
+      "title": "Founder, CEO and Co-Chief Investment Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/kenneth-griffin",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Founder, CEO and Co-CIO of Citadel LLC and Citadel Securities. Began investing in 1986 as a Harvard freshman. Founded Citadel in 1990. Team of over 2,500 professionals. Established global HQ in Miami in 2022."
+    },
+    {
+      "id": "b1c2d3e4-0015-0015-0015-000000000015",
+      "firmId": "a1b2c3d4-0007-0007-0007-000000000007",
+      "firstName": "Ray",
+      "lastName": "Dalio",
+      "title": "Founder and Co-Chief Investment Officer (Retired)",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/raydalio",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Founder of Bridgewater Associates. Created the All Weather and Pure Alpha macro strategies. Transitioned from Co-CIO role in 2022. Author of \"Principles: Life and Work\". Forbes ranked him among the 100 wealthiest people globally."
+    },
+    {
+      "id": "b1c2d3e4-0016-0016-0016-000000000016",
+      "firmId": "a1b2c3d4-0020-0020-0020-000000000020",
+      "firstName": "Leon",
+      "lastName": "Black",
+      "title": "Co-Founder (Retired CEO)",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/leon-black-apollo",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Founder of Apollo Global Management. Retired as CEO in March 2021. Previously led Drexel Burnham Lambert M&A. Built Apollo into one of the world's largest alternative asset managers with $696B AUM as of 2024."
+    },
+    {
+      "id": "b1c2d3e4-0017-0017-0017-000000000017",
+      "firmId": "a1b2c3d4-0020-0020-0020-000000000020",
+      "firstName": "Marc",
+      "lastName": "Rowan",
+      "title": "Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/marc-rowan",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "CEO of Apollo Global Management since March 2021. Co-founded Apollo in 1990. Led the firm's transformation into a leading alternative asset and retirement services platform."
+    },
+    {
+      "id": "b1c2d3e4-0018-0018-0018-000000000018",
+      "firmId": "a1b2c3d4-0021-0021-0021-000000000021",
+      "firstName": "David",
+      "lastName": "Rubenstein",
+      "title": "Co-Founder and Co-Chairman",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/david-rubenstein",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Founder and Co-Chairman of The Carlyle Group. Founded Carlyle in 1987. Former Deputy Assistant to President Jimmy Carter. Prominent philanthropist and author of The American Story."
+    },
+    {
+      "id": "b1c2d3e4-0019-0019-0019-000000000019",
+      "firmId": "a1b2c3d4-0021-0021-0021-000000000021",
+      "firstName": "Harvey",
+      "lastName": "Schwartz",
+      "title": "Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/harvey-schwartz-carlyle",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "CEO of The Carlyle Group since February 2023. Previously President and Co-COO of Goldman Sachs."
+    },
+    {
+      "id": "b1c2d3e4-0020-0020-0020-000000000020",
+      "firmId": "a1b2c3d4-0022-0022-0022-000000000022",
+      "firstName": "David",
+      "lastName": "Bonderman",
+      "title": "Co-Founder and Chairman",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/david-bonderman",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Founder and Chairman of TPG. Co-founded in 1992 with James Coulter. Previously COO of the Bass Group. Led investments in Continental Airlines, Burger King, and Ducati."
+    },
+    {
+      "id": "b1c2d3e4-0021-0021-0021-000000000021",
+      "firmId": "a1b2c3d4-0022-0022-0022-000000000022",
+      "firstName": "Jon",
+      "lastName": "Winkelried",
+      "title": "Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/jon-winkelried",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "CEO of TPG. Joined TPG in 2008 after serving as Co-President and Co-COO of Goldman Sachs. Leads global investment strategy across PE, growth, impact, and real estate."
+    },
+    {
+      "id": "b1c2d3e4-0022-0022-0022-000000000022",
+      "firmId": "a1b2c3d4-0023-0023-0023-000000000023",
+      "firstName": "Timothy",
+      "lastName": "Geithner",
+      "title": "President",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/timothy-geithner",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "75th US Treasury Secretary 2009-2013 under President Obama. Previously President of the Federal Reserve Bank of New York. President of Warburg Pincus since 2013."
+    },
+    {
+      "id": "b1c2d3e4-0023-0023-0023-000000000023",
+      "firmId": "a1b2c3d4-0023-0023-0023-000000000023",
+      "firstName": "Jeffrey",
+      "lastName": "Paine",
+      "title": "Managing Director",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/jeffrey-paine-warburg",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Director at Warburg Pincus. Leads Southeast Asia investment strategy. Co-founded Golden Gate Ventures before joining Warburg Pincus."
+    },
+    {
+      "id": "b1c2d3e4-0024-0024-0024-000000000024",
+      "firmId": "a1b2c3d4-0024-0024-0024-000000000024",
+      "firstName": "David",
+      "lastName": "Mussafer",
+      "title": "Managing Partner and Chairman",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/david-mussafer",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Partner and Chairman of Advent International. Has been with the firm since 1990. Leads North American PE investment activity and oversees global operations."
+    },
+    {
+      "id": "b1c2d3e4-0025-0025-0025-000000000025",
+      "firmId": "a1b2c3d4-0024-0024-0024-000000000024",
+      "firstName": "James",
+      "lastName": "Westra",
+      "title": "Managing Director",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/james-westra-advent",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Director at Advent International. Focuses on technology and business services in North America and Europe."
+    },
+    {
+      "id": "b1c2d3e4-0026-0026-0026-000000000026",
+      "firmId": "a1b2c3d4-0025-0025-0025-000000000025",
+      "firstName": "Steve",
+      "lastName": "Pagliuca",
+      "title": "Managing Director and Co-Chairman",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/steve-pagliuca",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Director and Co-Chairman of Bain Capital since 1989. Co-Owner of the Boston Celtics NBA franchise."
+    },
+    {
+      "id": "b1c2d3e4-0027-0027-0027-000000000027",
+      "firmId": "a1b2c3d4-0025-0025-0025-000000000025",
+      "firstName": "Jonathan",
+      "lastName": "Lavine",
+      "title": "Co-Managing Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/jonathan-lavine",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Managing Partner of Bain Capital. Joined in 1993. Leads Bain Capital Credit. Chair of Columbia University Board of Trustees."
+    },
+    {
+      "id": "b1c2d3e4-0028-0028-0028-000000000028",
+      "firmId": "a1b2c3d4-0026-0026-0026-000000000026",
+      "firstName": "Bill",
+      "lastName": "Gurley",
+      "title": "General Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/bill-gurley",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "General Partner at Benchmark since 1999. Led Benchmark investment in Uber (Series A, 2011). Also backed OpenTable, Zillow, Stitch Fix, and GrubHub. Writes the Above the Crowd investment blog."
+    },
+    {
+      "id": "b1c2d3e4-0029-0029-0029-000000000029",
+      "firmId": "a1b2c3d4-0026-0026-0026-000000000026",
+      "firstName": "Eric",
+      "lastName": "Vishria",
+      "title": "General Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/ericvishria",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "General Partner at Benchmark. Previously co-founded Rockmelt (acquired by Yahoo in 2013). Focuses on enterprise software and developer tools."
+    },
+    {
+      "id": "b1c2d3e4-0030-0030-0030-000000000030",
+      "firmId": "a1b2c3d4-0027-0027-0027-000000000027",
+      "firstName": "Hemant",
+      "lastName": "Taneja",
+      "title": "Managing Director and CEO",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/hementtaneja",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Director and CEO of General Catalyst since 2007. Author of Unscaled. Board member at Livongo, Snap, and Samsara."
+    },
+    {
+      "id": "b1c2d3e4-0031-0031-0031-000000000031",
+      "firmId": "a1b2c3d4-0027-0027-0027-000000000027",
+      "firstName": "Niko",
+      "lastName": "Bonatsos",
+      "title": "Managing Director",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/nikobonatsos",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Director at General Catalyst. Focuses on consumer internet and mobile. Backed Discord, Grammarly, and Snap. Joined General Catalyst in 2012."
+    },
+    {
+      "id": "b1c2d3e4-0032-0032-0032-000000000032",
+      "firmId": "a1b2c3d4-0028-0028-0028-000000000028",
+      "firstName": "Peter",
+      "lastName": "Thiel",
+      "title": "Co-Founder and Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/peterthiel",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Founder and Partner of Founders Fund. Co-founded PayPal (sold to eBay $1.5B, 2002), first outside investor in Facebook ($500K, 2004), co-founded Palantir. Established Founders Fund in 2005."
+    },
+    {
+      "id": "b1c2d3e4-0033-0033-0033-000000000033",
+      "firmId": "a1b2c3d4-0028-0028-0028-000000000028",
+      "firstName": "Keith",
+      "lastName": "Rabois",
+      "title": "Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/keith-rabois",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Partner at Founders Fund. PayPal Mafia member; former EVP PayPal, VP Business Development LinkedIn, COO Square. Investor in DoorDash, Airbnb, YouTube, and Yelp."
+    },
+    {
+      "id": "b1c2d3e4-0034-0034-0034-000000000034",
+      "firmId": "a1b2c3d4-0029-0029-0029-000000000029",
+      "firstName": "Jim",
+      "lastName": "Breyer",
+      "title": "Founding Partner (now at Breyer Capital)",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/jimbreyer",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Founding Partner of Accel. Led $12.7M Series A in Facebook (2005). Backed Etsy, Marvel Entertainment, and Spotify. Founded Breyer Capital. Former Chairman of NVCA."
+    },
+    {
+      "id": "b1c2d3e4-0035-0035-0035-000000000035",
+      "firmId": "a1b2c3d4-0029-0029-0029-000000000029",
+      "firstName": "Rich",
+      "lastName": "Wong",
+      "title": "General Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/richwong",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "General Partner at Accel. Enterprise software, cloud, and cybersecurity focus. Board member at Atlassian, Qualtrics, and Tenable. Joined Accel in 2006."
+    },
+    {
+      "id": "b1c2d3e4-0036-0036-0036-000000000036",
+      "firmId": "a1b2c3d4-0030-0030-0030-000000000030",
+      "firstName": "Steve",
+      "lastName": "Cohen",
+      "title": "Founder and CEO",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/steve-cohen-point72",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Founder and CEO of Point72 Asset Management. Founded in 2014 as successor to SAC Capital. Owner of the New York Mets (MLB)."
+    },
+    {
+      "id": "b1c2d3e4-0037-0037-0037-000000000037",
+      "firmId": "a1b2c3d4-0030-0030-0030-000000000030",
+      "firstName": "Doug",
+      "lastName": "Haynes",
+      "title": "President",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/doughaynes",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "President of Point72 Asset Management. Previously senior partner at McKinsey leading global technology practice. Joined Point72 to lead firm operations and talent strategy."
+    },
+    {
+      "id": "b1c2d3e4-0038-0038-0038-000000000038",
+      "firmId": "a1b2c3d4-0031-0031-0031-000000000031",
+      "firstName": "David",
+      "lastName": "Shaw",
+      "title": "Founder and Chief Scientist",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/david-e-shaw",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Founder and Chief Scientist of D.E. Shaw. Founded in 1988. Former Columbia computer science professor. Pioneered computational quantitative investing. Now focuses on D.E. Shaw Research in computational biochemistry."
+    },
+    {
+      "id": "b1c2d3e4-0039-0039-0039-000000000039",
+      "firmId": "a1b2c3d4-0031-0031-0031-000000000031",
+      "firstName": "Julius",
+      "lastName": "Gaudio",
+      "title": "Co-Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/julius-gaudio",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-CEO of D.E. Shaw. Oversees day-to-day operations and investment businesses. Long-tenured executive with deep experience in quantitative and systematic strategies."
+    },
+    {
+      "id": "b1c2d3e4-0040-0040-0040-000000000040",
+      "firmId": "a1b2c3d4-0032-0032-0032-000000000032",
+      "firstName": "John",
+      "lastName": "Overdeck",
+      "title": "Co-Founder and Co-Chairman",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/john-overdeck",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Founder and Co-Chairman of Two Sigma Investments. Co-founded 2001 with David Siegel. Previously at D.E. Shaw and Amazon. International Mathematical Olympiad gold medalist (1986)."
+    },
+    {
+      "id": "b1c2d3e4-0041-0041-0041-000000000041",
+      "firmId": "a1b2c3d4-0032-0032-0032-000000000032",
+      "firstName": "David",
+      "lastName": "Siegel",
+      "title": "Co-Founder and Co-Chairman",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/davidsiegel-twosigma",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Founder and Co-Chairman of Two Sigma Investments. Co-founded 2001 with John Overdeck. MIT PhD in computer science. Previously at D.E. Shaw and Paloma Partners."
+    },
+    {
+      "id": "b1c2d3e4-0042-0042-0042-000000000042",
+      "firmId": "a1b2c3d4-0033-0033-0033-000000000033",
+      "firstName": "Bill",
+      "lastName": "Gates",
+      "title": "Principal",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/williamhgates",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Principal of Gates Frontier. Co-founded Microsoft in 1975. Led Microsoft as CEO until 2000. Co-chair of the Bill and Melinda Gates Foundation."
+    },
+    {
+      "id": "b1c2d3e4-0043-0043-0043-000000000043",
+      "firmId": "a1b2c3d4-0033-0033-0033-000000000033",
+      "firstName": "Michael",
+      "lastName": "Larson",
+      "title": "Chief Investment Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/michael-larson-cascade",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Investment Officer for Gates Frontier and Cascade Investment LLC since 1994. Manages Bill Gates personal investment portfolio across equities, real estate, energy, and alternatives."
+    },
+    {
+      "id": "b1c2d3e4-0044-0044-0044-000000000044",
+      "firmId": "a1b2c3d4-0034-0034-0034-000000000034",
+      "firstName": "Rob",
+      "lastName": "Walton",
+      "title": "Chairman Emeritus of Walmart; Principal of Walton Enterprises",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/rob-walton",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "S. Robson Walton, Chairman Emeritus of Walmart and principal of Walton Enterprises LLC. Son of Sam Walton. Served as Walmart Chairman 1992-2015."
+    },
+    {
+      "id": "b1c2d3e4-0045-0045-0045-000000000045",
+      "firmId": "a1b2c3d4-0034-0034-0034-000000000034",
+      "firstName": "Greg",
+      "lastName": "Penner",
+      "title": "Chairman of Walmart Board",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/greg-penner",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chairman of the Walmart Board of Directors since 2015. Son-in-law of Rob Walton. Former General Partner at Madrone Capital Partners. Serves on boards of Google and Hyatt Hotels."
+    },
+    {
+      "id": "b1c2d3e4-0046-0046-0046-000000000046",
+      "firmId": "a1b2c3d4-0035-0035-0035-000000000035",
+      "firstName": "Michael",
+      "lastName": "Larson",
+      "title": "Chief Investment Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/michael-larson-cascade",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Investment Officer of Cascade Investment LLC since 1994. Manages Bill Gates personal portfolio including Canadian National Railway, AutoNation, and Four Seasons Hotels. Also serves as CIO of Gates Frontier LLC."
+    },
+    {
+      "id": "b1c2d3e4-0047-0047-0047-000000000047",
+      "firmId": "a1b2c3d4-0036-0036-0036-000000000036",
+      "firstName": "Tony",
+      "lastName": "Pritzker",
+      "title": "Chairman",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/tony-pritzker",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chairman of Pritzker Private Capital. Member of the Pritzker family, heirs to the Hyatt Hotels fortune. Oversees family PE and direct investment activities."
+    },
+    {
+      "id": "b1c2d3e4-0048-0048-0048-000000000048",
+      "firmId": "a1b2c3d4-0036-0036-0036-000000000036",
+      "firstName": "Paul",
+      "lastName": "Carbone",
+      "title": "Managing Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/paul-carbone-pritzker",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Partner of Pritzker Private Capital. Leads investment strategy and portfolio company management."
+    },
+    {
+      "id": "b1c2d3e4-0049-0049-0049-000000000049",
+      "firmId": "a1b2c3d4-0037-0037-0037-000000000037",
+      "firstName": "Gregory",
+      "lastName": "Fleming",
+      "title": "President and Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/gregory-fleming",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "President and CEO of Rockefeller Capital Management, which he founded in 2018. Previously President of Morgan Stanley Wealth Management and President of Merrill Lynch."
+    },
+    {
+      "id": "b1c2d3e4-0050-0050-0050-000000000050",
+      "firmId": "a1b2c3d4-0038-0038-0038-000000000038",
+      "firstName": "Jamie",
+      "lastName": "Dimon",
+      "title": "Chairman and Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/jamie-dimon",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chairman and CEO of JPMorgan Chase since 2005. Previously CEO of Bank One. Widely regarded as the most influential banker of his generation."
+    },
+    {
+      "id": "b1c2d3e4-0051-0051-0051-000000000051",
+      "firmId": "a1b2c3d4-0038-0038-0038-000000000038",
+      "firstName": "Daniel",
+      "lastName": "Pinto",
+      "title": "President and Chief Operating Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/daniel-pinto-jpmorgan",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "President and COO of JPMorgan Chase. Also CEO of Corporate and Investment Bank. Born in Buenos Aires. Has been with JPMorgan since 1983."
+    },
+    {
+      "id": "b1c2d3e4-0052-0052-0052-000000000052",
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "firstName": "David",
+      "lastName": "Solomon",
+      "title": "Chairman and Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/david-solomon-gs",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chairman and CEO of Goldman Sachs since October 2018. Previously Co-Head of Investment Banking. Led Goldman consumer banking initiative Marcus."
+    },
+    {
+      "id": "b1c2d3e4-0053-0053-0053-000000000053",
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "firstName": "John",
+      "lastName": "Waldron",
+      "title": "President and Chief Operating Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/john-waldron-goldman-sachs",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "President and COO of Goldman Sachs. Has been with the firm since 1994. Named President when Solomon became CEO in 2018."
+    },
+    {
+      "id": "b1c2d3e4-0054-0054-0054-000000000054",
+      "firmId": "a1b2c3d4-0040-0040-0040-000000000040",
+      "firstName": "Brian",
+      "lastName": "Moynihan",
+      "title": "Chairman, President and Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/brianmoynihan",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chairman, President and CEO of Bank of America since 2010. Led Bank of America transformation and recovery post-financial crisis."
+    },
+    {
+      "id": "b1c2d3e4-0055-0055-0055-000000000055",
+      "firmId": "a1b2c3d4-0040-0040-0040-000000000040",
+      "firstName": "Alastair",
+      "lastName": "Borthwick",
+      "title": "Chief Financial Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/alastair-borthwick",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Financial Officer of Bank of America. Joined from CIBC where he was Group Head of Capital Markets. Named CFO in 2021."
+    },
+    {
+      "id": "b1c2d3e4-0056-0056-0056-000000000056",
+      "firmId": "a1b2c3d4-0041-0041-0041-000000000041",
+      "firstName": "Charles",
+      "lastName": "Scharf",
+      "title": "President and Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/charles-scharf",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "President and CEO of Wells Fargo since October 2019. Previously CEO of BNY Mellon and Visa. Leading Wells Fargo transformation following its retail banking scandal."
+    },
+    {
+      "id": "b1c2d3e4-0057-0057-0057-000000000057",
+      "firmId": "a1b2c3d4-0041-0041-0041-000000000041",
+      "firstName": "Mike",
+      "lastName": "Santomassimo",
+      "title": "Chief Financial Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/mike-santomassimo",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Financial Officer of Wells Fargo. Joined in 2020 from BNY Mellon where he also served as CFO."
+    },
+    {
+      "id": "b1c2d3e4-0058-0058-0058-000000000058",
+      "firmId": "a1b2c3d4-0042-0042-0042-000000000042",
+      "firstName": "Jane",
+      "lastName": "Fraser",
+      "title": "Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/jane-fraser-citi",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Executive Officer of Citigroup since February 2021. First woman to lead a major US bank. Leading multi-year transformation of Citi global operations."
+    },
+    {
+      "id": "b1c2d3e4-0059-0059-0059-000000000059",
+      "firmId": "a1b2c3d4-0042-0042-0042-000000000042",
+      "firstName": "Mark",
+      "lastName": "Mason",
+      "title": "Chief Financial Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/mark-mason-citi",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Financial Officer of Citigroup. Has been with Citi since 2001. Named CFO in 2019."
+    },
+    {
+      "id": "b1c2d3e4-0060-0060-0060-000000000060",
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "firstName": "James",
+      "lastName": "Gorman",
+      "title": "Executive Chairman",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/james-gorman-morgan-stanley",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Executive Chairman of Morgan Stanley. CEO 2010-January 2024. Led Morgan Stanley transformation into leading wealth and asset management firm. Oversaw E*Trade ($13B) and Eaton Vance ($7B) acquisitions."
+    },
+    {
+      "id": "b1c2d3e4-0061-0061-0061-000000000061",
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "firstName": "Ted",
+      "lastName": "Pick",
+      "title": "Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/ted-pick",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Executive Officer of Morgan Stanley since January 2024. Previously Co-President and head of Institutional Securities. Has been with Morgan Stanley since 1990."
+    },
+    {
+      "id": "b1c2d3e4-0062-0062-0062-000000000062",
+      "firmId": "a1b2c3d4-0044-0044-0044-000000000044",
+      "firstName": "Sergio",
+      "lastName": "Ermotti",
+      "title": "Group Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/sergio-ermotti",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Group CEO of UBS since April 2023. Returned to lead Credit Suisse integration. Previously Group CEO 2011-2020."
+    },
+    {
+      "id": "b1c2d3e4-0063-0063-0063-000000000063",
+      "firmId": "a1b2c3d4-0044-0044-0044-000000000044",
+      "firstName": "Todd",
+      "lastName": "Tuckner",
+      "title": "Group Chief Financial Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/todd-tuckner",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Group CFO of UBS since 2023. Has been with UBS since 2007. Overseeing financial integration of Credit Suisse."
+    },
+    {
+      "id": "b1c2d3e4-0064-0064-0064-000000000064",
+      "firmId": "a1b2c3d4-0045-0045-0045-000000000045",
+      "firstName": "Christian",
+      "lastName": "Sewing",
+      "title": "Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/christian-sewing",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Executive Officer of Deutsche Bank since April 2018. Has been with Deutsche Bank since 1989. Led major restructuring refocusing on corporate banking and wealth management."
+    },
+    {
+      "id": "b1c2d3e4-0065-0065-0065-000000000065",
+      "firmId": "a1b2c3d4-0045-0045-0045-000000000045",
+      "firstName": "James",
+      "lastName": "von Moltke",
+      "title": "Chief Financial Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/james-von-moltke",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Financial Officer of Deutsche Bank since 2017. Previously EVP and CFO of Citigroup Institutional Clients Group."
+    },
+    {
+      "id": "b1c2d3e4-0066-0066-0066-000000000066",
+      "firmId": "a1b2c3d4-0046-0046-0046-000000000046",
+      "firstName": "Peter",
+      "lastName": "Orszag",
+      "title": "Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/peter-orszag",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "CEO of Lazard since 2023. Previously Vice Chairman at Lazard. Former Director of the Office of Management and Budget under President Obama."
+    },
+    {
+      "id": "b1c2d3e4-0067-0067-0067-000000000067",
+      "firmId": "a1b2c3d4-0046-0046-0046-000000000046",
+      "firstName": "Evan",
+      "lastName": "Russo",
+      "title": "Chief Financial Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/evan-russo-lazard",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Financial Officer of Lazard. Long-tenured Lazard executive. Oversees financial reporting and treasury for the global firm."
+    },
+    {
+      "id": "b1c2d3e4-0068-0068-0068-000000000068",
+      "firmId": "a1b2c3d4-0047-0047-0047-000000000047",
+      "firstName": "John",
+      "lastName": "Weinberg",
+      "title": "Co-Executive Chairman and Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/john-weinberg-evercore",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Executive Chairman and CEO of Evercore. Previously Senior Chairman at Goldman Sachs. Joined Evercore in 2016. Grandson of Goldman Sachs Sidney Weinberg."
+    },
+    {
+      "id": "b1c2d3e4-0069-0069-0069-000000000069",
+      "firmId": "a1b2c3d4-0047-0047-0047-000000000047",
+      "firstName": "Ralph",
+      "lastName": "Schlosstein",
+      "title": "Co-Executive Chairman (Retired 2022)",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/ralph-schlosstein",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Executive Chairman Emeritus of Evercore. Served as CEO 2009-2022. Previously co-founded BlackRock in 1988. Built Evercore into a top-ranked independent advisory firm."
+    },
+    {
+      "id": "b1c2d3e4-0070-0070-0070-000000000070",
+      "firmId": "a1b2c3d4-0048-0048-0048-000000000048",
+      "firstName": "Marc",
+      "lastName": "Leder",
+      "title": "Co-Chief Executive Officer and Co-Founder",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/marc-leder-sun-capital",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-CEO and Co-Founder of Sun Capital Partners. Co-founded 1995 with Rodger Krouse. Previously at Lehman Brothers. Overseen over 400 acquisitions with operational improvement focus."
+    },
+    {
+      "id": "b1c2d3e4-0071-0071-0071-000000000071",
+      "firmId": "a1b2c3d4-0048-0048-0048-000000000048",
+      "firstName": "Rodger",
+      "lastName": "Krouse",
+      "title": "Co-Chief Executive Officer and Co-Founder",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/rodger-krouse",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-CEO and Co-Founder of Sun Capital Partners. Co-founded 1995 with Marc Leder. Previously at Lehman Brothers. Leads deal sourcing and portfolio operations."
+    },
+    {
+      "id": "b1c2d3e4-0072-0072-0072-000000000072",
+      "firmId": "a1b2c3d4-0049-0049-0049-000000000049",
+      "firstName": "David",
+      "lastName": "McGovern",
+      "title": "Founder and Managing Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/david-mcgovern-marlin",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Founder and Managing Partner of Marlin Equity Partners. Founded 2005. Previously at DLJ Merchant Banking Partners and Bear Stearns. Built Marlin into a leading technology PE firm with over 200 acquisitions."
+    },
+    {
+      "id": "b1c2d3e4-0073-0073-0073-000000000073",
+      "firmId": "a1b2c3d4-0049-0049-0049-000000000049",
+      "firstName": "Alex",
+      "lastName": "Beek",
+      "title": "Managing Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/alex-beek-marlin",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Partner at Marlin Equity Partners. Focuses on technology and software acquisitions globally."
+    },
+    {
+      "id": "b1c2d3e4-0074-0074-0074-000000000074",
+      "firmId": "a1b2c3d4-0050-0050-0050-000000000050",
+      "firstName": "Paul",
+      "lastName": "Carbery",
+      "title": "Managing Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/paul-carbery-frontenac",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Partner of Frontenac Company. Leads Chief Executive Connections (CXC) model for sourcing and building lower middle market businesses."
+    },
+    {
+      "id": "b1c2d3e4-0075-0075-0075-000000000075",
+      "firmId": "a1b2c3d4-0050-0050-0050-000000000050",
+      "firstName": "Clinton",
+      "lastName": "Biondo",
+      "title": "Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/clinton-biondo",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Partner at Frontenac Company. Focuses on business services and consumer investments in the lower middle market."
+    },
+    {
+      "id": "b1c2d3e4-0076-0076-0076-000000000076",
+      "firmId": "a1b2c3d4-0051-0051-0051-000000000051",
+      "firstName": "Brian",
+      "lastName": "Demkowicz",
+      "title": "Managing Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/brian-demkowicz",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Partner and Co-Founder of Huron Capital Partners. Founded 1999. Leads Huron thesis-driven approach to building platform companies through acquisition."
+    },
+    {
+      "id": "b1c2d3e4-0077-0077-0077-000000000077",
+      "firmId": "a1b2c3d4-0051-0051-0051-000000000051",
+      "firstName": "Ian",
+      "lastName": "Bain",
+      "title": "Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/ian-bain-huron",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Partner at Huron Capital Partners. Focuses on deal origination and portfolio company development across business services and healthcare."
+    },
+    {
+      "id": "b1c2d3e4-0078-0078-0078-000000000078",
+      "firmId": "a1b2c3d4-0052-0052-0052-000000000052",
+      "firstName": "Marcie",
+      "lastName": "Frost",
+      "title": "Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/marcie-frost-calpers",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "CEO of CalPERS since 2016. Previously Director of the Washington State Department of Retirement Systems. Leads $503B fund serving approximately 2 million California public employees."
+    },
+    {
+      "id": "b1c2d3e4-0079-0079-0079-000000000079",
+      "firmId": "a1b2c3d4-0052-0052-0052-000000000052",
+      "firstName": "Theresa",
+      "lastName": "Taylor",
+      "title": "Board Chair",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/theresa-taylor-calpers",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Board Chair of the CalPERS Board of Administration. Elected member representing state employees. Also a member of the California State Personnel Board."
+    },
+    {
+      "id": "b1c2d3e4-0080-0080-0080-000000000080",
+      "firmId": "a1b2c3d4-0053-0053-0053-000000000053",
+      "firstName": "Jo",
+      "lastName": "Taylor",
+      "title": "President and Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/jo-taylor-otpp",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "President and CEO of Ontario Teachers Pension Plan since 2020. Previously Head of International at Ontario Teachers. Leads global investment strategy from Toronto for CAD $247.5B fund."
+    },
+    {
+      "id": "b1c2d3e4-0081-0081-0081-000000000081",
+      "firmId": "a1b2c3d4-0053-0053-0053-000000000053",
+      "firstName": "Ziad",
+      "lastName": "Hindo",
+      "title": "Chief Investment Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/ziad-hindo",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Investment Officer of Ontario Teachers Pension Plan. Has been with the fund since 1999. Named CIO in 2019."
+    },
+    {
+      "id": "b1c2d3e4-0082-0082-0082-000000000082",
+      "firmId": "a1b2c3d4-0054-0054-0054-000000000054",
+      "firstName": "John",
+      "lastName": "Graham",
+      "title": "President and Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/john-graham-cpp",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "President and CEO of CPP Investments since 2021. Leads investment of the Canada Pension Plan Fund (CAD $632B) for 21 million Canadians."
+    },
+    {
+      "id": "b1c2d3e4-0083-0083-0083-000000000083",
+      "firmId": "a1b2c3d4-0054-0054-0054-000000000054",
+      "firstName": "Edwin",
+      "lastName": "Cass",
+      "title": "Chief Investment Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/edwin-cass-cpp",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Investment Officer of CPP Investments. Has been with the fund since 2007."
+    },
+    {
+      "id": "b1c2d3e4-0084-0084-0084-000000000084",
+      "firmId": "a1b2c3d4-0055-0055-0055-000000000055",
+      "firstName": "Mario",
+      "lastName": "Giannini",
+      "title": "Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/mario-giannini-hamilton-lane",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "CEO of Hamilton Lane. Has been with the firm since 1995. Led Hamilton Lane IPO on NASDAQ in 2017 (HLNE)."
+    },
+    {
+      "id": "b1c2d3e4-0085-0085-0085-000000000085",
+      "firmId": "a1b2c3d4-0055-0055-0055-000000000055",
+      "firstName": "Erik",
+      "lastName": "Hirsch",
+      "title": "Vice Chairman",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/erik-hirsch-hamilton-lane",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Vice Chairman of Hamilton Lane. Has been with the firm since 1999. Previously Chief Investment Officer. Named Vice Chairman in 2019."
+    },
+    {
+      "id": "b1c2d3e4-0086-0086-0086-000000000086",
+      "firmId": "a1b2c3d4-0056-0056-0056-000000000056",
+      "firstName": "Scott",
+      "lastName": "Hart",
+      "title": "Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/scott-hart-stepstone",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "CEO of StepStone Group since 2021. Co-founded in 2007. Instrumental in StepStone NASDAQ IPO (STEP) in 2020."
+    },
+    {
+      "id": "b1c2d3e4-0087-0087-0087-000000000087",
+      "firmId": "a1b2c3d4-0056-0056-0056-000000000056",
+      "firstName": "Jason",
+      "lastName": "Ment",
+      "title": "Managing Partner, President and Chief Operating Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/jason-ment-stepstone",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Partner, President and COO of StepStone Group. Co-founded 2007. Oversees operations, legal, and compliance. Previously at Credit Suisse Private Equity."
+    },
+    {
+      "id": "b1c2d3e4-0088-0088-0088-000000000088",
+      "firmId": "a1b2c3d4-0057-0057-0057-000000000057",
+      "firstName": "Brooks",
+      "lastName": "Zug",
+      "title": "Senior Managing Director and Co-Founder",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/brooks-zug-harbourvest",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Senior Managing Director and Co-Founder of HarbourVest Partners. Co-founded in 1982. Pioneered the private equity fund of funds model."
+    },
+    {
+      "id": "b1c2d3e4-0089-0089-0089-000000000089",
+      "firmId": "a1b2c3d4-0057-0057-0057-000000000057",
+      "firstName": "John",
+      "lastName": "Toomey",
+      "title": "Managing Director",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/john-toomey-harbourvest",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Director at HarbourVest Partners. Focuses on US primary fund investments and secondary transactions. Over two decades with HarbourVest."
+    },
+    {
+      "id": "b1c2d3e4-0090-0090-0090-000000000090",
+      "firmId": "a1b2c3d4-0058-0058-0058-000000000058",
+      "firstName": "Josh",
+      "lastName": "Kopelman",
+      "title": "Founder and Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/jkopelman",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Founder and Partner of First Round Capital. Founded Half.com (sold to eBay $350M, 2000). Founded First Round Capital in 2004. Early investor in Uber, Square, Warby Parker, and Mint."
+    },
+    {
+      "id": "b1c2d3e4-0091-0091-0091-000000000091",
+      "firmId": "a1b2c3d4-0058-0058-0058-000000000058",
+      "firstName": "Bill",
+      "lastName": "Trenchard",
+      "title": "Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/billtrenchard",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Partner at First Round Capital. Previously a founder and operator. Focuses on enterprise software, developer tools, and infrastructure investments."
+    },
+    {
+      "id": "b1c2d3e4-0092-0092-0092-000000000092",
+      "firmId": "a1b2c3d4-0059-0059-0059-000000000059",
+      "firstName": "Garry",
+      "lastName": "Tan",
+      "title": "President and Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/garrytan",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "President and CEO of Y Combinator since 2023. Previously co-founded Initialized Capital. YC alum (2007) and early investor in Coinbase, Instacart, and Cruise."
+    },
+    {
+      "id": "b1c2d3e4-0093-0093-0093-000000000093",
+      "firmId": "a1b2c3d4-0059-0059-0059-000000000059",
+      "firstName": "Tom",
+      "lastName": "Blomfield",
+      "title": "Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/tomblomfield",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Partner at Y Combinator. Founded Monzo Bank in 2015, one of Europe most successful neobanks. Co-founder of GoCardless (YC W11). Joined YC as partner in 2021."
+    },
+    {
+      "id": "b1c2d3e4-0094-0094-0094-000000000094",
+      "firmId": "a1b2c3d4-0060-0060-0060-000000000060",
+      "firstName": "Josh",
+      "lastName": "Wolfe",
+      "title": "Co-Founder and Managing Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/joshwolfe",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Founder and Managing Partner of Lux Capital since 2000. Focuses on deep tech including defense, robotics, genomics, and AI."
+    },
+    {
+      "id": "b1c2d3e4-0095-0095-0095-000000000095",
+      "firmId": "a1b2c3d4-0060-0060-0060-000000000060",
+      "firstName": "Peter",
+      "lastName": "Hebert",
+      "title": "Co-Founder and Managing Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/peterhebert",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Co-Founder and Managing Partner of Lux Capital since 2000. Focuses on energy, materials science, and life sciences. Previously at Battery Ventures."
+    },
+    {
+      "id": "b1c2d3e4-0096-0096-0096-000000000096",
+      "firmId": "a1b2c3d4-0061-0061-0061-000000000061",
+      "firstName": "Chow Kiat",
+      "lastName": "Lim",
+      "title": "Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/lim-chow-kiat-gic",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Executive Officer of GIC Private Limited since 2017. Has been with GIC since 1993. Oversees Singapore foreign reserve investment in over 40 countries."
+    },
+    {
+      "id": "b1c2d3e4-0097-0097-0097-000000000097",
+      "firmId": "a1b2c3d4-0061-0061-0061-000000000061",
+      "firstName": "Jeffrey",
+      "lastName": "Jaensubhakij",
+      "title": "Group President and Chief Investment Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/jeffrey-jaensubhakij",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Group President and CIO of GIC. Has been with GIC since 1997. Leads investment management of $770B+ portfolio."
+    },
+    {
+      "id": "b1c2d3e4-0098-0098-0098-000000000098",
+      "firmId": "a1b2c3d4-0062-0062-0062-000000000062",
+      "firstName": "Dilhan",
+      "lastName": "Pillay",
+      "title": "Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/dilhan-pillay",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Executive Officer of Temasek Holdings since 2021. Leads global investment strategy for SGD $389B portfolio."
+    },
+    {
+      "id": "b1c2d3e4-0099-0099-0099-000000000099",
+      "firmId": "a1b2c3d4-0062-0062-0062-000000000062",
+      "firstName": "Rohit",
+      "lastName": "Sipahimalani",
+      "title": "Chief Investment Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/rohit-sipahimalani",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Chief Investment Officer of Temasek Holdings. Has been with Temasek since 2007. Oversees portfolio management of SGD $389B portfolio."
+    },
+    {
+      "id": "b1c2d3e4-0100-0100-0100-000000000100",
+      "firmId": "a1b2c3d4-0063-0063-0063-000000000063",
+      "firstName": "Khaldoon",
+      "lastName": "Al Mubarak",
+      "title": "Managing Director and Group Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/khaldoon-al-mubarak",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Director and Group CEO of Mubadala Investment Company since 2002. Also Chairman of the Executive Affairs Authority of Abu Dhabi. Leads $302B investment platform."
+    },
+    {
+      "id": "b1c2d3e4-0101-0101-0101-000000000101",
+      "firmId": "a1b2c3d4-0063-0063-0063-000000000063",
+      "firstName": "Waleed",
+      "lastName": "Al Mokarrab Al Muhairi",
+      "title": "Deputy Group Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": "https://www.linkedin.com/in/waleed-al-muhairi-mubadala",
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Deputy Group CEO of Mubadala Investment Company. Oversees technology, venture, and international investments."
+    },
+    {
+      "id": "b1c2d3e4-0102-0102-0102-000000000102",
+      "firmId": "a1b2c3d4-0064-0064-0064-000000000064",
+      "firstName": "Gunjan",
+      "lastName": "Kedia",
+      "title": "President and Chief Executive Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": null,
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "President and CEO of U.S. Bancorp since April 15, 2025 (effective at the conclusion of the Annual Meeting of Shareholders). Previously served as President. Succeeded Andy Cecere who became Executive Chairman."
+    },
+    {
+      "id": "b1c2d3e4-0103-0103-0103-000000000103",
+      "firmId": "a1b2c3d4-0064-0064-0064-000000000064",
+      "firstName": "John",
+      "lastName": "Stern",
+      "title": "Senior Executive Vice President and Chief Financial Officer",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": null,
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Senior Executive Vice President and CFO of U.S. Bancorp. Has served as Senior EVP since April 2023 and as CFO since September 2023. Has been with U.S. Bank since 2000. (Source: 2024 10-K, p. 133)"
+    },
+    {
+      "id": "b1c2d3e4-0104-0104-0104-000000000104",
+      "firmId": "a1b2c3d4-0065-0065-0065-000000000065",
+      "firstName": "Ron",
+      "lastName": "Conway",
+      "title": "Founder",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": null,
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Founder of SV Angel. Angel investor since 1992. (Source: svangel.com)"
+    },
+    {
+      "id": "b1c2d3e4-0105-0105-0105-000000000105",
+      "firmId": "a1b2c3d4-0066-0066-0066-000000000066",
+      "firstName": "Ben",
+      "lastName": "Lerer",
+      "title": "Managing Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": null,
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Partner of Lerer Hippeau since the firm's founding in 2010. (Source: lererhippeau.com/team)"
+    },
+    {
+      "id": "b1c2d3e4-0106-0106-0106-000000000106",
+      "firmId": "a1b2c3d4-0066-0066-0066-000000000066",
+      "firstName": "Eric",
+      "lastName": "Hippeau",
+      "title": "Managing Partner",
+      "email": null,
+      "phone": null,
+      "linkedinUrl": null,
+      "isPrimaryContact": false,
+      "department": null,
+      "notes": "Managing Partner of Lerer Hippeau since the firm's founding in 2010. (Source: lererhippeau.com/team)"
+    }
+  ],
+  "deals": [
+    {
+      "id": "d1e2f3a4-0001-0001-0001-000000000001",
+      "firmId": "a1b2c3d4-0016-0016-0016-000000000016",
+      "transactionName": "Databricks",
+      "targetCompany": "Databricks Inc.",
+      "transactionType": "VENTURE_CAPITAL",
+      "dealSizeCents": 100000000000,
+      "announcedDate": "2021-02-01",
+      "stage": "Series G",
+      "sector": "ai",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001813758&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0002-0002-0002-000000000002",
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "transactionName": "Databricks",
+      "targetCompany": "Databricks Inc.",
+      "transactionType": "VENTURE_CAPITAL",
+      "dealSizeCents": 858966127800,
+      "announcedDate": "2024-12-17",
+      "stage": "Series J",
+      "sector": "ai",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001813758&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0003-0003-0003-000000000003",
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "transactionName": "Stripe",
+      "targetCompany": "Stripe Inc.",
+      "transactionType": "VENTURE_CAPITAL",
+      "dealSizeCents": 60000000000,
+      "announcedDate": "2021-03-15",
+      "stage": "Series H",
+      "sector": "fintech",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001670148&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0004-0004-0004-000000000004",
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "transactionName": "Stripe",
+      "targetCompany": "Stripe Inc.",
+      "transactionType": "VENTURE_CAPITAL",
+      "dealSizeCents": 686986698400,
+      "announcedDate": "2023-03-15",
+      "stage": "Series I",
+      "sector": "fintech",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001670148&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0005-0005-0005-000000000005",
+      "firmId": "a1b2c3d4-0001-0001-0001-000000000001",
+      "transactionName": "OpenAI",
+      "targetCompany": "OpenAI Inc.",
+      "transactionType": "VENTURE_CAPITAL",
+      "dealSizeCents": 30000000000,
+      "announcedDate": "2023-04-28",
+      "stage": "Venture Round",
+      "sector": "ai",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001800397&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0006-0006-0006-000000000006",
+      "firmId": "a1b2c3d4-0018-0018-0018-000000000018",
+      "transactionName": "Nubank",
+      "targetCompany": "Nu Pagamentos S.A. (Nubank)",
+      "transactionType": "VENTURE_CAPITAL",
+      "dealSizeCents": 75000000000,
+      "announcedDate": "2021-06-07",
+      "stage": "Series G",
+      "sector": "fintech",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001691493&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0007-0007-0007-000000000007",
+      "firmId": "a1b2c3d4-0016-0016-0016-000000000016",
+      "transactionName": "Canva",
+      "targetCompany": "Canva Pty Ltd",
+      "transactionType": "VENTURE_CAPITAL",
+      "dealSizeCents": 20000000000,
+      "announcedDate": "2021-04-08",
+      "stage": "Series F",
+      "sector": "saas",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001863990&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0009-0009-0009-000000000009",
+      "firmId": "a1b2c3d4-0005-0005-0005-000000000005",
+      "transactionName": "Robinhood",
+      "targetCompany": "Robinhood Markets Inc.",
+      "transactionType": "VENTURE_CAPITAL",
+      "dealSizeCents": 340000000000,
+      "announcedDate": "2021-01-29",
+      "stage": "Series G",
+      "sector": "fintech",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001783879&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0010-0010-0010-000000000010",
+      "firmId": "a1b2c3d4-0017-0017-0017-000000000017",
+      "transactionName": "Klarna",
+      "targetCompany": "Klarna Bank AB",
+      "transactionType": "VENTURE_CAPITAL",
+      "dealSizeCents": 63900000000,
+      "announcedDate": "2021-07-01",
+      "stage": "Late Stage VC",
+      "sector": "fintech",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001959724&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0011-0011-0011-000000000011",
+      "firmId": "a1b2c3d4-0004-0004-0004-000000000004",
+      "transactionName": "Cloudera Inc.",
+      "targetCompany": "Cloudera Inc.",
+      "transactionType": "LEVERAGED_BUYOUT",
+      "dealSizeCents": 530000000000,
+      "announcedDate": "2021-10-08",
+      "stage": "Take-Private",
+      "sector": "cloud",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001660134&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0013-0013-0013-000000000013",
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "transactionName": "Compound Finance",
+      "targetCompany": "Compound Labs Inc.",
+      "transactionType": "VENTURE_CAPITAL",
+      "dealSizeCents": 2500000000,
+      "announcedDate": "2019-11-19",
+      "stage": "Series A",
+      "sector": "crypto",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://compound.finance"
+    },
+    {
+      "id": "d1e2f3a4-0014-0014-0014-000000000014",
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "transactionName": "DoorDash Inc.",
+      "targetCompany": "DoorDash Inc.",
+      "transactionType": "IPO",
+      "dealSizeCents": 336600000000,
+      "announcedDate": "2020-12-09",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001792789&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0015-0015-0015-000000000015",
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "transactionName": "Snowflake Inc.",
+      "targetCompany": "Snowflake Inc.",
+      "transactionType": "IPO",
+      "dealSizeCents": 336000000000,
+      "announcedDate": "2020-09-16",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001640147&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0016-0016-0016-000000000016",
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "transactionName": "Rivian Automotive Inc.",
+      "targetCompany": "Rivian Automotive Inc.",
+      "transactionType": "IPO",
+      "dealSizeCents": 1193400000000,
+      "announcedDate": "2021-11-10",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001874178&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0017-0017-0017-000000000017",
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "transactionName": "Arm Holdings plc",
+      "targetCompany": "Arm Holdings plc",
+      "transactionType": "IPO",
+      "dealSizeCents": 487000000000,
+      "announcedDate": "2023-09-14",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001973239&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0018-0018-0018-000000000018",
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "transactionName": "Reddit Inc.",
+      "targetCompany": "Reddit Inc.",
+      "transactionType": "IPO",
+      "dealSizeCents": 74800000000,
+      "announcedDate": "2024-03-21",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001713445&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0019-0019-0019-000000000019",
+      "firmId": "a1b2c3d4-0038-0038-0038-000000000038",
+      "transactionName": "Lyft Inc.",
+      "targetCompany": "Lyft Inc.",
+      "transactionType": "IPO",
+      "dealSizeCents": 234000000000,
+      "announcedDate": "2019-03-29",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001759509&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0020-0020-0020-000000000020",
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "transactionName": "Uber Technologies Inc.",
+      "targetCompany": "Uber Technologies Inc.",
+      "transactionType": "IPO",
+      "dealSizeCents": 810000000000,
+      "announcedDate": "2019-05-10",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001543151&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0021-0021-0021-000000000021",
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "transactionName": "UiPath Inc.",
+      "targetCompany": "UiPath Inc.",
+      "transactionType": "IPO",
+      "dealSizeCents": 134000000000,
+      "announcedDate": "2021-04-21",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001734722&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0022-0022-0022-000000000022",
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "transactionName": "Duolingo Inc.",
+      "targetCompany": "Duolingo Inc.",
+      "transactionType": "IPO",
+      "dealSizeCents": 52100000000,
+      "announcedDate": "2021-07-28",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001650372&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0023-0023-0023-000000000023",
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "transactionName": "GitLab Inc.",
+      "targetCompany": "GitLab Inc.",
+      "transactionType": "IPO",
+      "dealSizeCents": 80100000000,
+      "announcedDate": "2021-10-14",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001653482&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0024-0024-0024-000000000024",
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "transactionName": "Instacart (Maplebear Inc.)",
+      "targetCompany": "Instacart (Maplebear Inc.)",
+      "transactionType": "IPO",
+      "dealSizeCents": 66000000000,
+      "announcedDate": "2023-09-19",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001579091&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0025-0025-0025-000000000025",
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "transactionName": "Airbnb Inc.",
+      "targetCompany": "Airbnb Inc.",
+      "transactionType": "IPO",
+      "dealSizeCents": 374000000000,
+      "announcedDate": "2020-12-10",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001559720&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0026-0026-0026-000000000026",
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "transactionName": "Peloton Interactive Inc.",
+      "targetCompany": "Peloton Interactive Inc.",
+      "transactionType": "IPO",
+      "dealSizeCents": 116000000000,
+      "announcedDate": "2019-09-25",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001639825&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0027-0027-0027-000000000027",
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "transactionName": "Toast Inc.",
+      "targetCompany": "Toast Inc.",
+      "transactionType": "IPO",
+      "dealSizeCents": 100000000000,
+      "announcedDate": "2021-09-21",
+      "stage": "IPO",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001650164&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0028-0028-0028-000000000028",
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "transactionName": "Roblox Corporation",
+      "targetCompany": "Roblox Corporation",
+      "transactionType": "OTHER",
+      "dealSizeCents": null,
+      "announcedDate": "2021-03-10",
+      "stage": "Direct Listing",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001315098&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0029-0029-0029-000000000029",
+      "firmId": "a1b2c3d4-0043-0043-0043-000000000043",
+      "transactionName": "Palantir Technologies Inc.",
+      "targetCompany": "Palantir Technologies Inc.",
+      "transactionType": "OTHER",
+      "dealSizeCents": null,
+      "announcedDate": "2020-09-30",
+      "stage": "Direct Listing",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001321655&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0030-0030-0030-000000000030",
+      "firmId": "a1b2c3d4-0002-0002-0002-000000000002",
+      "transactionName": "Figma Inc.",
+      "targetCompany": "Figma Inc.",
+      "transactionType": "VENTURE_CAPITAL",
+      "dealSizeCents": 20000000000,
+      "announcedDate": "2021-06-23",
+      "stage": "Series D",
+      "sector": "technology",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001579878&owner=exclude&count=40"
+    },
+    {
+      "id": "d1e2f3a4-0031-0031-0031-000000000031",
+      "firmId": "a1b2c3d4-0003-0003-0003-000000000003",
+      "transactionName": "Ancestry.com",
+      "targetCompany": "Ancestry.com Operations LLC",
+      "transactionType": "LEVERAGED_BUYOUT",
+      "dealSizeCents": 470000000000,
+      "announcedDate": "2020-12-04",
+      "stage": "Take-Private",
+      "sector": "technology",
+      "status": "COMPLETED",
+      "sourceUrl": "https://www.blackstone.com/press-releases/article/blackstone-completes-acquisition-of-ancestry/"
+    },
+    {
+      "id": "d1e2f3a4-0032-0032-0032-000000000032",
+      "firmId": "a1b2c3d4-0039-0039-0039-000000000039",
+      "transactionName": "Coinbase Global Inc.",
+      "targetCompany": "Coinbase Global Inc.",
+      "transactionType": "OTHER",
+      "dealSizeCents": null,
+      "announcedDate": "2021-04-14",
+      "stage": "Direct Listing",
+      "sector": "fintech",
+      "status": "ANNOUNCED",
+      "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001679788&owner=exclude&count=40"
+    }
+  ]
+}

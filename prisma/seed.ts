@@ -71,10 +71,13 @@ interface SeedFirm {
   legalName: string | null;
   description: string | null;
   website: string | null;
+  linkedinUrl: string | null;
   headquartersCity: string | null;
   headquartersState: string | null;
   headquartersCountry: string | null;
   geographicFocus: string[];
+  aumCents: number | null;
+  totalFundSizeCents: number | null;
   minCheckSizeCents: number | null;
   maxCheckSizeCents: number | null;
   stagePreferences: string[];
@@ -185,10 +188,13 @@ async function main() {
           legalName: firm.legalName || null,
           description: firm.description || null,
           website: firm.website || null,
+          linkedinUrl: firm.linkedinUrl || null,
           headquartersCity: firm.headquartersCity || null,
           headquartersState: firm.headquartersState || null,
           headquartersCountry: firm.headquartersCountry || null,
           geographicFocus: firm.geographicFocus || [],
+          aumCents: firm.aumCents ? BigInt(firm.aumCents) : null,
+          totalFundSizeCents: firm.totalFundSizeCents ? BigInt(firm.totalFundSizeCents) : null,
           minCheckSizeCents: firm.minCheckSizeCents ? BigInt(firm.minCheckSizeCents) : null,
           maxCheckSizeCents: firm.maxCheckSizeCents ? BigInt(firm.maxCheckSizeCents) : null,
           stagePreferences: firm.stagePreferences || [],

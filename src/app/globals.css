@@ -112,8 +112,9 @@
   }
 
   /* ---- Form Inputs ---- */
+  /* Use :where() to zero out specificity so Tailwind utilities always win */
 
-  input[type="text"],
+  :where(input[type="text"],
   input[type="email"],
   input[type="password"],
   input[type="number"],
@@ -121,7 +122,7 @@
   input[type="url"],
   input[type="tel"],
   textarea,
-  select {
+  select) {
     background-color: var(--color-bg-secondary);
     border: 1px solid var(--color-border-default);
     border-radius: var(--radius-md);
@@ -134,23 +135,18 @@
       background-color var(--transition-fast);
   }
 
-  input:hover,
-  textarea:hover,
-  select:hover {
+  :where(input, textarea, select):hover {
     border-color: var(--color-border-active);
   }
 
-  input:focus,
-  textarea:focus,
-  select:focus {
+  :where(input, textarea, select):focus {
     border-color: var(--color-brand-accent);
     box-shadow: 0 0 0 3px rgba(92, 124, 250, 0.15);
     outline: none;
     background-color: var(--color-bg-elevated);
   }
 
-  input::placeholder,
-  textarea::placeholder {
+  :where(input, textarea)::placeholder {
     color: var(--color-text-muted);
   }
 

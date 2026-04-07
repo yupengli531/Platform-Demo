@@ -194,6 +194,18 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
                   <ArrowTopRightOnSquareIcon className="h-3 w-3" />
                 </a>
               )}
+              {firm.linkedinUrl && (
+                <a
+                  href={firm.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-brand-400 hover:text-brand-300 transition-colors"
+                >
+                  <LinkIcon className="h-4 w-4" />
+                  <span>LinkedIn</span>
+                  <ArrowTopRightOnSquareIcon className="h-3 w-3" />
+                </a>
+              )}
             </div>
 
             {/* Institution Type & Industry Badges */}
@@ -480,8 +492,7 @@ function ContactsTab({ contacts }: { contacts: FirmProfileProps['firm']['contact
             <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Title</th>
             <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Email</th>
             <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Phone</th>
-            <th className="text-center py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Seniority</th>
-            <th className="text-center py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Score</th>
+            <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">LinkedIn</th>
           </tr>
         </thead>
         <tbody>
@@ -512,14 +523,18 @@ function ContactsTab({ contacts }: { contacts: FirmProfileProps['firm']['contact
                   </a>
                 ) : '—'}
               </td>
-              <td className="py-3 px-4 text-center">
-                <span className="text-xs text-slate-400">
-                  {contact.seniority?.replace(/_/g, ' ') || '—'}
-                </span>
-              </td>
-              <td className="py-3 px-4 text-center">
-                {contact.relationshipScore !== null ? (
-                  <span className="text-xs font-medium text-white">{contact.relationshipScore}/10</span>
+              <td className="py-3 px-4">
+                {contact.linkedinUrl ? (
+                  <a
+                    href={contact.linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-400 hover:text-brand-300 flex items-center gap-1"
+                  >
+                    <LinkIcon className="h-3.5 w-3.5" />
+                    <span className="text-xs">Profile</span>
+                    <ArrowTopRightOnSquareIcon className="h-3 w-3" />
+                  </a>
                 ) : '—'}
               </td>
             </tr>

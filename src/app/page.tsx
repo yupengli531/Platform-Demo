@@ -60,7 +60,7 @@ export default function DashboardPage() {
 
             {/* Quick Search */}
             <div className="relative max-w-xl">
-              <MagnifyingGlassIcon className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+              <MagnifyingGlassIcon className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
               <input
                 type="text"
                 placeholder="Search firms, contacts, or transactions..."

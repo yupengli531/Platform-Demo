@@ -134,16 +134,16 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
   return (
     <div className="max-w-7xl mx-auto">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-navy-950 via-navy-900 to-navy-950 border border-navy-700/50 rounded-2xl p-6 md:p-8 mb-6">
+      <div className="bg-gradient-to-r from-brand-50 via-sand-50 to-warm-50 border border-sand-200 rounded-2xl p-6 md:p-8 mb-6">
         <div className="flex flex-col md:flex-row items-start gap-6">
           {/* Logo / Avatar */}
-          <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center text-2xl font-bold text-white flex-shrink-0">
+          <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-2xl font-bold text-warm-900 flex-shrink-0">
             {firm.name.charAt(0)}
           </div>
 
           <div className="flex-1 min-w-0">
             <div className="flex flex-wrap items-center gap-3 mb-2">
-              <h1 className="text-2xl md:text-3xl font-bold text-white">{firm.name}</h1>
+              <h1 className="text-2xl md:text-3xl font-bold text-warm-900">{firm.name}</h1>
               <span
                 className="text-xs font-medium px-2.5 py-1 rounded-full"
                 style={{ color: crmConfig.color, backgroundColor: crmConfig.bgColor }}
@@ -159,11 +159,11 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
             </div>
 
             {firm.legalName && firm.legalName !== firm.name && (
-              <p className="text-sm text-slate-400 mb-2">{firm.legalName}</p>
+              <p className="text-sm text-warm-500 mb-2">{firm.legalName}</p>
             )}
 
             {/* Quick Info */}
-            <div className="flex flex-wrap items-center gap-4 text-sm text-slate-400 mb-4">
+            <div className="flex flex-wrap items-center gap-4 text-sm text-warm-500 mb-4">
               {location && (
                 <div className="flex items-center gap-1.5">
                   <MapPinIcon className="h-4 w-4" />
@@ -187,7 +187,7 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
                   href={firm.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-brand-400 hover:text-brand-300 transition-colors"
+                  className="flex items-center gap-1.5 text-brand-600 hover:text-brand-700 transition-colors"
                 >
                   <GlobeAltIcon className="h-4 w-4" />
                   <span>Website</span>
@@ -199,7 +199,7 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
                   href={firm.linkedinUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-brand-400 hover:text-brand-300 transition-colors"
+                  className="flex items-center gap-1.5 text-brand-600 hover:text-brand-700 transition-colors"
                 >
                   <LinkIcon className="h-4 w-4" />
                   <span>LinkedIn</span>
@@ -228,7 +228,7 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
               {firm.industries.map(({ industry: ind }) => (
                 <span
                   key={ind.slug}
-                  className="text-xs text-slate-300 px-2 py-0.5 rounded-md bg-navy-800/80 border border-navy-700/40"
+                  className="text-xs text-warm-600 px-2 py-0.5 rounded-md bg-sand-100 border border-sand-200"
                 >
                   {ind.name}
                 </span>
@@ -255,17 +255,17 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
                   />
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-xl font-bold text-white">{firm.internalScore}</span>
+                  <span className="text-xl font-bold text-warm-900">{firm.internalScore}</span>
                 </div>
               </div>
-              <p className="text-2xs text-slate-500 mt-1">Internal Score</p>
+              <p className="text-2xs text-warm-400 mt-1">Internal Score</p>
             </div>
           )}
         </div>
 
         {/* Description */}
         {firm.description && (
-          <p className="text-sm text-slate-300 leading-relaxed mt-4 border-t border-navy-700/30 pt-4">
+          <p className="text-sm text-warm-600 leading-relaxed mt-4 border-t border-sand-200 pt-4">
             {firm.description}
           </p>
         )}
@@ -282,7 +282,7 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
       </div>
 
       {/* Tab Navigation */}
-      <div className="flex items-center gap-1 border-b border-navy-700/30 mb-6 overflow-x-auto">
+      <div className="flex items-center gap-1 border-b border-sand-200 mb-6 overflow-x-auto">
         {TABS.map((tab) => {
           const Icon = tab.icon;
           const count = tab.id === 'contacts' ? firm._count.contacts
@@ -297,14 +297,14 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
               onClick={() => setActiveTab(tab.id)}
               className={`flex items-center gap-2 px-4 py-3 text-sm font-medium border-b-2 transition-colors whitespace-nowrap ${
                 activeTab === tab.id
-                  ? 'border-brand-500 text-brand-400'
-                  : 'border-transparent text-slate-400 hover:text-white hover:border-navy-600'
+                  ? 'border-brand-500 text-brand-600'
+                  : 'border-transparent text-warm-500 hover:text-warm-900 hover:border-sand-400'
               }`}
             >
               <Icon className="h-4 w-4" />
               {tab.label}
               {count !== undefined && (
-                <span className="text-2xs bg-navy-800 text-slate-400 px-1.5 py-0.5 rounded-full">{count}</span>
+                <span className="text-2xs bg-sand-100 text-warm-500 px-1.5 py-0.5 rounded-full">{count}</span>
               )}
             </button>
           );
@@ -321,9 +321,9 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
       {/* CRM & Data Quality Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
         {/* CRM Status */}
-        <div className="bg-navy-950/80 border border-navy-700/30 rounded-xl p-5">
-          <h3 className="text-sm font-semibold text-white mb-4 flex items-center gap-2">
-            <StarIcon className="h-4 w-4 text-gold-500" />
+        <div className="bg-white border border-sand-200 rounded-xl shadow-soft p-5">
+          <h3 className="text-sm font-semibold text-warm-900 mb-4 flex items-center gap-2">
+            <StarIcon className="h-4 w-4 text-brand-500" />
             Relationship Management
           </h3>
           <div className="space-y-3 text-sm">
@@ -333,18 +333,18 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
             <InfoRow label="Last Contact" value={firm.lastContactDate ? new Date(firm.lastContactDate).toLocaleDateString() : '—'} />
             <InfoRow label="Next Follow-Up" value={firm.nextFollowUpDate ? new Date(firm.nextFollowUpDate).toLocaleDateString() : '—'} />
             {firm.internalNotes && (
-              <div className="pt-2 border-t border-navy-700/30">
-                <p className="text-xs text-slate-500 mb-1">Internal Notes</p>
-                <p className="text-xs text-slate-300 leading-relaxed">{firm.internalNotes}</p>
+              <div className="pt-2 border-t border-sand-200">
+                <p className="text-xs text-warm-400 mb-1">Internal Notes</p>
+                <p className="text-xs text-warm-600 leading-relaxed">{firm.internalNotes}</p>
               </div>
             )}
           </div>
         </div>
 
         {/* Data Quality */}
-        <div className="bg-navy-950/80 border border-navy-700/30 rounded-xl p-5">
-          <h3 className="text-sm font-semibold text-white mb-4 flex items-center gap-2">
-            <ChartBarIcon className="h-4 w-4 text-brand-400" />
+        <div className="bg-white border border-sand-200 rounded-xl shadow-soft p-5">
+          <h3 className="text-sm font-semibold text-warm-900 mb-4 flex items-center gap-2">
+            <ChartBarIcon className="h-4 w-4 text-brand-600" />
             Data Quality
           </h3>
           <div className="space-y-3 text-sm">
@@ -360,16 +360,16 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
 
       {/* Tags */}
       {firm.tags.length > 0 && (
-        <div className="mt-6 bg-navy-950/80 border border-navy-700/30 rounded-xl p-5">
-          <h3 className="text-sm font-semibold text-white mb-3 flex items-center gap-2">
-            <TagIcon className="h-4 w-4 text-slate-400" />
+        <div className="mt-6 bg-white border border-sand-200 rounded-xl shadow-soft p-5">
+          <h3 className="text-sm font-semibold text-warm-900 mb-3 flex items-center gap-2">
+            <TagIcon className="h-4 w-4 text-warm-500" />
             Tags
           </h3>
           <div className="flex flex-wrap gap-2">
             {firm.tags.map(({ tag }) => (
               <span
                 key={tag.slug}
-                className="text-xs px-2.5 py-1 rounded-full border border-navy-700/40 text-slate-300 bg-navy-800/50"
+                className="text-xs px-2.5 py-1 rounded-full border border-sand-200 text-warm-600 bg-sand-100/50"
                 style={tag.color ? { color: tag.color, borderColor: `${tag.color}30` } : undefined}
               >
                 {tag.name}
@@ -386,9 +386,9 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
 
 function MetricCard({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
-    <div className="bg-navy-950/80 border border-navy-700/30 rounded-xl px-4 py-3">
-      <div className="text-2xs text-slate-500 uppercase tracking-wider mb-1">{label}</div>
-      <div className={`text-sm font-semibold ${highlight ? 'text-gold-400' : 'text-white'}`}>
+    <div className="bg-white border border-sand-200 rounded-xl shadow-soft px-4 py-3">
+      <div className="text-2xs text-warm-400 uppercase tracking-wider mb-1">{label}</div>
+      <div className={`text-sm font-semibold ${highlight ? 'text-brand-700' : 'text-warm-900'}`}>
         {value}
       </div>
     </div>
@@ -398,7 +398,7 @@ function MetricCard({ label, value, highlight }: { label: string; value: string;
 function InfoRow({ label, value, color }: { label: string; value: string; color?: string }) {
   return (
     <div className="flex items-center justify-between">
-      <span className="text-xs text-slate-500">{label}</span>
+      <span className="text-xs text-warm-400">{label}</span>
       <span className="text-xs font-medium" style={color ? { color } : { color: '#e2e8f0' }}>
         {value}
       </span>
@@ -410,15 +410,15 @@ function OverviewTab({ firm }: { firm: FirmProfileProps['firm'] }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {/* Investment Focus */}
-      <div className="bg-navy-950/80 border border-navy-700/30 rounded-xl p-5">
-        <h3 className="text-sm font-semibold text-white mb-4">Investment Focus</h3>
+      <div className="bg-white border border-sand-200 rounded-xl shadow-soft p-5">
+        <h3 className="text-sm font-semibold text-warm-900 mb-4">Investment Focus</h3>
         <div className="space-y-4">
           {firm.stagePreferences.length > 0 && (
             <div>
-              <p className="text-xs text-slate-500 mb-2">Stage Preferences</p>
+              <p className="text-xs text-warm-400 mb-2">Stage Preferences</p>
               <div className="flex flex-wrap gap-1.5">
                 {firm.stagePreferences.map((stage) => (
-                  <span key={stage} className="text-xs text-brand-300 px-2 py-0.5 rounded-md bg-brand-900/30 border border-brand-800/30">
+                  <span key={stage} className="text-xs text-brand-700 px-2 py-0.5 rounded-md bg-brand-50 border border-brand-200">
                     {stage}
                   </span>
                 ))}
@@ -427,10 +427,10 @@ function OverviewTab({ firm }: { firm: FirmProfileProps['firm'] }) {
           )}
           {firm.dealTypePreferences.length > 0 && (
             <div>
-              <p className="text-xs text-slate-500 mb-2">Deal Types</p>
+              <p className="text-xs text-warm-400 mb-2">Deal Types</p>
               <div className="flex flex-wrap gap-1.5">
                 {firm.dealTypePreferences.map((deal) => (
-                  <span key={deal} className="text-xs text-slate-300 px-2 py-0.5 rounded-md bg-navy-800/60 border border-navy-700/40">
+                  <span key={deal} className="text-xs text-warm-600 px-2 py-0.5 rounded-md bg-sand-100 border border-sand-200">
                     {deal}
                   </span>
                 ))}
@@ -439,10 +439,10 @@ function OverviewTab({ firm }: { firm: FirmProfileProps['firm'] }) {
           )}
           {firm.geographicFocus.length > 0 && (
             <div>
-              <p className="text-xs text-slate-500 mb-2">Geographic Focus</p>
+              <p className="text-xs text-warm-400 mb-2">Geographic Focus</p>
               <div className="flex flex-wrap gap-1.5">
                 {firm.geographicFocus.map((geo) => (
-                  <span key={geo} className="text-xs text-slate-300 px-2 py-0.5 rounded-md bg-navy-800/60 border border-navy-700/40">
+                  <span key={geo} className="text-xs text-warm-600 px-2 py-0.5 rounded-md bg-sand-100 border border-sand-200">
                     {geo}
                   </span>
                 ))}
@@ -451,16 +451,16 @@ function OverviewTab({ firm }: { firm: FirmProfileProps['firm'] }) {
           )}
           {firm.investmentHorizon && (
             <div>
-              <p className="text-xs text-slate-500 mb-1">Investment Horizon</p>
-              <p className="text-sm text-white">{firm.investmentHorizon}</p>
+              <p className="text-xs text-warm-400 mb-1">Investment Horizon</p>
+              <p className="text-sm text-warm-900">{firm.investmentHorizon}</p>
             </div>
           )}
         </div>
       </div>
 
       {/* Firm Details */}
-      <div className="bg-navy-950/80 border border-navy-700/30 rounded-xl p-5">
-        <h3 className="text-sm font-semibold text-white mb-4">Firm Details</h3>
+      <div className="bg-white border border-sand-200 rounded-xl shadow-soft p-5">
+        <h3 className="text-sm font-semibold text-warm-900 mb-4">Firm Details</h3>
         <div className="space-y-3">
           <InfoRow label="Partners" value={firm.numberOfPartners?.toString() || '—'} />
           <InfoRow label="Active Portfolio" value={firm.activePortfolioSize?.toString() || '—'} />
@@ -477,8 +477,8 @@ function ContactsTab({ contacts }: { contacts: FirmProfileProps['firm']['contact
   if (contacts.length === 0) {
     return (
       <div className="text-center py-12">
-        <UserGroupIcon className="h-10 w-10 text-slate-600 mx-auto mb-3" />
-        <p className="text-slate-400">No contacts recorded</p>
+        <UserGroupIcon className="h-10 w-10 text-warm-300 mx-auto mb-3" />
+        <p className="text-warm-500">No contacts recorded</p>
       </div>
     );
   }
@@ -487,29 +487,29 @@ function ContactsTab({ contacts }: { contacts: FirmProfileProps['firm']['contact
     <div className="overflow-x-auto">
       <table className="w-full text-sm">
         <thead>
-          <tr className="border-b border-navy-700/50">
-            <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Name</th>
-            <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Title</th>
-            <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Email</th>
-            <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Phone</th>
-            <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">LinkedIn</th>
+          <tr className="border-b border-sand-200">
+            <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wider">Name</th>
+            <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wider">Title</th>
+            <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wider">Email</th>
+            <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wider">Phone</th>
+            <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wider">LinkedIn</th>
           </tr>
         </thead>
         <tbody>
           {contacts.map((contact) => (
-            <tr key={contact.id} className="border-b border-navy-800/50 hover:bg-navy-900/50 transition-colors">
+            <tr key={contact.id} className="border-b border-sand-100 hover:bg-sand-50 transition-colors">
               <td className="py-3 px-4">
                 <div className="flex items-center gap-2">
-                  <span className="text-white font-medium">{contact.firstName} {contact.lastName}</span>
+                  <span className="text-warm-900 font-medium">{contact.firstName} {contact.lastName}</span>
                   {contact.isPrimaryContact && (
-                    <span className="text-2xs px-1.5 py-0.5 rounded bg-gold-500/20 text-gold-400 font-medium">Primary</span>
+                    <span className="text-2xs px-1.5 py-0.5 rounded bg-gold-500/20 text-brand-700 font-medium">Primary</span>
                   )}
                 </div>
               </td>
-              <td className="py-3 px-4 text-slate-400">{contact.title || '—'}</td>
+              <td className="py-3 px-4 text-warm-500">{contact.title || '—'}</td>
               <td className="py-3 px-4">
                 {contact.email ? (
-                  <a href={`mailto:${contact.email}`} className="text-brand-400 hover:text-brand-300 flex items-center gap-1">
+                  <a href={`mailto:${contact.email}`} className="text-brand-600 hover:text-brand-700 flex items-center gap-1">
                     <EnvelopeIcon className="h-3.5 w-3.5" />
                     {contact.email}
                   </a>
@@ -517,7 +517,7 @@ function ContactsTab({ contacts }: { contacts: FirmProfileProps['firm']['contact
               </td>
               <td className="py-3 px-4">
                 {contact.phone ? (
-                  <a href={`tel:${contact.phone}`} className="text-slate-300 flex items-center gap-1">
+                  <a href={`tel:${contact.phone}`} className="text-warm-600 flex items-center gap-1">
                     <PhoneIcon className="h-3.5 w-3.5" />
                     {contact.phone}
                   </a>
@@ -529,7 +529,7 @@ function ContactsTab({ contacts }: { contacts: FirmProfileProps['firm']['contact
                     href={contact.linkedinUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-brand-400 hover:text-brand-300 flex items-center gap-1"
+                    className="text-brand-600 hover:text-brand-700 flex items-center gap-1"
                   >
                     <LinkIcon className="h-3.5 w-3.5" />
                     <span className="text-xs">Profile</span>
@@ -549,8 +549,8 @@ function TransactionsTab({ transactions }: { transactions: FirmProfileProps['fir
   if (transactions.length === 0) {
     return (
       <div className="text-center py-12">
-        <DocumentTextIcon className="h-10 w-10 text-slate-600 mx-auto mb-3" />
-        <p className="text-slate-400">No transactions recorded</p>
+        <DocumentTextIcon className="h-10 w-10 text-warm-300 mx-auto mb-3" />
+        <p className="text-warm-500">No transactions recorded</p>
       </div>
     );
   }
@@ -559,33 +559,33 @@ function TransactionsTab({ transactions }: { transactions: FirmProfileProps['fir
     <div className="overflow-x-auto">
       <table className="w-full text-sm">
         <thead>
-          <tr className="border-b border-navy-700/50">
-            <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Transaction</th>
-            <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Target</th>
-            <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Type</th>
-            <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Role</th>
-            <th className="text-right py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Deal Size</th>
-            <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Industry</th>
-            <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Date</th>
-            <th className="text-center py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Status</th>
+          <tr className="border-b border-sand-200">
+            <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wider">Transaction</th>
+            <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wider">Target</th>
+            <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wider">Type</th>
+            <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wider">Role</th>
+            <th className="text-right py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wider">Deal Size</th>
+            <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wider">Industry</th>
+            <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wider">Date</th>
+            <th className="text-center py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wider">Status</th>
           </tr>
         </thead>
         <tbody>
           {transactions.map((tx) => (
-            <tr key={tx.id} className="border-b border-navy-800/50 hover:bg-navy-900/50 transition-colors">
-              <td className="py-3 px-4 text-white font-medium">{tx.transactionName}</td>
-              <td className="py-3 px-4 text-slate-400">{tx.targetCompany || '—'}</td>
+            <tr key={tx.id} className="border-b border-sand-100 hover:bg-sand-50 transition-colors">
+              <td className="py-3 px-4 text-warm-900 font-medium">{tx.transactionName}</td>
+              <td className="py-3 px-4 text-warm-500">{tx.targetCompany || '—'}</td>
               <td className="py-3 px-4">
-                <span className="text-xs text-brand-300 px-2 py-0.5 rounded-md bg-brand-900/30">
+                <span className="text-xs text-brand-700 px-2 py-0.5 rounded-md bg-brand-50">
                   {tx.transactionType.replace(/_/g, ' ')}
                 </span>
               </td>
-              <td className="py-3 px-4 text-slate-400">{tx.role || '—'}</td>
-              <td className="py-3 px-4 text-right text-gold-400 font-medium">
+              <td className="py-3 px-4 text-warm-500">{tx.role || '—'}</td>
+              <td className="py-3 px-4 text-right text-brand-700 font-medium">
                 {tx.dealSizeCents ? formatCentsToUSD(Number(tx.dealSizeCents)) : '—'}
               </td>
-              <td className="py-3 px-4 text-slate-400 text-xs">{tx.industry || '—'}</td>
-              <td className="py-3 px-4 text-slate-400 text-xs">
+              <td className="py-3 px-4 text-warm-500 text-xs">{tx.industry || '—'}</td>
+              <td className="py-3 px-4 text-warm-500 text-xs">
                 {tx.closedDate ? new Date(tx.closedDate).toLocaleDateString() : '—'}
               </td>
               <td className="py-3 px-4 text-center">
@@ -593,7 +593,7 @@ function TransactionsTab({ transactions }: { transactions: FirmProfileProps['fir
                   tx.status === 'COMPLETED' ? 'text-green-400 bg-green-500/10' :
                   tx.status === 'PENDING' ? 'text-yellow-400 bg-yellow-500/10' :
                   tx.status === 'ANNOUNCED' ? 'text-blue-400 bg-blue-500/10' :
-                  'text-slate-400 bg-slate-500/10'
+                  'text-warm-500 bg-warm-500/10'
                 }`}>
                   {tx.status}
                 </span>
@@ -610,8 +610,8 @@ function SourcesTab({ sources }: { sources: FirmProfileProps['firm']['sourceLink
   if (sources.length === 0) {
     return (
       <div className="text-center py-12">
-        <LinkIcon className="h-10 w-10 text-slate-600 mx-auto mb-3" />
-        <p className="text-slate-400">No source links recorded</p>
+        <LinkIcon className="h-10 w-10 text-warm-300 mx-auto mb-3" />
+        <p className="text-warm-500">No source links recorded</p>
       </div>
     );
   }
@@ -619,19 +619,19 @@ function SourcesTab({ sources }: { sources: FirmProfileProps['firm']['sourceLink
   return (
     <div className="space-y-2">
       {sources.map((source) => (
-        <div key={source.id} className="flex items-center gap-3 bg-navy-900/50 border border-navy-700/30 rounded-lg px-4 py-3">
-          <LinkIcon className="h-4 w-4 text-slate-500 flex-shrink-0" />
+        <div key={source.id} className="flex items-center gap-3 bg-sand-50 border border-sand-200 rounded-lg px-4 py-3">
+          <LinkIcon className="h-4 w-4 text-warm-400 flex-shrink-0" />
           <div className="flex-1 min-w-0">
             <a
               href={source.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-brand-400 hover:text-brand-300 truncate block"
+              className="text-sm text-brand-600 hover:text-brand-700 truncate block"
             >
               {source.title || source.url}
             </a>
           </div>
-          <span className="text-2xs text-slate-500 px-2 py-0.5 rounded bg-navy-800">
+          <span className="text-2xs text-warm-400 px-2 py-0.5 rounded bg-sand-100">
             {source.sourceType.replace(/_/g, ' ')}
           </span>
         </div>
@@ -644,8 +644,8 @@ function ActivityTab({ logs }: { logs: FirmProfileProps['firm']['activityLogs'] 
   if (logs.length === 0) {
     return (
       <div className="text-center py-12">
-        <ClockIcon className="h-10 w-10 text-slate-600 mx-auto mb-3" />
-        <p className="text-slate-400">No activity recorded</p>
+        <ClockIcon className="h-10 w-10 text-warm-300 mx-auto mb-3" />
+        <p className="text-warm-500">No activity recorded</p>
       </div>
     );
   }
@@ -656,11 +656,11 @@ function ActivityTab({ logs }: { logs: FirmProfileProps['firm']['activityLogs'] 
         <div key={log.id} className="flex items-start gap-3 text-sm">
           <div className="w-2 h-2 rounded-full bg-brand-500 mt-1.5 flex-shrink-0" />
           <div>
-            <p className="text-slate-300">
-              <span className="text-xs font-medium text-brand-400 uppercase">{log.action}</span>
-              {log.details && <span className="text-slate-400"> — {log.details}</span>}
+            <p className="text-warm-600">
+              <span className="text-xs font-medium text-brand-600 uppercase">{log.action}</span>
+              {log.details && <span className="text-warm-500"> — {log.details}</span>}
             </p>
-            <p className="text-xs text-slate-600 mt-0.5">
+            <p className="text-xs text-warm-300 mt-0.5">
               {new Date(log.createdAt).toLocaleString()}
             </p>
           </div>

@@ -53,8 +53,8 @@ export default function InvestorTypeTabs({ counts, className, activeSlug: extern
           className={clsx(
             'relative flex shrink-0 items-center gap-2 whitespace-nowrap rounded-t-lg px-4 py-2.5 text-sm font-medium transition-colors',
             activeSlug === null
-              ? 'text-gold-400'
-              : 'text-navy-400 hover:bg-navy-800/40 hover:text-navy-200',
+              ? 'text-brand-700'
+              : 'text-warm-400 hover:bg-sand-100 hover:text-warm-700',
           )}
         >
           All
@@ -62,14 +62,14 @@ export default function InvestorTypeTabs({ counts, className, activeSlug: extern
             className={clsx(
               'rounded-full px-2 py-0.5 text-xs tabular-nums',
               activeSlug === null
-                ? 'bg-gold-500/15 text-gold-400'
-                : 'bg-navy-800 text-navy-400',
+                ? 'bg-brand-100 text-brand-700'
+                : 'bg-sand-100 text-warm-400',
             )}
           >
             {formatCount(totalCount)}
           </span>
           {activeSlug === null && (
-            <span className="absolute bottom-0 left-0 right-0 h-0.5 rounded-full bg-gold-400" />
+            <span className="absolute bottom-0 left-0 right-0 h-0.5 rounded-full bg-brand-500" />
           )}
         </button>
 
@@ -86,8 +86,8 @@ export default function InvestorTypeTabs({ counts, className, activeSlug: extern
               className={clsx(
                 'relative flex shrink-0 items-center gap-2 whitespace-nowrap rounded-t-lg px-4 py-2.5 text-sm font-medium transition-colors',
                 isActive
-                  ? 'text-gold-400'
-                  : 'text-navy-400 hover:bg-navy-800/40 hover:text-navy-200',
+                  ? 'text-brand-700'
+                  : 'text-warm-400 hover:bg-sand-100 hover:text-warm-700',
               )}
             >
               {type.name}
@@ -95,14 +95,14 @@ export default function InvestorTypeTabs({ counts, className, activeSlug: extern
                 className={clsx(
                   'rounded-full px-2 py-0.5 text-xs tabular-nums',
                   isActive
-                    ? 'bg-gold-500/15 text-gold-400'
-                    : 'bg-navy-800 text-navy-400',
+                    ? 'bg-brand-100 text-brand-700'
+                    : 'bg-sand-100 text-warm-400',
                 )}
               >
                 {formatCount(count)}
               </span>
               {isActive && (
-                <span className="absolute bottom-0 left-0 right-0 h-0.5 rounded-full bg-gold-400" />
+                <span className="absolute bottom-0 left-0 right-0 h-0.5 rounded-full bg-brand-500" />
               )}
             </button>
           );
@@ -110,7 +110,7 @@ export default function InvestorTypeTabs({ counts, className, activeSlug: extern
       </div>
 
       {/* Bottom border */}
-      <div className="border-b border-navy-800/60" />
+      <div className="border-b border-sand-200" />
     </div>
   );
 }

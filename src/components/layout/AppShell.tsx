@@ -11,7 +11,7 @@ interface AppShellProps {
 
 export default function AppShell({ children }: AppShellProps) {
   return (
-    <div className="flex h-screen flex-col bg-surface-primary text-white">
+    <div className="flex h-screen flex-col bg-surface-primary text-warm-950">
       {/* Header */}
       <Header />
 

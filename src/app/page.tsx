@@ -184,7 +184,7 @@ export default function DashboardPage() {
                         className="h-full rounded-full transition-all duration-500"
                         style={{
                           width: `${pct}%`,
-                          backgroundColor: config?.color || '#9a8d7c',
+                          backgroundColor: config?.color || '#7c6f5e',
                         }}
                       />
                     </div>
@@ -273,9 +273,9 @@ export default function DashboardPage() {
                 href={href}
                 className="flex items-center gap-3 bg-white border border-sand-200 rounded-lg px-4 py-3 text-sm text-warm-500 hover:text-warm-800 hover:border-brand-300 hover:shadow-card transition-all group"
               >
-                <MagnifyingGlassIcon className="h-4 w-4 text-warm-300 group-hover:text-brand-500 flex-shrink-0 transition-colors" />
+                <MagnifyingGlassIcon className="h-4 w-4 text-warm-400 group-hover:text-brand-500 flex-shrink-0 transition-colors" />
                 <span className="truncate">{q}</span>
-                <ArrowRightIcon className="h-3.5 w-3.5 ml-auto text-warm-300 group-hover:text-brand-500 flex-shrink-0 transition-colors" />
+                <ArrowRightIcon className="h-3.5 w-3.5 ml-auto text-warm-400 group-hover:text-brand-500 flex-shrink-0 transition-colors" />
               </Link>
             ))}
           </div>

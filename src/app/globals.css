@@ -16,13 +16,13 @@
     --color-bg-tertiary: #f0ece4;
     --color-bg-elevated: #ffffff;
     --color-surface-overlay: rgba(253, 252, 250, 0.9);
-    --color-border-default: rgba(193, 177, 152, 0.25);
-    --color-border-active: rgba(193, 177, 152, 0.45);
+    --color-border-default: rgba(213, 200, 181, 0.5);
+    --color-border-active: rgba(213, 200, 181, 0.8);
     --color-text-primary: #2c2418;
-    --color-text-secondary: #6b5e4f;
-    --color-text-muted: #9a8d7c;
+    --color-text-secondary: #574a3e;
+    --color-text-muted: #7c6f5e;
     --color-gold-accent: #c9930b;
-    --color-brand-accent: #a67c4a;
+    --color-brand-accent: #8b6838;
     --radius-sm: 6px;
     --radius-md: 8px;
     --radius-lg: 12px;
@@ -54,7 +54,7 @@
   }
 
   ::selection {
-    background-color: rgba(166, 124, 74, 0.2);
+    background-color: rgba(139, 104, 56, 0.2);
     color: #2c2418;
   }
 
@@ -62,7 +62,7 @@
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: rgba(193, 177, 152, 0.3) transparent;
+    scrollbar-color: rgba(124, 111, 94, 0.3) transparent;
   }
 
   *::-webkit-scrollbar {
@@ -75,12 +75,12 @@
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: rgba(193, 177, 152, 0.3);
+    background-color: rgba(124, 111, 94, 0.3);
     border-radius: 3px;
   }
 
   *::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(193, 177, 152, 0.5);
+    background-color: rgba(124, 111, 94, 0.5);
   }
 
   *::-webkit-scrollbar-corner {
@@ -141,7 +141,7 @@
 
   :where(input, textarea, select):focus {
     border-color: var(--color-brand-accent);
-    box-shadow: 0 0 0 3px rgba(166, 124, 74, 0.1);
+    box-shadow: 0 0 0 3px rgba(139, 104, 56, 0.15);
     outline: none;
     background-color: var(--color-bg-elevated);
   }
@@ -157,7 +157,7 @@
   select {
     cursor: pointer;
     appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%239a8d7c' viewBox='0 0 16 16'%3E%3Cpath d='M8 11.5l-5-5h10l-5 5z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%237c6f5e' viewBox='0 0 16 16'%3E%3Cpath d='M8 11.5l-5-5h10l-5 5z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
     padding-right: 2.25rem;

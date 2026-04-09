@@ -215,9 +215,9 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
                   key={it.slug}
                   className="text-xs font-medium px-2.5 py-1 rounded-lg"
                   style={{
-                    color: it.color || '#94a3b8',
-                    backgroundColor: `${it.color || '#94a3b8'}15`,
-                    border: `1px solid ${it.color || '#94a3b8'}30`,
+                    color: it.color || '#475569',
+                    backgroundColor: `${it.color || '#475569'}15`,
+                    border: `1px solid ${it.color || '#475569'}30`,
                   }}
                 >
                   {it.name}{isPrimary ? ' (Primary)' : ''}
@@ -241,16 +241,16 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
             <div className="flex-shrink-0 text-center">
               <div className="relative w-20 h-20">
                 <svg className="w-20 h-20 -rotate-90" viewBox="0 0 72 72">
-                  <circle cx="36" cy="36" r="30" fill="none" stroke="#1e293b" strokeWidth="6" />
+                  <circle cx="36" cy="36" r="30" fill="none" stroke="#ede4d6" strokeWidth="6" />
                   <circle
                     cx="36" cy="36" r="30" fill="none"
                     strokeWidth="6"
                     strokeLinecap="round"
                     strokeDasharray={`${(firm.internalScore / 100) * 188.5} 188.5`}
                     stroke={
-                      firm.internalScore >= 80 ? '#22c55e' :
-                      firm.internalScore >= 60 ? '#f59e0b' :
-                      firm.internalScore >= 40 ? '#3b82f6' : '#64748b'
+                      firm.internalScore >= 80 ? '#15803d' :
+                      firm.internalScore >= 60 ? '#b45309' :
+                      firm.internalScore >= 40 ? '#1d4ed8' : '#475569'
                     }
                   />
                 </svg>
@@ -399,7 +399,7 @@ function InfoRow({ label, value, color }: { label: string; value: string; color?
   return (
     <div className="flex items-center justify-between">
       <span className="text-xs text-warm-400">{label}</span>
-      <span className="text-xs font-medium" style={color ? { color } : { color: '#e2e8f0' }}>
+      <span className="text-xs font-medium text-warm-900" style={color ? { color } : undefined}>
         {value}
       </span>
     </div>
@@ -590,10 +590,10 @@ function TransactionsTab({ transactions }: { transactions: FirmProfileProps['fir
               </td>
               <td className="py-3 px-4 text-center">
                 <span className={`text-2xs px-2 py-0.5 rounded-full font-medium ${
-                  tx.status === 'COMPLETED' ? 'text-green-400 bg-green-500/10' :
-                  tx.status === 'PENDING' ? 'text-yellow-400 bg-yellow-500/10' :
-                  tx.status === 'ANNOUNCED' ? 'text-blue-400 bg-blue-500/10' :
-                  'text-warm-500 bg-warm-500/10'
+                  tx.status === 'COMPLETED' ? 'text-green-700 bg-green-100' :
+                  tx.status === 'PENDING' ? 'text-amber-700 bg-amber-100' :
+                  tx.status === 'ANNOUNCED' ? 'text-blue-700 bg-blue-100' :
+                  'text-warm-600 bg-sand-100'
                 }`}>
                   {tx.status}
                 </span>
@@ -660,7 +660,7 @@ function ActivityTab({ logs }: { logs: FirmProfileProps['firm']['activityLogs'] 
               <span className="text-xs font-medium text-brand-600 uppercase">{log.action}</span>
               {log.details && <span className="text-warm-500"> — {log.details}</span>}
             </p>
-            <p className="text-xs text-warm-300 mt-0.5">
+            <p className="text-xs text-warm-400 mt-0.5">
               {new Date(log.createdAt).toLocaleString()}
             </p>
           </div>

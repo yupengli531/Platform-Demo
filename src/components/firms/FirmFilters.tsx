@@ -142,7 +142,7 @@ function RangeInput({
             value={minValue}
             onChange={(e) => onMinChange(e.target.value)}
             placeholder={placeholder || 'Min'}
-            className={`w-full bg-white border border-sand-200 rounded-md text-xs text-warm-800 py-1.5 ${prefix ? 'pl-6' : 'pl-2.5'} pr-2.5 focus:outline-none focus:border-brand-500 placeholder:text-warm-300`}
+            className={`w-full bg-white border border-sand-200 rounded-md text-xs text-warm-800 py-1.5 ${prefix ? 'pl-6' : 'pl-2.5'} pr-2.5 focus:outline-none focus:border-brand-500 placeholder:text-warm-400`}
           />
         </div>
         <span className="text-warm-400 text-xs">to</span>
@@ -155,7 +155,7 @@ function RangeInput({
             value={maxValue}
             onChange={(e) => onMaxChange(e.target.value)}
             placeholder={placeholder || 'Max'}
-            className={`w-full bg-white border border-sand-200 rounded-md text-xs text-warm-800 py-1.5 ${prefix ? 'pl-6' : 'pl-2.5'} pr-2.5 focus:outline-none focus:border-brand-500 placeholder:text-warm-300`}
+            className={`w-full bg-white border border-sand-200 rounded-md text-xs text-warm-800 py-1.5 ${prefix ? 'pl-6' : 'pl-2.5'} pr-2.5 focus:outline-none focus:border-brand-500 placeholder:text-warm-400`}
           />
         </div>
       </div>

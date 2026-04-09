@@ -150,7 +150,7 @@ export default function Sidebar() {
                 >
                   <span
                     className="h-2 w-2 shrink-0 rounded-full"
-                    style={{ backgroundColor: '#9a8d7c' }}
+                    style={{ backgroundColor: '#7c6f5e' }}
                   />
                   All Types
                 </button>

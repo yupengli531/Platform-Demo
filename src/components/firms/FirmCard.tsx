@@ -66,12 +66,12 @@ export default function FirmCard({
               style={{
                 width: `${internalScore}%`,
                 background: internalScore >= 80
-                  ? '#5c674f'
+                  ? '#15803d'
                   : internalScore >= 60
-                    ? '#a67c4a'
+                    ? '#8b6838'
                     : internalScore >= 40
-                      ? '#7c92b1'
-                      : '#9a8d7c',
+                      ? '#1d4ed8'
+                      : '#7c6f5e',
               }}
             />
           </div>

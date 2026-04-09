@@ -495,34 +495,34 @@ export const US_STATES = [
 // ---- CRM Status Labels ----
 
 export const CRM_STATUS_CONFIG: Record<string, { label: string; color: string; bgColor: string }> = {
-  PROSPECT: { label: 'Prospect', color: '#94a3b8', bgColor: '#1e293b' },
-  CONTACTED: { label: 'Contacted', color: '#60a5fa', bgColor: '#1e3a5f' },
-  MEETING_SCHEDULED: { label: 'Meeting Scheduled', color: '#a78bfa', bgColor: '#2e1065' },
-  IN_DISCUSSION: { label: 'In Discussion', color: '#fbbf24', bgColor: '#451a03' },
-  ACTIVE_RELATIONSHIP: { label: 'Active Relationship', color: '#34d399', bgColor: '#064e3b' },
-  DORMANT: { label: 'Dormant', color: '#64748b', bgColor: '#1e293b' },
-  DO_NOT_CONTACT: { label: 'Do Not Contact', color: '#f87171', bgColor: '#450a0a' },
-  FORMER_CLIENT: { label: 'Former Client', color: '#fb923c', bgColor: '#431407' },
-  CLIENT: { label: 'Client', color: '#22d3ee', bgColor: '#083344' },
+  PROSPECT: { label: 'Prospect', color: '#475569', bgColor: '#f1f5f9' },
+  CONTACTED: { label: 'Contacted', color: '#1d4ed8', bgColor: '#eff6ff' },
+  MEETING_SCHEDULED: { label: 'Meeting Scheduled', color: '#6d28d9', bgColor: '#f5f3ff' },
+  IN_DISCUSSION: { label: 'In Discussion', color: '#b45309', bgColor: '#fffbeb' },
+  ACTIVE_RELATIONSHIP: { label: 'Active Relationship', color: '#047857', bgColor: '#ecfdf5' },
+  DORMANT: { label: 'Dormant', color: '#64748b', bgColor: '#f8fafc' },
+  DO_NOT_CONTACT: { label: 'Do Not Contact', color: '#b91c1c', bgColor: '#fef2f2' },
+  FORMER_CLIENT: { label: 'Former Client', color: '#c2410c', bgColor: '#fff7ed' },
+  CLIENT: { label: 'Client', color: '#0e7490', bgColor: '#ecfeff' },
 };
 
 // ---- Priority Config ----
 
 export const PRIORITY_CONFIG: Record<string, { label: string; color: string }> = {
-  CRITICAL: { label: 'Critical', color: '#ef4444' },
-  HIGH: { label: 'High', color: '#f59e0b' },
-  MEDIUM: { label: 'Medium', color: '#3b82f6' },
-  LOW: { label: 'Low', color: '#64748b' },
+  CRITICAL: { label: 'Critical', color: '#b91c1c' },
+  HIGH: { label: 'High', color: '#b45309' },
+  MEDIUM: { label: 'Medium', color: '#1d4ed8' },
+  LOW: { label: 'Low', color: '#475569' },
 };
 
 // ---- Data Confidence Config ----
 
 export const DATA_CONFIDENCE_CONFIG: Record<string, { label: string; color: string }> = {
-  VERIFIED: { label: 'Verified', color: '#22c55e' },
-  HIGH: { label: 'High', color: '#3b82f6' },
-  MEDIUM: { label: 'Medium', color: '#f59e0b' },
-  LOW: { label: 'Low', color: '#f97316' },
-  UNVERIFIED: { label: 'Unverified', color: '#ef4444' },
+  VERIFIED: { label: 'Verified', color: '#15803d' },
+  HIGH: { label: 'High', color: '#1d4ed8' },
+  MEDIUM: { label: 'Medium', color: '#b45309' },
+  LOW: { label: 'Low', color: '#c2410c' },
+  UNVERIFIED: { label: 'Unverified', color: '#b91c1c' },
 };
 
 // ---- Formatting Helpers ----

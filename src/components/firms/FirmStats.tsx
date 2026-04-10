@@ -49,9 +49,9 @@ export default function FirmStats({
       label: 'Avg Score',
       value: avgScore !== undefined ? avgScore.toFixed(0) : '—',
       icon: ArrowTrendingUpIcon,
-      color: 'text-purple-600',
-      borderColor: 'border-purple-200',
-      bgColor: 'bg-purple-50',
+      color: 'text-brand-700',
+      borderColor: 'border-brand-200',
+      bgColor: 'bg-brand-50',
     },
   ];
 

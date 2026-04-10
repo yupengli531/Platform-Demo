@@ -40,7 +40,7 @@ interface FirmGridProps {
 
 function SkeletonCard() {
   return (
-    <div className="bg-white border border-sand-200 rounded-xl p-5 animate-pulse">
+    <div className="bg-base border border-sand-200 rounded-xl p-5 animate-pulse">
       <div className="h-5 bg-sand-200 rounded w-3/4 mb-3" />
       <div className="h-3 bg-sand-200 rounded w-1/2 mb-3" />
       <div className="flex gap-1.5 mb-3">
@@ -189,7 +189,7 @@ export default function FirmGrid({
             const crmConfig = CRM_STATUS_CONFIG[firm.crmStatus] || CRM_STATUS_CONFIG.PROSPECT;
             return (
               <Link key={firm.id} href={`/firms/${firm.id}`} className="block group">
-                <div className="flex items-center gap-4 bg-white border border-sand-200 rounded-lg px-4 py-3 hover:border-brand-300 hover:shadow-card transition-all">
+                <div className="flex items-center gap-4 bg-base border border-sand-200 rounded-lg px-4 py-3 hover:border-brand-300 hover:shadow-card transition-all">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
                       <h4 className="text-sm font-semibold text-warm-900 group-hover:text-brand-700 truncate">
@@ -254,7 +254,7 @@ function ViewModeToggle({
         <button
           onClick={() => setViewMode('grid')}
           className={`p-1.5 rounded-md transition-colors ${
-            viewMode === 'grid' ? 'bg-brand-600 text-white' : 'text-warm-400 hover:text-warm-700'
+            viewMode === 'grid' ? 'bg-brand-600 dark:bg-brand-800 text-white' : 'text-warm-400 hover:text-warm-700'
           }`}
           title="Grid view"
         >
@@ -263,7 +263,7 @@ function ViewModeToggle({
         <button
           onClick={() => setViewMode('table')}
           className={`p-1.5 rounded-md transition-colors ${
-            viewMode === 'table' ? 'bg-brand-600 text-white' : 'text-warm-400 hover:text-warm-700'
+            viewMode === 'table' ? 'bg-brand-600 dark:bg-brand-800 text-white' : 'text-warm-400 hover:text-warm-700'
           }`}
           title="Table view"
         >
@@ -272,7 +272,7 @@ function ViewModeToggle({
         <button
           onClick={() => setViewMode('list')}
           className={`p-1.5 rounded-md transition-colors ${
-            viewMode === 'list' ? 'bg-brand-600 text-white' : 'text-warm-400 hover:text-warm-700'
+            viewMode === 'list' ? 'bg-brand-600 dark:bg-brand-800 text-white' : 'text-warm-400 hover:text-warm-700'
           }`}
           title="List view"
         >

@@ -70,7 +70,7 @@ export default function DashboardPage() {
                     window.location.href = `/browse?search=${encodeURIComponent(searchQuery.trim())}`;
                   }
                 }}
-                className="w-full bg-white border border-sand-300 rounded-xl text-warm-900 text-sm py-3.5 pl-12 pr-4 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500/30 placeholder:text-warm-400 transition-all shadow-soft"
+                className="w-full bg-base border border-sand-300 rounded-xl text-warm-900 text-sm py-3.5 pl-12 pr-4 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500/30 placeholder:text-warm-400 transition-all shadow-soft"
               />
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function DashboardPage() {
                 <Link
                   key={type.slug}
                   href={`/browse?institutionType=${type.slug}`}
-                  className="group bg-white border border-sand-200 rounded-xl px-4 py-3.5 hover:border-brand-300 hover:shadow-card-hover transition-all"
+                  className="group bg-base border border-sand-200 rounded-xl px-4 py-3.5 hover:border-brand-300 hover:shadow-card-hover transition-all"
                 >
                   <div className="flex items-center gap-3">
                     <div
@@ -143,7 +143,7 @@ export default function DashboardPage() {
                 <Link
                   key={industry.slug}
                   href={`/browse?industry=${industry.slug}`}
-                  className="group bg-white border border-sand-200 rounded-xl px-3.5 py-3 hover:border-sage-300 hover:shadow-card-hover transition-all"
+                  className="group bg-base border border-sand-200 rounded-xl px-3.5 py-3 hover:border-sage-300 hover:shadow-card-hover transition-all"
                 >
                   <div className="flex items-center gap-2.5">
                     <div
@@ -166,7 +166,7 @@ export default function DashboardPage() {
         {/* Bottom Grid: CRM Pipeline + Recent Activity + Geography */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* CRM Pipeline */}
-          <div className="bg-white border border-sand-200 rounded-xl p-5 shadow-soft">
+          <div className="bg-base border border-sand-200 rounded-xl p-5 shadow-soft">
             <h3 className="text-sm font-semibold text-warm-900 mb-4 flex items-center gap-2">
               <ArrowTrendingUpIcon className="h-4 w-4 text-brand-500" />
               Relationship Pipeline
@@ -196,7 +196,7 @@ export default function DashboardPage() {
           </div>
 
           {/* Recent Activity */}
-          <div className="bg-white border border-sand-200 rounded-xl p-5 shadow-soft">
+          <div className="bg-base border border-sand-200 rounded-xl p-5 shadow-soft">
             <h3 className="text-sm font-semibold text-warm-900 mb-4 flex items-center gap-2">
               <ChartBarSquareIcon className="h-4 w-4 text-brand-500" />
               Recent Activity
@@ -224,7 +224,7 @@ export default function DashboardPage() {
           </div>
 
           {/* Geographic Distribution */}
-          <div className="bg-white border border-sand-200 rounded-xl p-5 shadow-soft">
+          <div className="bg-base border border-sand-200 rounded-xl p-5 shadow-soft">
             <h3 className="text-sm font-semibold text-warm-900 mb-4 flex items-center gap-2">
               <UserGroupIcon className="h-4 w-4 text-sage-500" />
               Geographic Distribution
@@ -271,7 +271,7 @@ export default function DashboardPage() {
               <Link
                 key={q}
                 href={href}
-                className="flex items-center gap-3 bg-white border border-sand-200 rounded-lg px-4 py-3 text-sm text-warm-500 hover:text-warm-800 hover:border-brand-300 hover:shadow-card transition-all group"
+                className="flex items-center gap-3 bg-base border border-sand-200 rounded-lg px-4 py-3 text-sm text-warm-500 hover:text-warm-800 hover:border-brand-300 hover:shadow-card transition-all group"
               >
                 <MagnifyingGlassIcon className="h-4 w-4 text-warm-400 group-hover:text-brand-500 flex-shrink-0 transition-colors" />
                 <span className="truncate">{q}</span>

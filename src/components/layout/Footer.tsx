@@ -4,7 +4,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-sand-200 bg-white">
+    <footer className="border-t border-sand-200 bg-base">
       <div className="flex flex-col items-center justify-between gap-2 px-4 py-4 sm:flex-row lg:px-6">
         <p className="text-xs text-warm-400">
           &copy; {currentYear} MPV Capital Intelligence. All rights reserved.

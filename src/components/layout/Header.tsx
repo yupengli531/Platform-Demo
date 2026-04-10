@@ -9,6 +9,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline';
 import { useAppStore } from '@/store/useAppStore';
+import ThemeToggle from '@/components/ThemeToggle';
 
 export default function Header() {
   const { toggleSidebar, globalSearch, setGlobalSearch } = useAppStore();
@@ -44,7 +45,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 flex h-16 shrink-0 items-center border-b border-sand-200 bg-white/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 flex h-16 shrink-0 items-center border-b border-sand-200 bg-base/95 backdrop-blur-sm">
       <div className="flex w-full items-center gap-4 px-4 lg:px-6">
         {/* Mobile hamburger */}
         <button
@@ -79,7 +80,7 @@ export default function Header() {
               onChange={(e) => handleSearchChange(e.target.value)}
               onKeyDown={handleSearchKeyDown}
               placeholder="Search firms, contacts, deals..."
-              className="w-full rounded-lg border border-sand-300 bg-sand-50 py-2 pl-10 pr-4 text-sm text-warm-900 placeholder-warm-400 transition-colors focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500/30 focus:bg-white"
+              className="w-full rounded-lg border border-sand-300 bg-sand-50 py-2 pl-10 pr-4 text-sm text-warm-900 placeholder-warm-400 transition-colors focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500/30 focus:bg-base"
             />
             {searchInput && (
               <button
@@ -108,6 +109,9 @@ export default function Header() {
 
         {/* Right section */}
         <div className="flex items-center gap-1">
+          {/* Theme toggle */}
+          <ThemeToggle />
+
           {/* Notification bell */}
           <button
             type="button"
@@ -132,7 +136,7 @@ export default function Header() {
 
       {/* Mobile search bar (expanded) */}
       {mobileSearchOpen && (
-        <div className="absolute left-0 top-16 w-full border-b border-sand-200 bg-white p-3 md:hidden">
+        <div className="absolute left-0 top-16 w-full border-b border-sand-200 bg-base p-3 md:hidden">
           <div className="relative">
             <MagnifyingGlassIcon className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-warm-400" />
             <input

@@ -57,7 +57,7 @@ export default function FirmCard({
 
   return (
     <Link href={`/firms/${id}`} className="block group">
-      <div className="relative bg-white border border-sand-200 rounded-xl p-5 transition-all duration-300 hover:border-brand-300 hover:shadow-card-hover hover:-translate-y-0.5">
+      <div className="relative bg-base border border-sand-200 rounded-xl p-5 transition-all duration-300 hover:border-brand-300 hover:shadow-card-hover hover:-translate-y-0.5">
         {/* Score indicator bar */}
         {internalScore !== null && (
           <div className="absolute top-0 left-4 right-4 h-0.5 rounded-b overflow-hidden">

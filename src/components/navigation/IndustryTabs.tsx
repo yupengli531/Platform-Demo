@@ -49,7 +49,7 @@ export default function IndustryTabs({ counts, className, activeSlug: externalSl
         <button
           type="button"
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="flex w-full items-center justify-between rounded-lg border border-sand-300 bg-white px-3 py-2 text-sm text-warm-800 transition-colors hover:border-sand-400"
+          className="flex w-full items-center justify-between rounded-lg border border-sand-300 bg-base px-3 py-2 text-sm text-warm-800 transition-colors hover:border-sand-400"
         >
           <div className="flex items-center gap-2">
             {activeIndustry && (
@@ -70,7 +70,7 @@ export default function IndustryTabs({ counts, className, activeSlug: externalSl
 
         {/* Mobile dropdown menu */}
         {mobileOpen && (
-          <div className="absolute left-0 right-0 top-full z-30 mt-1 max-h-80 overflow-y-auto rounded-lg border border-sand-200 bg-white shadow-panel">
+          <div className="absolute left-0 right-0 top-full z-30 mt-1 max-h-80 overflow-y-auto rounded-lg border border-sand-200 bg-base shadow-panel">
             <button
               type="button"
               onClick={() => handleTabClick(null)}

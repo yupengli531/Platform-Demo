@@ -240,8 +240,8 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
           {firm.internalScore !== null && (
             <div className="flex-shrink-0 text-center">
               <div className="relative w-20 h-20">
-                <svg className="w-20 h-20 -rotate-90" viewBox="0 0 72 72">
-                  <circle cx="36" cy="36" r="30" fill="none" stroke="#ede4d6" strokeWidth="6" />
+                <svg className="w-20 h-20 -rotate-90 text-sand-200" viewBox="0 0 72 72">
+                  <circle cx="36" cy="36" r="30" fill="none" stroke="currentColor" strokeWidth="6" />
                   <circle
                     cx="36" cy="36" r="30" fill="none"
                     strokeWidth="6"
@@ -321,7 +321,7 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
       {/* CRM & Data Quality Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
         {/* CRM Status */}
-        <div className="bg-white border border-sand-200 rounded-xl shadow-soft p-5">
+        <div className="bg-base border border-sand-200 rounded-xl shadow-soft p-5">
           <h3 className="text-sm font-semibold text-warm-900 mb-4 flex items-center gap-2">
             <StarIcon className="h-4 w-4 text-brand-500" />
             Relationship Management
@@ -342,7 +342,7 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
         </div>
 
         {/* Data Quality */}
-        <div className="bg-white border border-sand-200 rounded-xl shadow-soft p-5">
+        <div className="bg-base border border-sand-200 rounded-xl shadow-soft p-5">
           <h3 className="text-sm font-semibold text-warm-900 mb-4 flex items-center gap-2">
             <ChartBarIcon className="h-4 w-4 text-brand-600" />
             Data Quality
@@ -360,7 +360,7 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
 
       {/* Tags */}
       {firm.tags.length > 0 && (
-        <div className="mt-6 bg-white border border-sand-200 rounded-xl shadow-soft p-5">
+        <div className="mt-6 bg-base border border-sand-200 rounded-xl shadow-soft p-5">
           <h3 className="text-sm font-semibold text-warm-900 mb-3 flex items-center gap-2">
             <TagIcon className="h-4 w-4 text-warm-500" />
             Tags
@@ -386,7 +386,7 @@ export default function FirmProfile({ firm }: FirmProfileProps) {
 
 function MetricCard({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
-    <div className="bg-white border border-sand-200 rounded-xl shadow-soft px-4 py-3">
+    <div className="bg-base border border-sand-200 rounded-xl shadow-soft px-4 py-3">
       <div className="text-2xs text-warm-400 uppercase tracking-wider mb-1">{label}</div>
       <div className={`text-sm font-semibold ${highlight ? 'text-brand-700' : 'text-warm-900'}`}>
         {value}
@@ -410,7 +410,7 @@ function OverviewTab({ firm }: { firm: FirmProfileProps['firm'] }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {/* Investment Focus */}
-      <div className="bg-white border border-sand-200 rounded-xl shadow-soft p-5">
+      <div className="bg-base border border-sand-200 rounded-xl shadow-soft p-5">
         <h3 className="text-sm font-semibold text-warm-900 mb-4">Investment Focus</h3>
         <div className="space-y-4">
           {firm.stagePreferences.length > 0 && (
@@ -459,7 +459,7 @@ function OverviewTab({ firm }: { firm: FirmProfileProps['firm'] }) {
       </div>
 
       {/* Firm Details */}
-      <div className="bg-white border border-sand-200 rounded-xl shadow-soft p-5">
+      <div className="bg-base border border-sand-200 rounded-xl shadow-soft p-5">
         <h3 className="text-sm font-semibold text-warm-900 mb-4">Firm Details</h3>
         <div className="space-y-3">
           <InfoRow label="Partners" value={firm.numberOfPartners?.toString() || '—'} />

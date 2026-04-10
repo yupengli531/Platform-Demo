@@ -142,7 +142,7 @@ function RangeInput({
             value={minValue}
             onChange={(e) => onMinChange(e.target.value)}
             placeholder={placeholder || 'Min'}
-            className={`w-full bg-white border border-sand-200 rounded-md text-xs text-warm-800 py-1.5 ${prefix ? 'pl-6' : 'pl-2.5'} pr-2.5 focus:outline-none focus:border-brand-500 placeholder:text-warm-400`}
+            className={`w-full bg-base border border-sand-200 rounded-md text-xs text-warm-800 py-1.5 ${prefix ? 'pl-6' : 'pl-2.5'} pr-2.5 focus:outline-none focus:border-brand-500 placeholder:text-warm-400`}
           />
         </div>
         <span className="text-warm-400 text-xs">to</span>
@@ -155,7 +155,7 @@ function RangeInput({
             value={maxValue}
             onChange={(e) => onMaxChange(e.target.value)}
             placeholder={placeholder || 'Max'}
-            className={`w-full bg-white border border-sand-200 rounded-md text-xs text-warm-800 py-1.5 ${prefix ? 'pl-6' : 'pl-2.5'} pr-2.5 focus:outline-none focus:border-brand-500 placeholder:text-warm-400`}
+            className={`w-full bg-base border border-sand-200 rounded-md text-xs text-warm-800 py-1.5 ${prefix ? 'pl-6' : 'pl-2.5'} pr-2.5 focus:outline-none focus:border-brand-500 placeholder:text-warm-400`}
           />
         </div>
       </div>
@@ -213,19 +213,19 @@ export default function FirmFilters({
     <div className={className}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2 bg-white border border-sand-300 rounded-lg text-sm text-warm-600 hover:text-warm-900 hover:border-sand-400 transition-colors"
+        className="flex items-center gap-2 px-3 py-2 bg-base border border-sand-300 rounded-lg text-sm text-warm-600 hover:text-warm-900 hover:border-sand-400 transition-colors"
       >
         <FunnelIcon className="h-4 w-4" />
         <span>Filters</span>
         {activeFilterCount > 0 && (
-          <span className="bg-brand-600 text-white text-2xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+          <span className="bg-brand-600 dark:bg-brand-800 text-white text-2xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
             {activeFilterCount}
           </span>
         )}
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-full mt-2 w-80 bg-white border border-sand-200 rounded-xl shadow-panel z-50 max-h-[80vh] overflow-y-auto">
+        <div className="absolute right-0 top-full mt-2 w-80 bg-base border border-sand-200 rounded-xl shadow-panel z-50 max-h-[80vh] overflow-y-auto">
           <div className="flex items-center justify-between p-4 border-b border-sand-200">
             <h3 className="text-sm font-semibold text-warm-900">Filters</h3>
             <button onClick={() => setIsOpen(false)} className="text-warm-400 hover:text-warm-700 transition-colors">
@@ -339,7 +339,7 @@ export default function FirmFilters({
             </button>
             <button
               onClick={handleApply}
-              className="flex-1 px-3 py-2 text-sm font-medium text-white bg-brand-600 hover:bg-brand-700 rounded-lg transition-colors"
+              className="flex-1 px-3 py-2 text-sm font-medium text-white bg-brand-600 hover:bg-brand-700 dark:bg-brand-800 dark:hover:bg-brand-900 rounded-lg transition-colors"
             >
               Apply Filters
             </button>

@@ -4,34 +4,162 @@
 
 /* ============================================================================
    MPV Capital Intelligence Platform - Global Styles
-   Warm beige/neutral light theme — minimal, elegant, calm, premium
+   Dual-theme: warm light + warm dark
    ============================================================================ */
+
+/* ---- Theme Color Scales (RGB channels for Tailwind opacity support) ---- */
+
+:root {
+  /* Brand */
+  --brand-50: 250 248 245;
+  --brand-100: 245 240 232;
+  --brand-200: 235 224 208;
+  --brand-300: 220 201 173;
+  --brand-400: 201 171 130;
+  --brand-500: 154 122 74;
+  --brand-600: 139 104 56;
+  --brand-700: 139 101 64;
+  --brand-800: 114 82 58;
+  --brand-900: 94 68 51;
+  --brand-950: 51 35 26;
+
+  /* Sand */
+  --sand-50: 253 252 250;
+  --sand-100: 250 247 242;
+  --sand-200: 245 239 228;
+  --sand-300: 237 227 209;
+  --sand-400: 224 208 181;
+  --sand-500: 209 187 150;
+  --sand-600: 191 164 115;
+  --sand-700: 166 139 91;
+  --sand-800: 135 112 74;
+  --sand-900: 110 92 62;
+  --sand-950: 58 48 32;
+
+  /* Sage */
+  --sage-50: 246 247 245;
+  --sage-100: 232 234 228;
+  --sage-200: 210 214 202;
+  --sage-300: 179 187 168;
+  --sage-400: 146 157 131;
+  --sage-500: 116 129 102;
+  --sage-600: 92 103 79;
+  --sage-700: 73 82 64;
+  --sage-800: 60 67 53;
+  --sage-900: 51 57 46;
+  --sage-950: 26 30 23;
+
+  /* Warm */
+  --warm-50: 250 248 245;
+  --warm-100: 245 240 232;
+  --warm-200: 237 228 214;
+  --warm-300: 213 200 181;
+  --warm-400: 124 111 94;
+  --warm-500: 105 92 77;
+  --warm-600: 87 74 62;
+  --warm-700: 69 58 48;
+  --warm-800: 55 46 37;
+  --warm-900: 44 36 24;
+  --warm-950: 26 21 14;
+
+  /* Surfaces */
+  --surface-primary: 253 252 250;
+  --surface-secondary: 248 245 240;
+  --surface-tertiary: 240 236 228;
+  --surface-elevated: 255 255 255;
+
+  /* Base (card/panel bg — replaces bg-white) */
+  --color-base: 255 255 255;
+
+  /* Semantic tokens (derived from scales) */
+  --color-bg-primary: rgb(var(--surface-primary));
+  --color-bg-secondary: rgb(var(--surface-secondary));
+  --color-bg-tertiary: rgb(var(--surface-tertiary));
+  --color-bg-elevated: rgb(var(--surface-elevated));
+  --color-surface-overlay: rgb(var(--surface-primary) / 0.9);
+  --color-border-default: rgb(var(--sand-300) / 0.5);
+  --color-border-active: rgb(var(--sand-300) / 0.8);
+  --color-text-primary: rgb(var(--warm-900));
+  --color-text-secondary: rgb(var(--warm-600));
+  --color-text-muted: rgb(var(--warm-400));
+  --color-gold-accent: #c9930b;
+  --color-brand-accent: rgb(var(--brand-600));
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---- Dark Theme Overrides ---- */
+
+.dark {
+  /* Brand (light end changes for dark backgrounds, 500+ stays for buttons/accents) */
+  --brand-50: 36 30 22;
+  --brand-100: 46 38 26;
+  --brand-200: 60 50 34;
+  --brand-300: 82 68 46;
+  --brand-400: 120 98 68;
+
+  /* Sand (full reversal — dark bgs on low end, light text on high end) */
+  --sand-50: 22 20 17;
+  --sand-100: 32 29 25;
+  --sand-200: 42 38 33;
+  --sand-300: 58 53 46;
+  --sand-400: 82 75 65;
+  --sand-500: 115 106 94;
+  --sand-600: 150 140 127;
+  --sand-700: 182 173 162;
+  --sand-800: 210 204 195;
+  --sand-900: 232 228 222;
+  --sand-950: 248 245 241;
+
+  /* Sage (bg end darkens, text end lightens) */
+  --sage-50: 20 24 18;
+  --sage-100: 28 34 24;
+  --sage-200: 40 48 34;
+  --sage-300: 58 68 50;
+  --sage-400: 96 110 82;
+  --sage-500: 140 156 122;
+  --sage-600: 164 180 148;
+  --sage-700: 188 206 170;
+  --sage-800: 214 228 200;
+  --sage-900: 234 242 226;
+  --sage-950: 248 250 244;
+
+  /* Warm (fully reversed — dark bgs on low end, light text on high end) */
+  --warm-50: 21 19 15;
+  --warm-100: 30 27 22;
+  --warm-200: 44 39 33;
+  --warm-300: 64 58 50;
+  --warm-400: 148 136 120;
+  --warm-500: 172 160 144;
+  --warm-600: 196 185 170;
+  --warm-700: 216 207 196;
+  --warm-800: 232 226 218;
+  --warm-900: 245 240 232;
+  --warm-950: 252 250 246;
+
+  /* Surfaces */
+  --surface-primary: 17 15 13;
+  --surface-secondary: 22 20 17;
+  --surface-tertiary: 32 29 25;
+  --surface-elevated: 28 25 22;
+
+  /* Base (card bg in dark mode) */
+  --color-base: 28 25 22;
+
+  /* Border adjustments for dark */
+  --color-border-default: rgb(var(--sand-300) / 0.4);
+  --color-border-active: rgb(var(--sand-300) / 0.6);
+}
 
 /* ---- Base Layer ---- */
 
 @layer base {
-  :root {
-    --color-bg-primary: #fdfcfa;
-    --color-bg-secondary: #f8f5f0;
-    --color-bg-tertiary: #f0ece4;
-    --color-bg-elevated: #ffffff;
-    --color-surface-overlay: rgba(253, 252, 250, 0.9);
-    --color-border-default: rgba(213, 200, 181, 0.5);
-    --color-border-active: rgba(213, 200, 181, 0.8);
-    --color-text-primary: #2c2418;
-    --color-text-secondary: #574a3e;
-    --color-text-muted: #7c6f5e;
-    --color-gold-accent: #c9930b;
-    --color-brand-accent: #8b6838;
-    --radius-sm: 6px;
-    --radius-md: 8px;
-    --radius-lg: 12px;
-    --radius-xl: 16px;
-    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
   *,
   *::before,
   *::after {
@@ -46,6 +174,10 @@
     color-scheme: light;
   }
 
+  html.dark {
+    color-scheme: dark;
+  }
+
   body {
     background-color: var(--color-bg-primary);
     color: var(--color-text-primary);
@@ -54,15 +186,15 @@
   }
 
   ::selection {
-    background-color: rgba(139, 104, 56, 0.2);
-    color: #2c2418;
+    background-color: rgb(var(--brand-600) / 0.2);
+    color: var(--color-text-primary);
   }
 
   /* ---- Scrollbar Styling ---- */
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: rgba(124, 111, 94, 0.3) transparent;
+    scrollbar-color: rgb(var(--warm-400) / 0.3) transparent;
   }
 
   *::-webkit-scrollbar {
@@ -75,12 +207,12 @@
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: rgba(124, 111, 94, 0.3);
+    background-color: rgb(var(--warm-400) / 0.3);
     border-radius: 3px;
   }
 
   *::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(124, 111, 94, 0.5);
+    background-color: rgb(var(--warm-400) / 0.5);
   }
 
   *::-webkit-scrollbar-corner {
@@ -141,7 +273,7 @@
 
   :where(input, textarea, select):focus {
     border-color: var(--color-brand-accent);
-    box-shadow: 0 0 0 3px rgba(139, 104, 56, 0.15);
+    box-shadow: 0 0 0 3px rgb(var(--brand-600) / 0.15);
     outline: none;
     background-color: var(--color-bg-elevated);
   }
@@ -325,7 +457,7 @@
     background: linear-gradient(
       90deg,
       transparent,
-      rgba(255, 255, 255, 0.5),
+      rgb(var(--warm-200) / 0.3),
       transparent
     );
     animation: shimmer 2s linear infinite;

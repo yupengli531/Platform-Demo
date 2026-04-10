@@ -209,7 +209,7 @@ function BrowseContent() {
                 placeholder="Search by firm name, contact, or keyword..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-white border border-sand-300 rounded-lg text-warm-900 text-sm py-2.5 pl-10 pr-4 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500/30 placeholder:text-warm-400 transition-all"
+                className="w-full bg-base border border-sand-300 rounded-lg text-warm-900 text-sm py-2.5 pl-10 pr-4 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500/30 placeholder:text-warm-400 transition-all"
               />
             </div>
 
@@ -224,7 +224,7 @@ function BrowseContent() {
 
               <button
                 onClick={handleExport}
-                className="flex items-center gap-2 px-3 py-2 bg-white border border-sand-300 rounded-lg text-sm text-warm-600 hover:text-warm-900 hover:border-sand-400 transition-colors"
+                className="flex items-center gap-2 px-3 py-2 bg-base border border-sand-300 rounded-lg text-sm text-warm-600 hover:text-warm-900 hover:border-sand-400 transition-colors"
                 title="Export to CSV"
               >
                 <ArrowDownTrayIcon className="h-4 w-4" />
@@ -233,7 +233,7 @@ function BrowseContent() {
 
               <button
                 onClick={() => fetchFirms(1)}
-                className="flex items-center gap-2 px-3 py-2 bg-white border border-sand-300 rounded-lg text-sm text-warm-600 hover:text-warm-900 hover:border-sand-400 transition-colors"
+                className="flex items-center gap-2 px-3 py-2 bg-base border border-sand-300 rounded-lg text-sm text-warm-600 hover:text-warm-900 hover:border-sand-400 transition-colors"
                 title="Refresh"
               >
                 <ArrowPathIcon className="h-4 w-4" />
@@ -304,7 +304,7 @@ function BrowseContent() {
             <button
               onClick={() => fetchFirms(pagination.page - 1)}
               disabled={pagination.page <= 1}
-              className="px-3 py-2 text-sm text-warm-500 bg-white border border-sand-300 rounded-lg hover:text-warm-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+              className="px-3 py-2 text-sm text-warm-500 bg-base border border-sand-300 rounded-lg hover:text-warm-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
             >
               Previous
             </button>
@@ -326,7 +326,7 @@ function BrowseContent() {
                     onClick={() => fetchFirms(pageNum)}
                     className={`w-9 h-9 text-sm rounded-lg transition-colors ${
                       pageNum === pagination.page
-                        ? 'bg-brand-600 text-white font-medium'
+                        ? 'bg-brand-600 dark:bg-brand-800 text-white font-medium'
                         : 'text-warm-500 hover:text-warm-800 hover:bg-sand-100'
                     }`}
                   >
@@ -338,7 +338,7 @@ function BrowseContent() {
             <button
               onClick={() => fetchFirms(pagination.page + 1)}
               disabled={!pagination.hasMore}
-              className="px-3 py-2 text-sm text-warm-500 bg-white border border-sand-300 rounded-lg hover:text-warm-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+              className="px-3 py-2 text-sm text-warm-500 bg-base border border-sand-300 rounded-lg hover:text-warm-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
             >
               Next
             </button>

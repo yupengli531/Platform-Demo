@@ -49,7 +49,7 @@ export default function IndustryTabs({ counts, className, activeSlug: externalSl
         <button
           type="button"
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="flex w-full items-center justify-between rounded-lg border border-navy-700/50 bg-navy-900/60 px-3 py-2 text-sm text-white transition-colors hover:border-navy-600"
+          className="flex w-full items-center justify-between rounded-lg border border-sand-300 bg-base px-3 py-2 text-sm text-warm-800 transition-colors hover:border-sand-400"
         >
           <div className="flex items-center gap-2">
             {activeIndustry && (
@@ -62,7 +62,7 @@ export default function IndustryTabs({ counts, className, activeSlug: externalSl
           </div>
           <ChevronDownIcon
             className={clsx(
-              'h-4 w-4 text-navy-400 transition-transform',
+              'h-4 w-4 text-warm-400 transition-transform',
               mobileOpen && 'rotate-180',
             )}
           />
@@ -70,19 +70,19 @@ export default function IndustryTabs({ counts, className, activeSlug: externalSl
 
         {/* Mobile dropdown menu */}
         {mobileOpen && (
-          <div className="absolute left-0 right-0 top-full z-30 mt-1 max-h-80 overflow-y-auto rounded-lg border border-navy-700/50 bg-surface-secondary shadow-panel">
+          <div className="absolute left-0 right-0 top-full z-30 mt-1 max-h-80 overflow-y-auto rounded-lg border border-sand-200 bg-base shadow-panel">
             <button
               type="button"
               onClick={() => handleTabClick(null)}
               className={clsx(
                 'flex w-full items-center gap-2.5 px-3 py-2 text-sm transition-colors',
                 activeSlug === null
-                  ? 'bg-brand-600/10 font-medium text-brand-400'
-                  : 'text-navy-300 hover:bg-navy-800/40',
+                  ? 'bg-brand-50 font-medium text-brand-700'
+                  : 'text-warm-600 hover:bg-sand-50',
               )}
             >
               All Industries
-              <span className="ml-auto text-xs tabular-nums text-navy-500">
+              <span className="ml-auto text-xs tabular-nums text-warm-400">
                 {formatCount(totalCount)}
               </span>
             </button>
@@ -94,8 +94,8 @@ export default function IndustryTabs({ counts, className, activeSlug: externalSl
                 className={clsx(
                   'flex w-full items-center gap-2.5 px-3 py-2 text-sm transition-colors',
                   activeSlug === ind.slug
-                    ? 'bg-brand-600/10 font-medium text-brand-400'
-                    : 'text-navy-300 hover:bg-navy-800/40',
+                    ? 'bg-brand-50 font-medium text-brand-700'
+                    : 'text-warm-600 hover:bg-sand-50',
                 )}
               >
                 <span
@@ -103,7 +103,7 @@ export default function IndustryTabs({ counts, className, activeSlug: externalSl
                   style={{ backgroundColor: ind.color }}
                 />
                 {ind.name}
-                <span className="ml-auto text-xs tabular-nums text-navy-500">
+                <span className="ml-auto text-xs tabular-nums text-warm-400">
                   {formatCount(counts[ind.slug] ?? 0)}
                 </span>
               </button>
@@ -129,8 +129,8 @@ export default function IndustryTabs({ counts, className, activeSlug: externalSl
             className={clsx(
               'relative flex shrink-0 items-center gap-2 whitespace-nowrap rounded-t-lg px-3 py-2 text-sm font-medium transition-colors',
               activeSlug === null
-                ? 'text-brand-400'
-                : 'text-navy-400 hover:bg-navy-800/40 hover:text-navy-200',
+                ? 'text-sage-700'
+                : 'text-warm-400 hover:bg-sand-100 hover:text-warm-700',
             )}
           >
             All Industries
@@ -138,14 +138,14 @@ export default function IndustryTabs({ counts, className, activeSlug: externalSl
               className={clsx(
                 'rounded-full px-1.5 py-0.5 text-xs tabular-nums',
                 activeSlug === null
-                  ? 'bg-brand-600/15 text-brand-400'
-                  : 'bg-navy-800 text-navy-400',
+                  ? 'bg-sage-100 text-sage-700'
+                  : 'bg-sand-100 text-warm-400',
               )}
             >
               {formatCount(totalCount)}
             </span>
             {activeSlug === null && (
-              <span className="absolute bottom-0 left-0 right-0 h-0.5 rounded-full bg-brand-500" />
+              <span className="absolute bottom-0 left-0 right-0 h-0.5 rounded-full bg-sage-500" />
             )}
           </button>
 
@@ -162,8 +162,8 @@ export default function IndustryTabs({ counts, className, activeSlug: externalSl
                 className={clsx(
                   'relative flex shrink-0 items-center gap-2 whitespace-nowrap rounded-t-lg px-3 py-2 text-sm font-medium transition-colors',
                   isActive
-                    ? 'text-brand-400'
-                    : 'text-navy-400 hover:bg-navy-800/40 hover:text-navy-200',
+                    ? 'text-sage-700'
+                    : 'text-warm-400 hover:bg-sand-100 hover:text-warm-700',
                 )}
               >
                 <span
@@ -175,14 +175,14 @@ export default function IndustryTabs({ counts, className, activeSlug: externalSl
                   className={clsx(
                     'rounded-full px-1.5 py-0.5 text-xs tabular-nums',
                     isActive
-                      ? 'bg-brand-600/15 text-brand-400'
-                      : 'bg-navy-800 text-navy-400',
+                      ? 'bg-sage-100 text-sage-700'
+                      : 'bg-sand-100 text-warm-400',
                   )}
                 >
                   {formatCount(count)}
                 </span>
                 {isActive && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 rounded-full bg-brand-500" />
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 rounded-full bg-sage-500" />
                 )}
               </button>
             );
@@ -190,7 +190,7 @@ export default function IndustryTabs({ counts, className, activeSlug: externalSl
         </div>
 
         {/* Bottom border */}
-        <div className="border-b border-navy-800/60" />
+        <div className="border-b border-sand-200" />
       </div>
     </div>
   );

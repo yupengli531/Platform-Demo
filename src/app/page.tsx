@@ -44,23 +44,22 @@ export default function DashboardPage() {
     <AppShell>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
         {/* Hero Section */}
-        <div className="relative overflow-hidden bg-gradient-to-br from-navy-950 via-brand-950/30 to-navy-950 border border-navy-700/30 rounded-2xl p-8 md:p-12 mb-8">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMxZTI5M2IiIGZpbGwtb3BhY2l0eT0iMC4xNSI+PHBhdGggZD0iTTM2IDM0djItSDJ2LTJoMzR6TTAgMzR2LTJoMnYySD16Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-30" />
+        <div className="relative overflow-hidden bg-gradient-to-br from-brand-50 via-sand-50 to-warm-50 border border-sand-200 rounded-2xl p-8 md:p-12 mb-8">
           <div className="relative">
             <div className="flex items-center gap-2 mb-3">
-              <BoltIcon className="h-5 w-5 text-gold-400" />
-              <span className="text-sm font-medium text-gold-400">Capital Intelligence Platform</span>
+              <BoltIcon className="h-5 w-5 text-brand-600" />
+              <span className="text-sm font-medium text-brand-600">Capital Intelligence Platform</span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">
+            <h1 className="text-3xl md:text-4xl font-bold text-warm-900 mb-3">
               MPV Capital Intelligence
             </h1>
-            <p className="text-base text-slate-400 max-w-2xl mb-6">
+            <p className="text-base text-warm-500 max-w-2xl mb-6">
               Navigate capital markets data by investor type and industry vertical. Search, filter, and match the right capital sources for any deal.
             </p>
 
             {/* Quick Search */}
             <div className="relative max-w-xl">
-              <MagnifyingGlassIcon className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+              <MagnifyingGlassIcon className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-warm-400" />
               <input
                 type="text"
                 placeholder="Search firms, contacts, or transactions..."
@@ -71,7 +70,7 @@ export default function DashboardPage() {
                     window.location.href = `/browse?search=${encodeURIComponent(searchQuery.trim())}`;
                   }
                 }}
-                className="w-full bg-navy-900/80 border border-navy-700/50 rounded-xl text-white text-sm py-3.5 pl-12 pr-4 focus:outline-none focus:border-brand-500/50 focus:ring-1 focus:ring-brand-500/20 placeholder:text-slate-600 transition-all"
+                className="w-full bg-base border border-sand-300 rounded-xl text-warm-900 text-sm py-3.5 pl-12 pr-4 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500/30 placeholder:text-warm-400 transition-all shadow-soft"
               />
             </div>
           </div>
@@ -89,11 +88,11 @@ export default function DashboardPage() {
         {/* Quick Access: Institution Types */}
         <div className="mb-8">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-semibold text-white flex items-center gap-2">
-              <BuildingOfficeIcon className="h-5 w-5 text-brand-400" />
+            <h2 className="text-lg font-semibold text-warm-900 flex items-center gap-2">
+              <BuildingOfficeIcon className="h-5 w-5 text-brand-500" />
               Browse by Capital Provider
             </h2>
-            <Link href="/browse" className="text-sm text-brand-400 hover:text-brand-300 flex items-center gap-1 transition-colors">
+            <Link href="/browse" className="text-sm text-brand-600 hover:text-brand-700 flex items-center gap-1 transition-colors">
               View All <ArrowRightIcon className="h-3.5 w-3.5" />
             </Link>
           </div>
@@ -104,7 +103,7 @@ export default function DashboardPage() {
                 <Link
                   key={type.slug}
                   href={`/browse?institutionType=${type.slug}`}
-                  className="group bg-navy-950/60 border border-navy-700/30 rounded-xl px-4 py-3.5 hover:border-brand-500/30 hover:bg-navy-900/60 transition-all"
+                  className="group bg-base border border-sand-200 rounded-xl px-4 py-3.5 hover:border-brand-300 hover:shadow-card-hover transition-all"
                 >
                   <div className="flex items-center gap-3">
                     <div
@@ -112,10 +111,10 @@ export default function DashboardPage() {
                       style={{ backgroundColor: type.color }}
                     />
                     <div className="min-w-0">
-                      <h3 className="text-sm font-medium text-white group-hover:text-brand-400 transition-colors truncate">
+                      <h3 className="text-sm font-medium text-warm-800 group-hover:text-brand-700 transition-colors truncate">
                         {type.name}
                       </h3>
-                      <p className="text-xs text-slate-500 mt-0.5">
+                      <p className="text-xs text-warm-400 mt-0.5">
                         {count.toLocaleString()} {count === 1 ? 'firm' : 'firms'}
                       </p>
                     </div>
@@ -129,11 +128,11 @@ export default function DashboardPage() {
         {/* Quick Access: Top Industries */}
         <div className="mb-8">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-semibold text-white flex items-center gap-2">
-              <GlobeAltIcon className="h-5 w-5 text-emerald-400" />
+            <h2 className="text-lg font-semibold text-warm-900 flex items-center gap-2">
+              <GlobeAltIcon className="h-5 w-5 text-sage-500" />
               Browse by Industry
             </h2>
-            <Link href="/browse" className="text-sm text-brand-400 hover:text-brand-300 flex items-center gap-1 transition-colors">
+            <Link href="/browse" className="text-sm text-brand-600 hover:text-brand-700 flex items-center gap-1 transition-colors">
               View All <ArrowRightIcon className="h-3.5 w-3.5" />
             </Link>
           </div>
@@ -144,7 +143,7 @@ export default function DashboardPage() {
                 <Link
                   key={industry.slug}
                   href={`/browse?industry=${industry.slug}`}
-                  className="group bg-navy-950/60 border border-navy-700/30 rounded-xl px-3.5 py-3 hover:border-emerald-500/20 hover:bg-navy-900/60 transition-all"
+                  className="group bg-base border border-sand-200 rounded-xl px-3.5 py-3 hover:border-sage-300 hover:shadow-card-hover transition-all"
                 >
                   <div className="flex items-center gap-2.5">
                     <div
@@ -152,10 +151,10 @@ export default function DashboardPage() {
                       style={{ backgroundColor: industry.color }}
                     />
                     <div className="min-w-0">
-                      <h3 className="text-xs font-medium text-white group-hover:text-emerald-400 transition-colors truncate">
+                      <h3 className="text-xs font-medium text-warm-800 group-hover:text-sage-700 transition-colors truncate">
                         {industry.name}
                       </h3>
-                      <p className="text-2xs text-slate-500">{count.toLocaleString()}</p>
+                      <p className="text-2xs text-warm-400">{count.toLocaleString()}</p>
                     </div>
                   </div>
                 </Link>
@@ -167,9 +166,9 @@ export default function DashboardPage() {
         {/* Bottom Grid: CRM Pipeline + Recent Activity + Geography */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* CRM Pipeline */}
-          <div className="bg-navy-950/80 border border-navy-700/30 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-white mb-4 flex items-center gap-2">
-              <ArrowTrendingUpIcon className="h-4 w-4 text-gold-400" />
+          <div className="bg-base border border-sand-200 rounded-xl p-5 shadow-soft">
+            <h3 className="text-sm font-semibold text-warm-900 mb-4 flex items-center gap-2">
+              <ArrowTrendingUpIcon className="h-4 w-4 text-brand-500" />
               Relationship Pipeline
             </h3>
             <div className="space-y-2">
@@ -179,17 +178,17 @@ export default function DashboardPage() {
                 const pct = ((count / total) * 100).toFixed(0);
                 return (
                   <div key={status} className="flex items-center gap-3">
-                    <div className="w-24 text-xs text-slate-400 truncate">{config?.label || status}</div>
-                    <div className="flex-1 h-2 bg-navy-800 rounded-full overflow-hidden">
+                    <div className="w-24 text-xs text-warm-500 truncate">{config?.label || status}</div>
+                    <div className="flex-1 h-2 bg-sand-100 rounded-full overflow-hidden">
                       <div
                         className="h-full rounded-full transition-all duration-500"
                         style={{
                           width: `${pct}%`,
-                          backgroundColor: config?.color || '#64748b',
+                          backgroundColor: config?.color || '#7c6f5e',
                         }}
                       />
                     </div>
-                    <div className="w-8 text-xs text-slate-500 text-right">{count}</div>
+                    <div className="w-8 text-xs text-warm-500 text-right">{count}</div>
                   </div>
                 );
               })}
@@ -197,37 +196,37 @@ export default function DashboardPage() {
           </div>
 
           {/* Recent Activity */}
-          <div className="bg-navy-950/80 border border-navy-700/30 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-white mb-4 flex items-center gap-2">
-              <ChartBarSquareIcon className="h-4 w-4 text-brand-400" />
+          <div className="bg-base border border-sand-200 rounded-xl p-5 shadow-soft">
+            <h3 className="text-sm font-semibold text-warm-900 mb-4 flex items-center gap-2">
+              <ChartBarSquareIcon className="h-4 w-4 text-brand-500" />
               Recent Activity
             </h3>
             {data?.recentActivity && data.recentActivity.length > 0 ? (
               <div className="space-y-3">
                 {data.recentActivity.slice(0, 8).map((activity) => (
                   <div key={activity.id} className="flex items-start gap-2.5 text-xs">
-                    <div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 flex-shrink-0" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-brand-400 mt-1.5 flex-shrink-0" />
                     <div className="min-w-0">
-                      <p className="text-slate-300 truncate">
-                        <span className="text-brand-400 font-medium">{activity.action}</span>
-                        {activity.firmName && <span className="text-slate-500"> · {activity.firmName}</span>}
+                      <p className="text-warm-700 truncate">
+                        <span className="text-brand-600 font-medium">{activity.action}</span>
+                        {activity.firmName && <span className="text-warm-400"> · {activity.firmName}</span>}
                       </p>
                       {activity.details && (
-                        <p className="text-slate-600 truncate mt-0.5">{activity.details}</p>
+                        <p className="text-warm-400 truncate mt-0.5">{activity.details}</p>
                       )}
                     </div>
                   </div>
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-slate-500">No recent activity</p>
+              <p className="text-sm text-warm-400">No recent activity</p>
             )}
           </div>
 
           {/* Geographic Distribution */}
-          <div className="bg-navy-950/80 border border-navy-700/30 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-white mb-4 flex items-center gap-2">
-              <UserGroupIcon className="h-4 w-4 text-emerald-400" />
+          <div className="bg-base border border-sand-200 rounded-xl p-5 shadow-soft">
+            <h3 className="text-sm font-semibold text-warm-900 mb-4 flex items-center gap-2">
+              <UserGroupIcon className="h-4 w-4 text-sage-500" />
               Geographic Distribution
             </h3>
             {data?.firmsByGeography && data.firmsByGeography.length > 0 ? (
@@ -237,29 +236,29 @@ export default function DashboardPage() {
                   const pct = ((geo.count / total) * 100).toFixed(0);
                   return (
                     <div key={i} className="flex items-center gap-3">
-                      <div className="w-32 text-xs text-slate-400 truncate">
+                      <div className="w-32 text-xs text-warm-500 truncate">
                         {geo.state ? `${geo.state}, ${geo.country}` : geo.country}
                       </div>
-                      <div className="flex-1 h-2 bg-navy-800 rounded-full overflow-hidden">
+                      <div className="flex-1 h-2 bg-sand-100 rounded-full overflow-hidden">
                         <div
-                          className="h-full rounded-full bg-emerald-500/60 transition-all duration-500"
+                          className="h-full rounded-full bg-sage-400 transition-all duration-500"
                           style={{ width: `${pct}%` }}
                         />
                       </div>
-                      <div className="w-8 text-xs text-slate-500 text-right">{geo.count}</div>
+                      <div className="w-8 text-xs text-warm-500 text-right">{geo.count}</div>
                     </div>
                   );
                 })}
               </div>
             ) : (
-              <p className="text-sm text-slate-500">No geographic data available</p>
+              <p className="text-sm text-warm-400">No geographic data available</p>
             )}
           </div>
         </div>
 
         {/* Quick Questions */}
         <div className="mt-8 mb-4">
-          <h2 className="text-lg font-semibold text-white mb-4">Quick Queries</h2>
+          <h2 className="text-lg font-semibold text-warm-900 mb-4">Quick Queries</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[
               { q: 'Family offices investing in gaming', href: '/browse?institutionType=family-offices&industry=gaming' },
@@ -272,11 +271,11 @@ export default function DashboardPage() {
               <Link
                 key={q}
                 href={href}
-                className="flex items-center gap-3 bg-navy-950/40 border border-navy-700/20 rounded-lg px-4 py-3 text-sm text-slate-400 hover:text-white hover:border-brand-500/30 hover:bg-navy-900/40 transition-all group"
+                className="flex items-center gap-3 bg-base border border-sand-200 rounded-lg px-4 py-3 text-sm text-warm-500 hover:text-warm-800 hover:border-brand-300 hover:shadow-card transition-all group"
               >
-                <MagnifyingGlassIcon className="h-4 w-4 text-slate-600 group-hover:text-brand-400 flex-shrink-0 transition-colors" />
+                <MagnifyingGlassIcon className="h-4 w-4 text-warm-400 group-hover:text-brand-500 flex-shrink-0 transition-colors" />
                 <span className="truncate">{q}</span>
-                <ArrowRightIcon className="h-3.5 w-3.5 ml-auto text-slate-700 group-hover:text-brand-400 flex-shrink-0 transition-colors" />
+                <ArrowRightIcon className="h-3.5 w-3.5 ml-auto text-warm-400 group-hover:text-brand-500 flex-shrink-0 transition-colors" />
               </Link>
             ))}
           </div>

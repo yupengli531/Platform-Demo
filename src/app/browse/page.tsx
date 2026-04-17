@@ -165,9 +165,9 @@ function BrowseContent() {
 
   return (
     <AppShell>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
         {/* Stats */}
-        <div className="mb-6">
+        <div>
           <FirmStats
             totalFirms={stats.totalFirms}
             totalContacts={stats.totalContacts}
@@ -176,8 +176,8 @@ function BrowseContent() {
         </div>
 
         {/* Primary Navigation: Institution Type Tabs */}
-        <div className="mb-4">
-          <h2 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">
+        <div className="overflow-hidden">
+          <h2 className="text-xs font-semibold text-warm-400 uppercase tracking-wider mb-2">
             Capital Provider Type
           </h2>
           <InvestorTypeTabs
@@ -188,8 +188,8 @@ function BrowseContent() {
         </div>
 
         {/* Secondary Navigation: Industry Tabs */}
-        <div className="mb-6">
-          <h2 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">
+        <div className="overflow-hidden">
+          <h2 className="text-xs font-semibold text-warm-400 uppercase tracking-wider mb-2">
             Industry / Sector
           </h2>
           <IndustryTabs
@@ -200,90 +200,92 @@ function BrowseContent() {
         </div>
 
         {/* Search + Filter Bar */}
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-6">
-          <div className="relative flex-1">
-            <MagnifyingGlassIcon className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-500" />
-            <input
-              type="text"
-              placeholder="Search by firm name, contact, or keyword..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-navy-900/60 border border-navy-700/50 rounded-lg text-white text-sm py-2.5 pl-10 pr-4 focus:outline-none focus:border-brand-500/50 placeholder:text-slate-600 transition-all"
-            />
-          </div>
-
-          <div className="flex items-center gap-2">
-            <div className="relative">
-              <FirmFilters
-                onApply={handleApplyFilters}
-                onClear={handleClearFilters}
-                activeFilterCount={activeFilterCount}
+        <div className="relative z-20">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            <div className="relative flex-1 min-w-0">
+              <MagnifyingGlassIcon className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-warm-400" />
+              <input
+                type="text"
+                placeholder="Search by firm name, contact, or keyword..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full bg-base border border-sand-300 rounded-lg text-warm-900 text-sm py-2.5 pl-10 pr-4 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500/30 placeholder:text-warm-400 transition-all"
               />
             </div>
 
-            <button
-              onClick={handleExport}
-              className="flex items-center gap-2 px-3 py-2 bg-navy-800/50 border border-navy-700/50 rounded-lg text-sm text-slate-300 hover:text-white hover:border-navy-600 transition-colors"
-              title="Export to CSV"
-            >
-              <ArrowDownTrayIcon className="h-4 w-4" />
-              <span className="hidden sm:inline">Export</span>
-            </button>
+            <div className="flex items-center gap-2 shrink-0">
+              <div className="relative">
+                <FirmFilters
+                  onApply={handleApplyFilters}
+                  onClear={handleClearFilters}
+                  activeFilterCount={activeFilterCount}
+                />
+              </div>
 
-            <button
-              onClick={() => fetchFirms(1)}
-              className="flex items-center gap-2 px-3 py-2 bg-navy-800/50 border border-navy-700/50 rounded-lg text-sm text-slate-300 hover:text-white hover:border-navy-600 transition-colors"
-              title="Refresh"
-            >
-              <ArrowPathIcon className="h-4 w-4" />
-            </button>
+              <button
+                onClick={handleExport}
+                className="flex items-center gap-2 px-3 py-2 bg-base border border-sand-300 rounded-lg text-sm text-warm-600 hover:text-warm-900 hover:border-sand-400 transition-colors"
+                title="Export to CSV"
+              >
+                <ArrowDownTrayIcon className="h-4 w-4" />
+                <span className="hidden sm:inline">Export</span>
+              </button>
+
+              <button
+                onClick={() => fetchFirms(1)}
+                className="flex items-center gap-2 px-3 py-2 bg-base border border-sand-300 rounded-lg text-sm text-warm-600 hover:text-warm-900 hover:border-sand-400 transition-colors"
+                title="Refresh"
+              >
+                <ArrowPathIcon className="h-4 w-4" />
+              </button>
+            </div>
           </div>
+
+          {/* Active Filters Display */}
+          {(activeInstitutionType || activeIndustry || searchQuery) && (
+            <div className="flex flex-wrap items-center gap-2 mt-3">
+              <span className="text-xs text-warm-400">Active:</span>
+              {activeInstitutionType && (
+                <button
+                  onClick={() => setActiveInstitutionType('')}
+                  className="text-xs px-2.5 py-1 rounded-full bg-brand-100 text-brand-700 border border-brand-200 hover:bg-brand-200 transition-colors flex items-center gap-1"
+                >
+                  {activeInstitutionType.replace(/-/g, ' ')}
+                  <span className="text-brand-500">&times;</span>
+                </button>
+              )}
+              {activeIndustry && (
+                <button
+                  onClick={() => setActiveIndustry('')}
+                  className="text-xs px-2.5 py-1 rounded-full bg-sage-100 text-sage-700 border border-sage-200 hover:bg-sage-200 transition-colors flex items-center gap-1"
+                >
+                  {activeIndustry.replace(/-/g, ' ')}
+                  <span className="text-sage-500">&times;</span>
+                </button>
+              )}
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="text-xs px-2.5 py-1 rounded-full bg-sand-100 text-warm-700 border border-sand-200 hover:bg-sand-200 transition-colors flex items-center gap-1"
+                >
+                  &ldquo;{searchQuery}&rdquo;
+                  <span className="text-warm-400">&times;</span>
+                </button>
+              )}
+              <button
+                onClick={() => {
+                  setActiveInstitutionType('');
+                  setActiveIndustry('');
+                  setSearchQuery('');
+                  handleClearFilters();
+                }}
+                className="text-xs text-warm-400 hover:text-warm-800 transition-colors ml-2"
+              >
+                Clear all
+              </button>
+            </div>
+          )}
         </div>
-
-        {/* Active Filters Display */}
-        {(activeInstitutionType || activeIndustry || searchQuery) && (
-          <div className="flex flex-wrap items-center gap-2 mb-4">
-            <span className="text-xs text-slate-500">Active:</span>
-            {activeInstitutionType && (
-              <button
-                onClick={() => setActiveInstitutionType('')}
-                className="text-xs px-2.5 py-1 rounded-full bg-brand-500/15 text-brand-300 border border-brand-500/20 hover:bg-brand-500/25 transition-colors flex items-center gap-1"
-              >
-                {activeInstitutionType.replace(/-/g, ' ')}
-                <span className="text-brand-500">&times;</span>
-              </button>
-            )}
-            {activeIndustry && (
-              <button
-                onClick={() => setActiveIndustry('')}
-                className="text-xs px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/20 hover:bg-emerald-500/25 transition-colors flex items-center gap-1"
-              >
-                {activeIndustry.replace(/-/g, ' ')}
-                <span className="text-emerald-500">&times;</span>
-              </button>
-            )}
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery('')}
-                className="text-xs px-2.5 py-1 rounded-full bg-slate-500/15 text-slate-300 border border-slate-500/20 hover:bg-slate-500/25 transition-colors flex items-center gap-1"
-              >
-                &ldquo;{searchQuery}&rdquo;
-                <span className="text-slate-500">&times;</span>
-              </button>
-            )}
-            <button
-              onClick={() => {
-                setActiveInstitutionType('');
-                setActiveIndustry('');
-                setSearchQuery('');
-                handleClearFilters();
-              }}
-              className="text-xs text-slate-500 hover:text-white transition-colors ml-2"
-            >
-              Clear all
-            </button>
-          </div>
-        )}
 
         {/* Firm Results */}
         <FirmGrid
@@ -302,7 +304,7 @@ function BrowseContent() {
             <button
               onClick={() => fetchFirms(pagination.page - 1)}
               disabled={pagination.page <= 1}
-              className="px-3 py-2 text-sm text-slate-400 bg-navy-800/50 border border-navy-700/50 rounded-lg hover:text-white disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+              className="px-3 py-2 text-sm text-warm-500 bg-base border border-sand-300 rounded-lg hover:text-warm-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
             >
               Previous
             </button>
@@ -324,8 +326,8 @@ function BrowseContent() {
                     onClick={() => fetchFirms(pageNum)}
                     className={`w-9 h-9 text-sm rounded-lg transition-colors ${
                       pageNum === pagination.page
-                        ? 'bg-brand-600 text-white font-medium'
-                        : 'text-slate-400 hover:text-white hover:bg-navy-800/50'
+                        ? 'bg-brand-600 dark:bg-brand-800 text-white font-medium'
+                        : 'text-warm-500 hover:text-warm-800 hover:bg-sand-100'
                     }`}
                   >
                     {pageNum}
@@ -336,7 +338,7 @@ function BrowseContent() {
             <button
               onClick={() => fetchFirms(pagination.page + 1)}
               disabled={!pagination.hasMore}
-              className="px-3 py-2 text-sm text-slate-400 bg-navy-800/50 border border-navy-700/50 rounded-lg hover:text-white disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+              className="px-3 py-2 text-sm text-warm-500 bg-base border border-sand-300 rounded-lg hover:text-warm-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
             >
               Next
             </button>

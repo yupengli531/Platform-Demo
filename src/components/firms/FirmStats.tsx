@@ -25,33 +25,33 @@ export default function FirmStats({
       label: 'Total Firms',
       value: totalFirms.toLocaleString(),
       icon: BuildingOfficeIcon,
-      color: 'text-brand-400',
-      borderColor: 'border-brand-500/20',
-      bgColor: 'bg-brand-500/5',
+      color: 'text-brand-600',
+      borderColor: 'border-brand-200',
+      bgColor: 'bg-brand-50',
     },
     {
       label: 'Contacts',
       value: totalContacts.toLocaleString(),
       icon: UserGroupIcon,
-      color: 'text-emerald-400',
-      borderColor: 'border-emerald-500/20',
-      bgColor: 'bg-emerald-500/5',
+      color: 'text-sage-600',
+      borderColor: 'border-sage-200',
+      bgColor: 'bg-sage-50',
     },
     {
       label: 'Transactions',
       value: totalTransactions.toLocaleString(),
       icon: DocumentTextIcon,
-      color: 'text-gold-400',
-      borderColor: 'border-gold-500/20',
-      bgColor: 'bg-gold-500/5',
+      color: 'text-warm-700',
+      borderColor: 'border-sand-200',
+      bgColor: 'bg-sand-50',
     },
     {
       label: 'Avg Score',
       value: avgScore !== undefined ? avgScore.toFixed(0) : '—',
       icon: ArrowTrendingUpIcon,
-      color: 'text-purple-400',
-      borderColor: 'border-purple-500/20',
-      bgColor: 'bg-purple-500/5',
+      color: 'text-brand-700',
+      borderColor: 'border-brand-200',
+      bgColor: 'bg-brand-50',
     },
   ];
 
@@ -62,15 +62,15 @@ export default function FirmStats({
         return (
           <div
             key={stat.label}
-            className={`${stat.bgColor} border ${stat.borderColor} rounded-xl px-4 py-4 transition-all hover:shadow-glow`}
+            className={`${stat.bgColor} border ${stat.borderColor} rounded-xl px-4 py-4 transition-all hover:shadow-card`}
           >
             <div className="flex items-center gap-3">
               <div className={`${stat.color}`}>
                 <Icon className="h-5 w-5" />
               </div>
               <div>
-                <p className="text-2xs text-slate-500 uppercase tracking-wider">{stat.label}</p>
-                <p className={`text-xl font-bold text-white mt-0.5`}>{stat.value}</p>
+                <p className="text-2xs text-warm-400 uppercase tracking-wider">{stat.label}</p>
+                <p className="text-xl font-bold text-warm-900 mt-0.5">{stat.value}</p>
               </div>
             </div>
           </div>

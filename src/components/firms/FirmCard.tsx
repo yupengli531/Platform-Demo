@@ -57,7 +57,7 @@ export default function FirmCard({
 
   return (
     <Link href={`/firms/${id}`} className="block group">
-      <div className="relative bg-navy-950/80 border border-navy-700/50 rounded-xl p-5 transition-all duration-300 hover:border-brand-500/40 hover:shadow-card-hover hover:bg-navy-900/80 hover:-translate-y-0.5">
+      <div className="relative bg-base border border-sand-200 rounded-xl p-5 transition-all duration-300 hover:border-brand-300 hover:shadow-card-hover hover:-translate-y-0.5">
         {/* Score indicator bar */}
         {internalScore !== null && (
           <div className="absolute top-0 left-4 right-4 h-0.5 rounded-b overflow-hidden">
@@ -66,12 +66,12 @@ export default function FirmCard({
               style={{
                 width: `${internalScore}%`,
                 background: internalScore >= 80
-                  ? '#22c55e'
+                  ? '#15803d'
                   : internalScore >= 60
-                    ? '#f59e0b'
+                    ? '#8b6838'
                     : internalScore >= 40
-                      ? '#3b82f6'
-                      : '#64748b',
+                      ? '#1d4ed8'
+                      : '#7c6f5e',
               }}
             />
           </div>
@@ -80,11 +80,11 @@ export default function FirmCard({
         {/* Header */}
         <div className="flex items-start justify-between gap-3 mb-3">
           <div className="min-w-0 flex-1">
-            <h3 className="text-white font-semibold text-base truncate group-hover:text-brand-400 transition-colors">
+            <h3 className="text-warm-900 font-semibold text-base truncate group-hover:text-brand-700 transition-colors">
               {name}
             </h3>
             {location && (
-              <div className="flex items-center gap-1.5 mt-1 text-slate-400 text-xs">
+              <div className="flex items-center gap-1.5 mt-1 text-warm-400 text-xs">
                 <MapPinIcon className="h-3.5 w-3.5 flex-shrink-0" />
                 <span className="truncate">{location}</span>
               </div>
@@ -105,16 +105,16 @@ export default function FirmCard({
               key={it.slug}
               className="text-2xs font-medium px-2 py-0.5 rounded-md"
               style={{
-                color: it.color || '#94a3b8',
-                backgroundColor: `${it.color || '#94a3b8'}15`,
-                border: `1px solid ${it.color || '#94a3b8'}30`,
+                color: it.color || '#6b5e4f',
+                backgroundColor: `${it.color || '#6b5e4f'}12`,
+                border: `1px solid ${it.color || '#6b5e4f'}25`,
               }}
             >
               {it.name}
             </span>
           ))}
           {institutionTypes.length > 3 && (
-            <span className="text-2xs text-slate-500 px-1.5 py-0.5">
+            <span className="text-2xs text-warm-400 px-1.5 py-0.5">
               +{institutionTypes.length - 3}
             </span>
           )}
@@ -125,13 +125,13 @@ export default function FirmCard({
           {industries.slice(0, 3).map(({ industry: ind }) => (
             <span
               key={ind.slug}
-              className="text-2xs text-slate-300 px-1.5 py-0.5 rounded bg-navy-800/80"
+              className="text-2xs text-warm-600 px-1.5 py-0.5 rounded bg-sand-100"
             >
               {ind.name}
             </span>
           ))}
           {industries.length > 3 && (
-            <span className="text-2xs text-slate-500 px-1 py-0.5">
+            <span className="text-2xs text-warm-400 px-1 py-0.5">
               +{industries.length - 3}
             </span>
           )}
@@ -139,7 +139,7 @@ export default function FirmCard({
 
         {/* Description */}
         {description && (
-          <p className="text-xs text-slate-400 line-clamp-2 mb-3 leading-relaxed">
+          <p className="text-xs text-warm-500 line-clamp-2 mb-3 leading-relaxed">
             {description}
           </p>
         )}
@@ -147,17 +147,17 @@ export default function FirmCard({
         {/* Financial Metrics */}
         <div className="grid grid-cols-2 gap-2 mb-3">
           {aumCents && (
-            <div className="bg-navy-900/60 rounded-lg px-3 py-2">
-              <div className="text-2xs text-slate-500 uppercase tracking-wider">AUM</div>
-              <div className="text-sm font-semibold text-gold-400">
+            <div className="bg-brand-50 rounded-lg px-3 py-2">
+              <div className="text-2xs text-warm-400 uppercase tracking-wider">AUM</div>
+              <div className="text-sm font-semibold text-brand-700">
                 {formatCentsToUSD(Number(aumCents))}
               </div>
             </div>
           )}
           {(minCheckSizeCents || maxCheckSizeCents) && (
-            <div className="bg-navy-900/60 rounded-lg px-3 py-2">
-              <div className="text-2xs text-slate-500 uppercase tracking-wider">Check Size</div>
-              <div className="text-sm font-semibold text-white">
+            <div className="bg-sand-50 rounded-lg px-3 py-2">
+              <div className="text-2xs text-warm-400 uppercase tracking-wider">Check Size</div>
+              <div className="text-sm font-semibold text-warm-800">
                 {formatCheckSizeRange(
                   minCheckSizeCents ? Number(minCheckSizeCents) : null,
                   maxCheckSizeCents ? Number(maxCheckSizeCents) : null
@@ -173,13 +173,13 @@ export default function FirmCard({
             {stagePreferences.slice(0, 3).map((stage) => (
               <span
                 key={stage}
-                className="text-2xs text-brand-300 px-1.5 py-0.5 rounded bg-brand-900/30 border border-brand-800/30"
+                className="text-2xs text-brand-700 px-1.5 py-0.5 rounded bg-brand-50 border border-brand-200"
               >
                 {stage}
               </span>
             ))}
             {stagePreferences.length > 3 && (
-              <span className="text-2xs text-slate-500 px-1">
+              <span className="text-2xs text-warm-400 px-1">
                 +{stagePreferences.length - 3}
               </span>
             )}
@@ -192,7 +192,7 @@ export default function FirmCard({
             {tags.slice(0, 4).map(({ tag }) => (
               <span
                 key={tag.slug}
-                className="text-2xs text-slate-400 px-1.5 py-0.5 rounded-full bg-navy-800/50 border border-navy-700/30"
+                className="text-2xs text-warm-500 px-1.5 py-0.5 rounded-full bg-sand-100 border border-sand-200"
               >
                 {tag.name}
               </span>
@@ -201,8 +201,8 @@ export default function FirmCard({
         )}
 
         {/* Footer Stats */}
-        <div className="flex items-center justify-between pt-3 border-t border-navy-700/30">
-          <div className="flex items-center gap-3 text-xs text-slate-500">
+        <div className="flex items-center justify-between pt-3 border-t border-sand-200">
+          <div className="flex items-center gap-3 text-xs text-warm-400">
             <div className="flex items-center gap-1">
               <UserGroupIcon className="h-3.5 w-3.5" />
               <span>{_count.contacts}</span>
@@ -214,8 +214,8 @@ export default function FirmCard({
           </div>
           {internalScore !== null && (
             <div className="flex items-center gap-1.5">
-              <ArrowTrendingUpIcon className="h-3.5 w-3.5 text-slate-500" />
-              <span className="text-xs font-medium text-slate-400">{internalScore}/100</span>
+              <ArrowTrendingUpIcon className="h-3.5 w-3.5 text-warm-400" />
+              <span className="text-xs font-medium text-warm-500">{internalScore}/100</span>
             </div>
           )}
         </div>

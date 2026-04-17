@@ -44,7 +44,7 @@ export default function Sidebar() {
       {/* Mobile overlay */}
       {sidebarOpen && (
         <div
-          className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm lg:hidden"
+          className="fixed inset-0 z-40 bg-warm-950/20 backdrop-blur-sm lg:hidden"
           onClick={() => setSidebarOpen(false)}
         />
       )}
@@ -52,24 +52,24 @@ export default function Sidebar() {
       {/* Sidebar panel */}
       <aside
         className={clsx(
-          'fixed inset-y-0 left-0 z-50 flex w-64 flex-col border-r border-navy-800/60 bg-surface-primary transition-transform duration-300 ease-in-out lg:static lg:z-auto lg:translate-x-0',
+          'fixed inset-y-0 left-0 z-50 flex w-64 flex-col border-r border-sand-200 bg-base transition-transform duration-300 ease-in-out lg:static lg:z-auto lg:translate-x-0',
           sidebarOpen ? 'translate-x-0' : '-translate-x-full',
         )}
       >
         {/* Sidebar header (mobile close) */}
-        <div className="flex h-16 items-center justify-between border-b border-navy-800/60 px-4 lg:hidden">
+        <div className="flex h-16 items-center justify-between border-b border-sand-200 px-4 lg:hidden">
           <div className="flex items-center gap-2.5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-gold-500 to-gold-600">
-              <span className="text-sm font-bold text-navy-950">M</span>
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-700">
+              <span className="text-sm font-bold text-white">M</span>
             </div>
-            <span className="text-sm font-semibold text-white">
-              MPV Capital <span className="text-gold-400">Intelligence</span>
+            <span className="text-sm font-semibold text-warm-900">
+              MPV Capital <span className="text-brand-600">Intelligence</span>
             </span>
           </div>
           <button
             type="button"
             onClick={() => setSidebarOpen(false)}
-            className="rounded-md p-1.5 text-navy-400 hover:bg-navy-800 hover:text-white"
+            className="rounded-md p-1.5 text-warm-400 hover:bg-sand-100 hover:text-warm-700"
             aria-label="Close sidebar"
           >
             <XMarkIcon className="h-5 w-5" />
@@ -91,20 +91,20 @@ export default function Sidebar() {
                   className={clsx(
                     'flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors',
                     isActive
-                      ? 'bg-navy-800/80 text-gold-400'
-                      : 'text-navy-300 hover:bg-navy-800/50 hover:text-white',
+                      ? 'bg-brand-50 text-brand-700'
+                      : 'text-warm-600 hover:bg-sand-100 hover:text-warm-900',
                   )}
                 >
                   <Icon
                     className={clsx(
                       'h-4.5 w-4.5 shrink-0',
-                      isActive ? 'text-gold-400' : 'text-navy-400',
+                      isActive ? 'text-brand-600' : 'text-warm-400',
                     )}
                     style={{ width: 18, height: 18 }}
                   />
                   {link.label}
                   {isActive && (
-                    <span className="ml-auto h-1.5 w-1.5 rounded-full bg-gold-400" />
+                    <span className="ml-auto h-1.5 w-1.5 rounded-full bg-brand-500" />
                   )}
                 </button>
               );
@@ -112,14 +112,14 @@ export default function Sidebar() {
           </div>
 
           {/* Divider */}
-          <div className="my-4 border-t border-navy-800/60" />
+          <div className="my-4 border-t border-sand-200" />
 
           {/* Institution type filters */}
           <div>
             <button
               type="button"
               onClick={() => setTypesExpanded(!typesExpanded)}
-              className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-xs font-semibold uppercase tracking-wider text-navy-400 transition-colors hover:text-navy-200"
+              className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-xs font-semibold uppercase tracking-wider text-warm-400 transition-colors hover:text-warm-600"
             >
               <FunnelIcon className="h-3.5 w-3.5" />
               Institution Types
@@ -144,13 +144,13 @@ export default function Sidebar() {
                   className={clsx(
                     'flex w-full items-center gap-2.5 rounded-md px-3 py-1.5 text-sm transition-colors',
                     filters.institutionType === null
-                      ? 'bg-navy-800/60 font-medium text-gold-400'
-                      : 'text-navy-300 hover:bg-navy-800/40 hover:text-white',
+                      ? 'bg-brand-50 font-medium text-brand-700'
+                      : 'text-warm-600 hover:bg-sand-100 hover:text-warm-900',
                   )}
                 >
                   <span
                     className="h-2 w-2 shrink-0 rounded-full"
-                    style={{ backgroundColor: '#94a3b8' }}
+                    style={{ backgroundColor: '#7c6f5e' }}
                   />
                   All Types
                 </button>
@@ -165,8 +165,8 @@ export default function Sidebar() {
                       className={clsx(
                         'flex w-full items-center gap-2.5 rounded-md px-3 py-1.5 text-sm transition-colors',
                         isActive
-                          ? 'bg-navy-800/60 font-medium text-gold-400'
-                          : 'text-navy-300 hover:bg-navy-800/40 hover:text-white',
+                          ? 'bg-brand-50 font-medium text-brand-700'
+                          : 'text-warm-600 hover:bg-sand-100 hover:text-warm-900',
                       )}
                     >
                       <span
@@ -183,8 +183,8 @@ export default function Sidebar() {
         </nav>
 
         {/* Sidebar footer */}
-        <div className="border-t border-navy-800/60 px-4 py-3">
-          <p className="text-2xs text-navy-500">
+        <div className="border-t border-sand-200 px-4 py-3">
+          <p className="text-2xs text-warm-400">
             Platform v1.0
           </p>
         </div>

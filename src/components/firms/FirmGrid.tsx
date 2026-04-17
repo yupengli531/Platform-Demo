@@ -40,22 +40,22 @@ interface FirmGridProps {
 
 function SkeletonCard() {
   return (
-    <div className="bg-navy-950/80 border border-navy-700/30 rounded-xl p-5 animate-pulse">
-      <div className="h-5 bg-navy-800 rounded w-3/4 mb-3" />
-      <div className="h-3 bg-navy-800 rounded w-1/2 mb-3" />
+    <div className="bg-base border border-sand-200 rounded-xl p-5 animate-pulse">
+      <div className="h-5 bg-sand-200 rounded w-3/4 mb-3" />
+      <div className="h-3 bg-sand-200 rounded w-1/2 mb-3" />
       <div className="flex gap-1.5 mb-3">
-        <div className="h-5 bg-navy-800 rounded w-20" />
-        <div className="h-5 bg-navy-800 rounded w-16" />
+        <div className="h-5 bg-sand-200 rounded w-20" />
+        <div className="h-5 bg-sand-200 rounded w-16" />
       </div>
-      <div className="h-3 bg-navy-800 rounded w-full mb-2" />
-      <div className="h-3 bg-navy-800 rounded w-2/3 mb-4" />
+      <div className="h-3 bg-sand-200 rounded w-full mb-2" />
+      <div className="h-3 bg-sand-200 rounded w-2/3 mb-4" />
       <div className="grid grid-cols-2 gap-2 mb-3">
-        <div className="h-12 bg-navy-800 rounded" />
-        <div className="h-12 bg-navy-800 rounded" />
+        <div className="h-12 bg-sand-100 rounded" />
+        <div className="h-12 bg-sand-100 rounded" />
       </div>
-      <div className="flex justify-between pt-3 border-t border-navy-700/30">
-        <div className="h-3 bg-navy-800 rounded w-16" />
-        <div className="h-3 bg-navy-800 rounded w-12" />
+      <div className="flex justify-between pt-3 border-t border-sand-200">
+        <div className="h-3 bg-sand-200 rounded w-16" />
+        <div className="h-3 bg-sand-200 rounded w-12" />
       </div>
     </div>
   );
@@ -85,11 +85,11 @@ export default function FirmGrid({
   if (firms.length === 0) {
     return (
       <div className="text-center py-20">
-        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-navy-800/50 mb-4">
-          <Squares2X2Icon className="h-8 w-8 text-slate-500" />
+        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-sand-100 mb-4">
+          <Squares2X2Icon className="h-8 w-8 text-warm-400" />
         </div>
-        <h3 className="text-lg font-semibold text-slate-300 mb-2">No Results</h3>
-        <p className="text-slate-500 max-w-md mx-auto">{emptyMessage}</p>
+        <h3 className="text-lg font-semibold text-warm-700 mb-2">No Results</h3>
+        <p className="text-warm-400 max-w-md mx-auto">{emptyMessage}</p>
       </div>
     );
   }
@@ -110,25 +110,25 @@ export default function FirmGrid({
         <div className="mt-4 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-navy-700/50">
-                <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Firm</th>
-                <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Type</th>
-                <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Industry</th>
-                <th className="text-left py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Location</th>
-                <th className="text-right py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">AUM</th>
-                <th className="text-right py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Check Size</th>
-                <th className="text-center py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Score</th>
-                <th className="text-center py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Status</th>
-                <th className="text-center py-3 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Deals</th>
+              <tr className="border-b border-sand-200">
+                <th className="text-left py-3 px-4 text-xs font-semibold text-warm-400 uppercase tracking-wider">Firm</th>
+                <th className="text-left py-3 px-4 text-xs font-semibold text-warm-400 uppercase tracking-wider">Type</th>
+                <th className="text-left py-3 px-4 text-xs font-semibold text-warm-400 uppercase tracking-wider">Industry</th>
+                <th className="text-left py-3 px-4 text-xs font-semibold text-warm-400 uppercase tracking-wider">Location</th>
+                <th className="text-right py-3 px-4 text-xs font-semibold text-warm-400 uppercase tracking-wider">AUM</th>
+                <th className="text-right py-3 px-4 text-xs font-semibold text-warm-400 uppercase tracking-wider">Check Size</th>
+                <th className="text-center py-3 px-4 text-xs font-semibold text-warm-400 uppercase tracking-wider">Score</th>
+                <th className="text-center py-3 px-4 text-xs font-semibold text-warm-400 uppercase tracking-wider">Status</th>
+                <th className="text-center py-3 px-4 text-xs font-semibold text-warm-400 uppercase tracking-wider">Deals</th>
               </tr>
             </thead>
             <tbody>
               {firms.map((firm) => {
                 const crmConfig = CRM_STATUS_CONFIG[firm.crmStatus] || CRM_STATUS_CONFIG.PROSPECT;
                 return (
-                  <tr key={firm.id} className="border-b border-navy-800/50 hover:bg-navy-900/50 transition-colors">
+                  <tr key={firm.id} className="border-b border-sand-100 hover:bg-sand-50 transition-colors">
                     <td className="py-3 px-4">
-                      <Link href={`/firms/${firm.id}`} className="text-white font-medium hover:text-brand-400 transition-colors">
+                      <Link href={`/firms/${firm.id}`} className="text-warm-900 font-medium hover:text-brand-700 transition-colors">
                         {firm.name}
                       </Link>
                     </td>
@@ -138,30 +138,30 @@ export default function FirmGrid({
                           <span
                             key={it.slug}
                             className="text-2xs px-1.5 py-0.5 rounded"
-                            style={{ color: it.color || '#94a3b8', backgroundColor: `${it.color || '#94a3b8'}15` }}
+                            style={{ color: it.color || '#6b5e4f', backgroundColor: `${it.color || '#6b5e4f'}12` }}
                           >
                             {it.name}
                           </span>
                         ))}
                       </div>
                     </td>
-                    <td className="py-3 px-4 text-slate-400 text-xs">
+                    <td className="py-3 px-4 text-warm-500 text-xs">
                       {firm.industries.slice(0, 2).map((i) => i.industry.name).join(', ')}
                     </td>
-                    <td className="py-3 px-4 text-slate-400 text-xs">
+                    <td className="py-3 px-4 text-warm-500 text-xs">
                       {[firm.headquartersCity, firm.headquartersState].filter(Boolean).join(', ')}
                     </td>
-                    <td className="py-3 px-4 text-right text-gold-400 font-medium text-xs">
+                    <td className="py-3 px-4 text-right text-brand-700 font-medium text-xs">
                       {firm.aumCents ? formatCentsToUSD(Number(firm.aumCents)) : '—'}
                     </td>
-                    <td className="py-3 px-4 text-right text-white text-xs">
+                    <td className="py-3 px-4 text-right text-warm-800 text-xs">
                       {firm.minCheckSizeCents || firm.maxCheckSizeCents
                         ? `${formatCentsToUSD(Number(firm.minCheckSizeCents))} – ${formatCentsToUSD(Number(firm.maxCheckSizeCents))}`
                         : '—'}
                     </td>
                     <td className="py-3 px-4 text-center">
                       {firm.internalScore !== null ? (
-                        <span className="text-xs font-medium text-slate-300">{firm.internalScore}</span>
+                        <span className="text-xs font-medium text-warm-600">{firm.internalScore}</span>
                       ) : '—'}
                     </td>
                     <td className="py-3 px-4 text-center">
@@ -172,7 +172,7 @@ export default function FirmGrid({
                         {crmConfig.label}
                       </span>
                     </td>
-                    <td className="py-3 px-4 text-center text-slate-400 text-xs">
+                    <td className="py-3 px-4 text-center text-warm-500 text-xs">
                       {firm._count.transactions}
                     </td>
                   </tr>
@@ -189,10 +189,10 @@ export default function FirmGrid({
             const crmConfig = CRM_STATUS_CONFIG[firm.crmStatus] || CRM_STATUS_CONFIG.PROSPECT;
             return (
               <Link key={firm.id} href={`/firms/${firm.id}`} className="block group">
-                <div className="flex items-center gap-4 bg-navy-950/60 border border-navy-700/30 rounded-lg px-4 py-3 hover:border-brand-500/30 hover:bg-navy-900/60 transition-all">
+                <div className="flex items-center gap-4 bg-base border border-sand-200 rounded-lg px-4 py-3 hover:border-brand-300 hover:shadow-card transition-all">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
-                      <h4 className="text-sm font-semibold text-white group-hover:text-brand-400 truncate">
+                      <h4 className="text-sm font-semibold text-warm-900 group-hover:text-brand-700 truncate">
                         {firm.name}
                       </h4>
                       <span
@@ -202,7 +202,7 @@ export default function FirmGrid({
                         {crmConfig.label}
                       </span>
                     </div>
-                    <div className="flex items-center gap-3 mt-1 text-xs text-slate-500">
+                    <div className="flex items-center gap-3 mt-1 text-xs text-warm-400">
                       {firm.institutionTypes.slice(0, 2).map(({ institutionType: it }) => (
                         <span key={it.slug} style={{ color: it.color || undefined }}>{it.name}</span>
                       ))}
@@ -213,17 +213,17 @@ export default function FirmGrid({
                   <div className="flex items-center gap-6 flex-shrink-0">
                     {firm.aumCents && (
                       <div className="text-right">
-                        <div className="text-2xs text-slate-500">AUM</div>
-                        <div className="text-sm font-semibold text-gold-400">{formatCentsToUSD(Number(firm.aumCents))}</div>
+                        <div className="text-2xs text-warm-400">AUM</div>
+                        <div className="text-sm font-semibold text-brand-700">{formatCentsToUSD(Number(firm.aumCents))}</div>
                       </div>
                     )}
                     <div className="text-right">
-                      <div className="text-2xs text-slate-500">Contacts</div>
-                      <div className="text-sm text-white">{firm._count.contacts}</div>
+                      <div className="text-2xs text-warm-400">Contacts</div>
+                      <div className="text-sm text-warm-800">{firm._count.contacts}</div>
                     </div>
                     <div className="text-right">
-                      <div className="text-2xs text-slate-500">Deals</div>
-                      <div className="text-sm text-white">{firm._count.transactions}</div>
+                      <div className="text-2xs text-warm-400">Deals</div>
+                      <div className="text-sm text-warm-800">{firm._count.transactions}</div>
                     </div>
                   </div>
                 </div>
@@ -247,14 +247,14 @@ function ViewModeToggle({
 }) {
   return (
     <div className="flex items-center justify-between">
-      <p className="text-sm text-slate-400">
-        <span className="text-white font-semibold">{count.toLocaleString()}</span> results
+      <p className="text-sm text-warm-500">
+        <span className="text-warm-900 font-semibold">{count.toLocaleString()}</span> results
       </p>
-      <div className="flex items-center gap-1 bg-navy-800/50 rounded-lg p-1">
+      <div className="flex items-center gap-1 bg-sand-100 rounded-lg p-1">
         <button
           onClick={() => setViewMode('grid')}
           className={`p-1.5 rounded-md transition-colors ${
-            viewMode === 'grid' ? 'bg-brand-600 text-white' : 'text-slate-400 hover:text-white'
+            viewMode === 'grid' ? 'bg-brand-600 dark:bg-brand-800 text-white' : 'text-warm-400 hover:text-warm-700'
           }`}
           title="Grid view"
         >
@@ -263,7 +263,7 @@ function ViewModeToggle({
         <button
           onClick={() => setViewMode('table')}
           className={`p-1.5 rounded-md transition-colors ${
-            viewMode === 'table' ? 'bg-brand-600 text-white' : 'text-slate-400 hover:text-white'
+            viewMode === 'table' ? 'bg-brand-600 dark:bg-brand-800 text-white' : 'text-warm-400 hover:text-warm-700'
           }`}
           title="Table view"
         >
@@ -272,7 +272,7 @@ function ViewModeToggle({
         <button
           onClick={() => setViewMode('list')}
           className={`p-1.5 rounded-md transition-colors ${
-            viewMode === 'list' ? 'bg-brand-600 text-white' : 'text-slate-400 hover:text-white'
+            viewMode === 'list' ? 'bg-brand-600 dark:bg-brand-800 text-white' : 'text-warm-400 hover:text-warm-700'
           }`}
           title="List view"
         >

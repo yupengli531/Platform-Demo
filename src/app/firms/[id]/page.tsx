@@ -32,7 +32,7 @@ export default function FirmDetailPage() {
         {/* Back Navigation */}
         <Link
           href="/browse"
-          className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors mb-6"
+          className="inline-flex items-center gap-2 text-sm text-warm-500 hover:text-warm-800 transition-colors mb-6"
         >
           <ArrowLeftIcon className="h-4 w-4" />
           Back to Browse
@@ -42,21 +42,21 @@ export default function FirmDetailPage() {
           <div className="flex items-center justify-center py-20">
             <div className="text-center">
               <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-brand-500 mx-auto mb-4" />
-              <p className="text-sm text-slate-400">Loading firm profile...</p>
+              <p className="text-sm text-warm-500">Loading firm profile...</p>
             </div>
           </div>
         )}
 
         {error && (
           <div className="text-center py-20">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-500/10 mb-4">
-              <span className="text-2xl">!</span>
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 mb-4">
+              <span className="text-2xl text-red-600">!</span>
             </div>
-            <h2 className="text-xl font-semibold text-white mb-2">Firm Not Found</h2>
-            <p className="text-slate-400 mb-6">{error}</p>
+            <h2 className="text-xl font-semibold text-warm-900 mb-2">Firm Not Found</h2>
+            <p className="text-warm-500 mb-6">{error}</p>
             <Link
               href="/browse"
-              className="text-sm text-brand-400 hover:text-brand-300 transition-colors"
+              className="text-sm text-brand-600 hover:text-brand-700 transition-colors"
             >
               Return to Browse
             </Link>

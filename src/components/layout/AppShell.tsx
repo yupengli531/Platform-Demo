@@ -11,7 +11,7 @@ interface AppShellProps {
 
 export default function AppShell({ children }: AppShellProps) {
   return (
-    <div className="flex h-screen flex-col bg-surface-primary text-white">
+    <div className="flex h-screen flex-col bg-surface-primary text-warm-950">
       {/* Header */}
       <Header />
 
@@ -22,7 +22,7 @@ export default function AppShell({ children }: AppShellProps) {
 
         {/* Main content area */}
         <main className="flex flex-1 flex-col overflow-y-auto">
-          <div className="flex-1 px-4 py-6 lg:px-6">
+          <div className="flex-1">
             {children}
           </div>
 

@@ -57,16 +57,16 @@ function FilterSection({
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
-    <div className="border-b border-navy-700/30 last:border-b-0">
+    <div className="border-b border-sand-200 last:border-b-0">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between py-3 px-1 text-sm font-medium text-slate-300 hover:text-white transition-colors"
+        className="w-full flex items-center justify-between py-3 px-1 text-sm font-medium text-warm-700 hover:text-warm-900 transition-colors"
       >
         {title}
         {isOpen ? (
-          <ChevronUpIcon className="h-4 w-4 text-slate-500" />
+          <ChevronUpIcon className="h-4 w-4 text-warm-400" />
         ) : (
-          <ChevronDownIcon className="h-4 w-4 text-slate-500" />
+          <ChevronDownIcon className="h-4 w-4 text-warm-400" />
         )}
       </button>
       {isOpen && <div className="pb-3 px-1">{children}</div>}
@@ -101,8 +101,8 @@ function MultiSelect({
           onClick={() => toggle(option)}
           className={`text-xs px-2.5 py-1 rounded-md border transition-colors ${
             selected.includes(option)
-              ? 'border-brand-500 bg-brand-500/20 text-brand-300'
-              : 'border-navy-700/50 bg-navy-800/30 text-slate-400 hover:text-slate-300 hover:border-navy-600'
+              ? 'border-brand-400 bg-brand-50 text-brand-700'
+              : 'border-sand-200 bg-sand-50 text-warm-500 hover:text-warm-700 hover:border-sand-300'
           }`}
         >
           {renderOption ? renderOption(option) : option}
@@ -131,31 +131,31 @@ function RangeInput({
 }) {
   return (
     <div>
-      <label className="text-xs text-slate-500 mb-1.5 block">{label}</label>
+      <label className="text-xs text-warm-400 mb-1.5 block">{label}</label>
       <div className="flex items-center gap-2">
         <div className="relative flex-1">
           {prefix && (
-            <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-xs text-slate-500">{prefix}</span>
+            <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-xs text-warm-400">{prefix}</span>
           )}
           <input
             type="number"
             value={minValue}
             onChange={(e) => onMinChange(e.target.value)}
             placeholder={placeholder || 'Min'}
-            className={`w-full bg-navy-800/50 border border-navy-700/50 rounded-md text-xs text-white py-1.5 ${prefix ? 'pl-6' : 'pl-2.5'} pr-2.5 focus:outline-none focus:border-brand-500/50 placeholder:text-slate-600`}
+            className={`w-full bg-base border border-sand-200 rounded-md text-xs text-warm-800 py-1.5 ${prefix ? 'pl-6' : 'pl-2.5'} pr-2.5 focus:outline-none focus:border-brand-500 placeholder:text-warm-400`}
           />
         </div>
-        <span className="text-slate-600 text-xs">to</span>
+        <span className="text-warm-400 text-xs">to</span>
         <div className="relative flex-1">
           {prefix && (
-            <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-xs text-slate-500">{prefix}</span>
+            <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-xs text-warm-400">{prefix}</span>
           )}
           <input
             type="number"
             value={maxValue}
             onChange={(e) => onMaxChange(e.target.value)}
             placeholder={placeholder || 'Max'}
-            className={`w-full bg-navy-800/50 border border-navy-700/50 rounded-md text-xs text-white py-1.5 ${prefix ? 'pl-6' : 'pl-2.5'} pr-2.5 focus:outline-none focus:border-brand-500/50 placeholder:text-slate-600`}
+            className={`w-full bg-base border border-sand-200 rounded-md text-xs text-warm-800 py-1.5 ${prefix ? 'pl-6' : 'pl-2.5'} pr-2.5 focus:outline-none focus:border-brand-500 placeholder:text-warm-400`}
           />
         </div>
       </div>
@@ -213,22 +213,22 @@ export default function FirmFilters({
     <div className={className}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2 bg-navy-800/50 border border-navy-700/50 rounded-lg text-sm text-slate-300 hover:text-white hover:border-navy-600 transition-colors"
+        className="flex items-center gap-2 px-3 py-2 bg-base border border-sand-300 rounded-lg text-sm text-warm-600 hover:text-warm-900 hover:border-sand-400 transition-colors"
       >
         <FunnelIcon className="h-4 w-4" />
         <span>Filters</span>
         {activeFilterCount > 0 && (
-          <span className="bg-brand-600 text-white text-2xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+          <span className="bg-brand-600 dark:bg-brand-800 text-white text-2xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
             {activeFilterCount}
           </span>
         )}
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-full mt-2 w-80 bg-navy-900 border border-navy-700/50 rounded-xl shadow-2xl z-50 max-h-[80vh] overflow-y-auto">
-          <div className="flex items-center justify-between p-4 border-b border-navy-700/30">
-            <h3 className="text-sm font-semibold text-white">Filters</h3>
-            <button onClick={() => setIsOpen(false)} className="text-slate-400 hover:text-white transition-colors">
+        <div className="absolute right-0 top-full mt-2 w-80 bg-base border border-sand-200 rounded-xl shadow-panel z-50 max-h-[80vh] overflow-y-auto">
+          <div className="flex items-center justify-between p-4 border-b border-sand-200">
+            <h3 className="text-sm font-semibold text-warm-900">Filters</h3>
+            <button onClick={() => setIsOpen(false)} className="text-warm-400 hover:text-warm-700 transition-colors">
               <XMarkIcon className="h-4 w-4" />
             </button>
           </div>
@@ -237,7 +237,7 @@ export default function FirmFilters({
             <FilterSection title="Geography" defaultOpen>
               <div className="space-y-3">
                 <div>
-                  <label className="text-xs text-slate-500 mb-1.5 block">Country</label>
+                  <label className="text-xs text-warm-400 mb-1.5 block">Country</label>
                   <MultiSelect
                     options={COUNTRIES}
                     selected={filters.countries}
@@ -245,7 +245,7 @@ export default function FirmFilters({
                   />
                 </div>
                 <div>
-                  <label className="text-xs text-slate-500 mb-1.5 block">State (US)</label>
+                  <label className="text-xs text-warm-400 mb-1.5 block">State (US)</label>
                   <MultiSelect
                     options={[...US_STATES].slice(0, 15)}
                     selected={filters.states}
@@ -330,16 +330,16 @@ export default function FirmFilters({
             </FilterSection>
           </div>
 
-          <div className="flex items-center gap-2 p-4 border-t border-navy-700/30">
+          <div className="flex items-center gap-2 p-4 border-t border-sand-200">
             <button
               onClick={handleClear}
-              className="flex-1 px-3 py-2 text-sm text-slate-400 hover:text-white border border-navy-700/50 rounded-lg transition-colors"
+              className="flex-1 px-3 py-2 text-sm text-warm-500 hover:text-warm-800 border border-sand-200 rounded-lg transition-colors"
             >
               Clear All
             </button>
             <button
               onClick={handleApply}
-              className="flex-1 px-3 py-2 text-sm font-medium text-white bg-brand-600 hover:bg-brand-500 rounded-lg transition-colors"
+              className="flex-1 px-3 py-2 text-sm font-medium text-white bg-brand-600 hover:bg-brand-700 dark:bg-brand-800 dark:hover:bg-brand-900 rounded-lg transition-colors"
             >
               Apply Filters
             </button>

@@ -50,141 +50,111 @@ A full-stack web application for browsing and analyzing capital market firms —
 | `GET /api/institution-types` | Institution type list with firm counts |
 | `GET /api/export` | Export filtered firms as CSV |
 
-## Getting Started
+## Run It Yourself
 
-### Prerequisites
+### macOS — Copy & Paste Into Terminal
 
-- [Node.js](https://nodejs.org/) 18+
-- [PostgreSQL](https://www.postgresql.org/download/) 14+
-- [Git](https://git-scm.com/downloads)
-
----
-
-### macOS (Terminal)
-
-**1. Install Homebrew, Node.js, and PostgreSQL**
+If you don't have Homebrew, Node.js, or PostgreSQL yet, run this first:
 
 ```bash
-# Install Homebrew (skip if you already have it)
+# Step 1: Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
-# Follow the instructions Homebrew prints to add it to your PATH, e.g.:
-# echo >> ~/.zprofile
-# echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> ~/.zprofile
-# eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+When it finishes, **it will print two commands** starting with `echo` — copy and run those. They look like:
 
-# Install Node.js and PostgreSQL
+```bash
+echo >> ~/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+```
+
+Then install Node.js and PostgreSQL:
+
+```bash
+# Step 2: Install Node.js and PostgreSQL
 brew install node
 brew install postgresql@15
 brew services start postgresql@15
 ```
 
-**2. Clone and set up the project**
+Now clone the project, set up the database, and run:
 
 ```bash
+# Step 3: Clone the repo
 git clone https://github.com/yupengli531/Platform-Demo.git
 cd Platform-Demo
 
+# Step 4: Install dependencies
 npm install
-```
 
-**3. Create the database and configure environment**
-
-```bash
-# Create the database (uses your Mac username by default)
+# Step 5: Create the database
 createdb mpv_capital_intelligence
 
-# Create the .env file — replace YOUR_MAC_USERNAME with your actual username
-echo 'DATABASE_URL="postgresql://YOUR_MAC_USERNAME@localhost:5432/mpv_capital_intelligence?schema=public"
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
-NEXT_PUBLIC_APP_NAME="MPV Capital Intelligence"' > .env
-```
+# Step 6: Create the .env file (auto-detects your Mac username)
+echo "DATABASE_URL=\"postgresql://$(whoami)@localhost:5432/mpv_capital_intelligence?schema=public\"
+NEXT_PUBLIC_APP_URL=\"http://localhost:3000\"
+NEXT_PUBLIC_APP_NAME=\"MPV Capital Intelligence\"" > .env
 
-> **Tip:** Run `whoami` in Terminal to see your Mac username.
-
-**4. Initialize the database and seed data**
-
-```bash
+# Step 7: Set up database tables and load sample data
 npx prisma generate
 npx prisma db push
 npm run db:seed
-```
 
-This seeds 57 real capital market firms, 106 contacts, 30 transactions, 13 institution types, and 27 industries.
-
-**5. Run the app**
-
-```bash
+# Step 8: Start the app
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open **http://localhost:3000** in your browser.
 
 ---
 
-### Windows (PowerShell or Command Prompt)
+### Windows — Copy & Paste Into PowerShell
 
-**1. Install Node.js and PostgreSQL**
+**First, install these two programs (download and run the installers):**
 
-- Download and install **Node.js LTS** from [nodejs.org](https://nodejs.org/) (includes npm)
-- Download and install **PostgreSQL** from [postgresql.org/download/windows](https://www.postgresql.org/download/windows/)
-  - During install, remember the password you set for the `postgres` user
-  - Keep the default port `5432`
+1. **Node.js** — https://nodejs.org (click the LTS download button)
+2. **PostgreSQL** — https://www.postgresql.org/download/windows (use the interactive installer)
+   - During install, set a password for the `postgres` user and remember it
+   - Keep the default port **5432**
+   - Check the box for **"Add to PATH"** if available
 
-**2. Clone and set up the project**
+If you don't have Git, install it from https://git-scm.com/downloads.
+
+**After installing, close and reopen PowerShell**, then run:
 
 ```powershell
+# Step 1: Clone the repo
 git clone https://github.com/yupengli531/Platform-Demo.git
 cd Platform-Demo
 
+# Step 2: Install dependencies
 npm install
-```
 
-> If `git` is not installed, download it from [git-scm.com/downloads](https://git-scm.com/downloads).
-
-**3. Create the database**
-
-Open **pgAdmin** (installed with PostgreSQL) or **SQL Shell (psql)** and run:
-
-```sql
-CREATE DATABASE mpv_capital_intelligence;
-```
-
-Or from PowerShell (if PostgreSQL bin is in your PATH):
-
-```powershell
+# Step 3: Create the database (enter your postgres password when prompted)
 & "C:\Program Files\PostgreSQL\15\bin\createdb.exe" -U postgres mpv_capital_intelligence
 ```
 
-**4. Configure environment**
-
-Create a `.env` file in the project root:
+> If the path above doesn't work, check your PostgreSQL version folder (e.g. `16` instead of `15`).
 
 ```powershell
+# Step 4: Create the .env file (replace YOUR_PASSWORD with your postgres password)
 @"
 DATABASE_URL="postgresql://postgres:YOUR_PASSWORD@localhost:5432/mpv_capital_intelligence?schema=public"
 NEXT_PUBLIC_APP_URL="http://localhost:3000"
 NEXT_PUBLIC_APP_NAME="MPV Capital Intelligence"
 "@ | Out-File -Encoding utf8 .env
-```
 
-> Replace `YOUR_PASSWORD` with the password you set during PostgreSQL installation.
-
-**5. Initialize the database and seed data**
-
-```powershell
+# Step 5: Set up database tables and load sample data
 npx prisma generate
 npx prisma db push
 npm run db:seed
-```
 
-**6. Run the app**
-
-```powershell
+# Step 6: Start the app
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open **http://localhost:3000** in your browser.
 
 ---
 
@@ -193,10 +163,11 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 | Problem | Solution |
 |---------|----------|
 | `brew: command not found` | Run the Homebrew install command again and follow the PATH instructions it prints |
-| `createdb: command not found` (Mac) | Run `export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"` |
-| `User postgres was denied access` (Mac) | Your DATABASE_URL should use your Mac username, not `postgres` |
-| `ECONNREFUSED` or `connection refused` | Make sure PostgreSQL is running (`brew services start postgresql@15` on Mac, or check Services on Windows) |
-| Page loads but shows no data | Make sure you ran `npm run db:seed` successfully |
+| `createdb: command not found` (Mac) | Run `export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"` then try again |
+| `User postgres was denied access` (Mac) | Your DATABASE_URL should use your Mac username (run `whoami` to check), not `postgres` |
+| `ECONNREFUSED` or `connection refused` | PostgreSQL isn't running. Mac: `brew services start postgresql@15`. Windows: open Services app and start PostgreSQL |
+| Page loads but shows no data | Run `npm run db:seed` again |
+| `git: command not found` | Install Git from https://git-scm.com/downloads |
 
 ### Additional Data Import
 
